@@ -173,7 +173,7 @@ O relatório também destaca dados sobre a satisfação dos clientes em realizar
 Vitor Augusto Meira França, economista da Fecomercio-SP principal entidade sindical paulista dos setores de comércio e serviços. Responsável por administrar, no Estado, o Serviço Social do Comércio (Sesc) e o Serviço Nacional de Aprendizagem Comercial (Senac) afirma o seguinte:
 
 \begin{citacao}
-	Diante de um quadro de instabilidade política, inflação alta, taxas de juros elevadas, escassez de crédito, aumento do desemprego e consequente conservadorismo dos consumidores, o varejo brasileiro deve repetir o fraco desempenho do ano passado e registrar nova queda das vendas neste ano. por outrolado, o e-commerce deve apresentar crescimento como ocorreu em 2015. \cite{webshoppers}
+Diante de um quadro de instabilidade política, inflação alta, taxas de juros elevadas, escassez de crédito, aumento do desemprego e consequente conservadorismo dos consumidores, o varejo brasileiro deve repetir o fraco desempenho do ano passado e registrar nova queda das vendas neste ano. por outrolado, o e-commerce deve apresentar crescimento como ocorreu em 2015. \cite{webshoppers}
 \end{citacao}
 
 O Relatório \textit{WebShoppers} apresenta estimativas sobre esse crescimento, que podemos ver nas figuras \ref{figura:estimativa:pedidos} e \ref{figura:estimativa:faturamento}.
@@ -246,46 +246,54 @@ Esse trabalho tem como objetivo principal o desenvolvimento de uma ferramenta pa
 % section organizacao_do_documento (end)
 A Seção \ref{cha:fundamentaco_teorica} apresenta a fundamentação teórica para o desenvolvimento deste trabalho. Na Seção \ref{cha:metodologia} é descrita a metodologia adotada para execução do projeto. A seção \ref{cha:metodologia} descreve os métodos e o tipo de pesquisa realizada no trabalho . A Seção \ref{cha:sudoloja} descreve a análise, o projeto, a implementação e a validação do sistema. A Seção \ref{cha:consideracoes_finais} apresenta as considerações finais do trabalho. E por fim, o apêndice.
 
-% \chapter{Fundamentação Teórica} % (fold)
-% \label{cha:fundamentaco_teorica}
+\chapter{Fundamentação Teórica} % (fold)
+\label{cha:fundamentaco_teorica}
 
-% \section{CMS} % (fold)
-% \label{sec:cms}
-% CMS é a sigla para \textit{Content Management System}, que se traduz diretamente ao português como Sistema de Gerenciamento de Conteúdos. Em linhas gerais, um CMS permitiria administrar conteúdos em meio digital e para o caso particular que nos ocupa, um CMS permitiria gerenciar os conteúdos de uma loja. \cite{miguel}
+\section{CMS} % (fold)
+\label{sec:cms}
 
-% Em outras palavras, um CMS é uma ferramenta que permite a um editor criar, e publicar qualquer tipo de informação em uma página web. Geralmente, os CMS trabalham manipulando um banco de dados, de modo que o editor simplesmente atualiza este banco, incluindo nova informação ou editando a existente.
+Sistemas de Gerenciamento de Conteúdo (SGC) ou Content Management System (CMS), segundo \citeonline{mercer} são softwares que facilitam a criação, organização, manipulação e remoção de dados em forma de imagens, documentos, scripts, textos, etc.
+Já \citeonline{barcia}, diz que um CMS, é uma plataforma de gestão de conteúdos, ou seja, um sistema que integra ferramentas que permitem criar, editar e publicar conteúdo em tempo real, onde os utilizadores manipulam uma interface sem terem a necessidade de saber programar. \citeonline{barcia} ainda ressalta que os gerenciadores também dispensam o uso de programação, facilitando dessa forma a gestão dos dados e o acesso às funcionalidades da ferramenta.
 
-% Contudo, o mais interessante, é que essa ferramenta é feita de tal maneira que mesmo aqueles que nunca ouviram falar de ASP, PHP, MySQL, Apache, HTML, Javascript ou qualquer outra linguagem voltada para web poderá usá-lo, inclusive esta é sua principal função, tornar acessível a todos a sua presença na Internet através de um site, facilitando a inserção de textos, de comentários e dezenas de outras funcionalidades, de acordo com as características de cada aplicação. 
+O uso de um CMS pode facilitar o trabalho dos administradores de aplicações, que envolvem muitas atualizações no seu conteúdo, como por exemplo, blogs, portais corporativos\footnote{Instrumento de gestão de informação e de conhecimento}. ``Os benefícios ligados a adoção de um CMS incluem desde a redução do custo de atualização dos conteúdos nos websites até o aumento da eficiência das equipes de TI'' \cite{pereira}.
 
-% \textit{Podemos dizer que um CMS é um software que pega uma estrutura pré moldada e transforma em um web site com base nos comandos passados pelo administrador} \cite{raven}. Alguns Exemplos de CMS podem ser vistos a seguir.
+Em linhas gerais, um CMS permitiria administrar conteúdos em meio digital. E para o caso particular que nos ocupa, um CMS permitiria gerenciar os conteúdos de uma loja virtual.
 
-% \begin{itemize}
-% \item \textit{Drupal} - É uma plataforma de gerenciamento de conteúdo de código aberto alimentando milhões de web sites e aplicações. Ele é construído, usado, e apoiado por uma comunidade ativa e diversificada de pessoas ao redor do mundo \cite{drupal}.
+Em outras palavras, um CMS é uma ferramenta que permite a um editor criar e publicar qualquer tipo de informação em uma página web. Geralmente, um CMS trabalha manipulando um banco de dados, de modo que o editor simplesmente atualiza este banco, incluindo nova informação ou editando a existente.
 
-% \item \textit{OpenText} \citeyear{opentext} - O primeiro sistema CMS comercial que apareceu no mercado. A OpenText é líder em Gestão de Informação Corporativa, seus produtos de gerenciamento de conteúdo permitem coleta mais eficiente de todos os tipos de informação - estruturada e não estruturada - e fornecem essa informação em contexto por qualquer aplicativo, plataforma ou processo.
+Contudo, o mais interessante, é que essa ferramenta é feita de tal maneira que mesmo aqueles que nunca ouviram falar de JAVA, PHP, MySQL, Javascript ou qualquer outra linguagem voltada para web poderá usá-lo, inclusive esta é sua principal função, tornar acessível a todos a sua presença na Internet através de um site, facilitando a inserção de textos, de comentários e dezenas de outras funcionalidades, de acordo com as características de cada aplicação. Alguns Exemplos de CMS podem ser vistos a seguir.
 
-% \item \textit{Wordpress} - Sistema muito popular e bastante usado pelos \textit{bloggers}. WordPress é um software web que você pode usar para criar um belo site, blog, ou app \cite{wordpress}.
-% \end{itemize}
+\begin{itemize}
+\item \textit{Drupal} - É uma plataforma de gerenciamento de conteúdo de código aberto, usado em milhares de web sites e aplicações. Ele é desenvoldivo, usado, e apoiado por uma comunidade ativa e diversificada de pessoas ao redor do mundo \cite{drupal}.
 
-% % section cms (end)
+\item \textit{OpenText} \citeyear{opentext} - O primeiro sistema CMS comercial que apareceu no mercado. A OpenText é líder em Gestão de Informação Corporativa. Seus produtos de gerenciamento de conteúdo permitem uma coleta mais eficiente de todos os tipos de informação - estruturada e não estruturada - e fornecem essa informação em contexto por qualquer aplicativo, plataforma ou processo \cite{opentext}.
 
-% \section{\textit{e-commerce}} % (fold)
-% \label{sec:e_commerce}
+\item \textit{Wordpress} - Sistema muito popular e bastante usado pelos \textit{bloggers}. WordPress é um software web que você pode usar para criar um site, blog, ou app \cite{wordpress}.
+\end{itemize}
 
-% \textit{e-commerce}, também chamado de comércio eletrônico, é aplicável a qualquer tipo de transação comercial que pode envolver compra, venda, transferência ou troca de produtos, serviços ou informações por meio de redes de computadores, incluindo
-% a Internet \cite{turban}. Entretanto, existem diferenças entre \textit{e-commerce} e e-business. E-business é definido como o uso das tecnologias da informação para executar funções de negócios. E-business é, portanto, um termo mais amplo que inclui
-% \textit{e-commerce} \cite{gordon}. Segundo \citeonline{fernandes} \textit{e-commerce} é dividido nos seguintes tipos:
+% section cms (end)
 
-% \begin{itemize}
-% \item \textbf{Empresa para Empresa (B2B – Business to Business):} Engloba as negociações de bens ou serviços que acontecem entre empresas;
-% \item \textbf{Empresa para Consumidor (B2C – Business to Consumer):} Tipo de comércio mais conhecido, onde a empresa faz o negócio diretamente com os consumidores finais;
-% \item \textbf{Consumidor para Consumidor (C2C – Consumer to Consumer):} Engloba todas as transações que acontecem entre consumidores finais, geralmente intermediadas por uma terceira entidade;
-% \item \textbf{Consumidor para Empresa (C2B – Consumer to Business):} O sentido tradicional da troca dos bens é invertido. Acontece quando um número de indivíduos coloca os seus bens ou serviços para serem adquirido por empresas que procuram por tal bem ou serviço;
-% \item \textbf{Empresa para Administração (B2A – Business to Administration):} Para esse tipo de comércio são consideradas todas as transações que ocorrem entre empresas e a administração pública;
-% \item \textbf{Consumidor para Administração (C2A – Consumer to Administration):} Ocorre nas transações entre indivíduos e a administração pública.
-% \end{itemize}
+\section{\textit{E-commerce}} % (fold)
+\label{sec:e_commerce} 
 
-% O sistema que será apresentado se encaixa no tipo B2C (\textit{Business to Consumer}) onde o Lojista fará o negócio diretamente com os consumidores finais.
+Segundo \citeonline{kalakota}, o Comércio Eletrônico (CE) pode ser definido como sendo a compra e a venda de informações, produtos e serviços através de redes de computadores. \citeonline{bloch} estenderam esta definição incluindo que CE é o suporte para qualquer tipo de transações de negócio sobre uma infra-estrutura digital.
+
+\apudonline{kalakota}{albertin} há muito tempo, consideravam que o ambiente tradicional de negócio estava mudando rapidamente, com os consumidores e negócios procurando flexibilidade para mudar os parceiros de negócio, plataformas, carreiras e redes. O \textit{e-commerce} começava a se disseminar.
+
+O comércio eletrônico ou \textit{e-commerce}, é aplicável a qualquer tipo de transação comercial que pode envolver compra, venda, transferência ou troca de produtos, serviços ou informações por meio de redes de computadores, incluindo a Internet \cite{turban}.
+
+Existem diferenças entre \textit{e-commerce} e \textit{e-business}. \textit{E-business} é definido como o uso das tecnologias da informação para executar funções de negócios. \textit{E-business} é, portanto, um termo mais amplo que inclui \textit{e-commerce} \cite{gordon}. 
+
+Dentre os modelos existentes de \textit{e-business}, \citeonline{asfoura} destaca três tipos principais que incluem o e-commerce em sua execução:
+
+\begin{itemize}
+\item \textbf{Empresa para Empresa (B2B – Business to Business):} Engloba as negociações de bens ou serviços que acontecem entre empresas;
+\item \textbf{Empresa para Consumidor (B2C – Business to Consumer):} Tipo de comércio mais conhecido, onde a empresa faz o negócio diretamente com os consumidores finais;
+\item \textbf{Consumidor para Consumidor (C2C – Consumer to Consumer):} Engloba todas as transações que acontecem entre consumidores finais, geralmente intermediadas por uma terceira entidade;
+\end{itemize}
+
+O sistema que será apresentado se encaixa no modelo de negócio B2C (\textit{Business to Consumer}), onde o lojista fará o negócio diretamente com os consumidores finais.
+
 
 % section e_commerce (end)
 % chapter fundamenta_o_te_rica (end)
