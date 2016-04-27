@@ -441,249 +441,249 @@ Durante esta etapa foram definidas as \textit{Releases}, juntamente com a data e
 % chapter metodologia (end)
 
 
-% \chapter{Sudo Loja} % (fold)
-% \label{cha:sudo_loja}
-
-% Esta seção irá discutir o sistema desenvolvido, assim como as etapas de análise, projeto e implementação. Também será abordado o projeto arquitetural e as tecnologias utilizadas na construção do sistema. Na seção \ref{sec:ferramentas_relacionadas} uma análise das ferramentas relacionadas foi levantada, afim de destacar um diferencial dentre as ferramentas existentes.
-
-% \section{Ferramentas Relacionadas} % (fold)
-% \label{sec:ferramentas_relacionadas}
-
-% A seguir, podemos ver um quadro comparativo com as principais ferramentas usadas na criação de lojas virtuais e suas respectivas funcionalidades comparando com o sistema desenvolvido.
-
-% \begin{itemize}
-% \item 1. Magento (www.magento.com) \nocite{magento}
-% \item 2. Tray Commerce (www.tray.com.br) \nocite{tray}
-% \item 3. Loja UolHost (www.uolhost.com.br) \nocite{uolhost}
-% \item 4. Wix Commerce (pt.wix.com/ecommerce/website) \nocite{wix}
-% \item 5. Loja Integrada (www.lojaintegrada.com.br) \nocite{lojaintegrada}
-
-% \end{itemize}
-
-% \begin{table}[H]
-% \centering
-% \caption{Funcionalidades das ferramentas}
-% \label{quad:comparativo}
-% \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} |a|b|b|b|b|b|b|}	
-% \hline
-% \rowcolor{ballblue}
-% & 1 	  & 2 	          & 3 			 & 4 			& 5   & Sudo Loja\\ 
-% \hline
-% Pago										 	& não     & sim			  & sim			 & sim 			& sim & \textbf{não}\\
-% \hline
-% Gerenciamento de produtos, 			& sim     & sim			  & sim			 & sim 			& sim & \textbf{sim}\\
-% clientes e pedidos 			&      & 			  & 			 &  			&  & \\
-% \hline
-% Personalização do layout 					 	& sim     & sim			  & sim			 & sim 			& sim & \textbf{sim}\\
-% \hline
-% Múltiplas imagens por produto 				 	& sim     & sim			  & sim			 & sim 			& sim & \textbf{sim}\\
-% \hline
-% Site apropriado para dispositivos moveis    	& sim     & não			  & não			 & não 			& não & \textbf{sim}\\
-% \hline
-% Controle de estoque								& sim     & sim			  & sim			 & sim 			& sim & \textbf{sim}\\
-% \hline
-% Perguntas na página do produto 			& não     & não			  & não			 & não 			& não & \textbf{sim}\\
-% \hline
-% \end{tabular*}
-% \end{table}
-
-% Como o quadro \ref{quad:comparativo} mostra, a Sudo Loja contará com as funcionalidades encontradas nas ferramentas listadas acima e ainda com um diferencial, que será a possibilidade de fazer perguntas ao vendedor sobre determinado produto.
-
-% % section ferramentas_relacionadas (end)
-
-% \section{Análise} % (fold)
-% \label{sec:analise}
-
-% A seguir serão apresentados os artefatos produzidos na fase de análise, inerentes a uma \textit{User Story} específica. Para isso foi escolhida a \textit{User Story} 03 (O sistema deve realizar o gerenciamento do estoque da loja virtual).
-
-% As \textit{User Stories} alocadas são quebradas em tarefas, e o cliente deve definir os testes de aceitação para cada \textit{User Story}. Para auxílio na gerência foi feito uso da Tabela de Alocação de Tarefas (TAT), na qual especificamos as \textit{\textit{User Stories}} envolvidas, tarefas, responsáveis, estimativas de tempo, tempo real consumido e status da tarefa. Nos quadros \ref{quadro:tati-us03} e \ref{quadro:teste-aceitacaoi-us03} podemos ver, respectivamente, a tabela de alocação de tarefas e os testes de aceitação geradas pra a US03. As demais \textit{\textit{User Stories}} serão apresentadas com detalhes no Apêndice \ref{app:user_stories_e_testes_de_aceitacao}.
-
-% \newpage
-
-% \begin{longtable}{|p{1.5cm}|p{3.5cm}|c|p{2cm}|p{2cm}|c|}
-% \caption{Alocação de Tarefas - US03}
-% \label{quadro:tati-us03}
-% \hline
-% \multicolumn{6}{|c|}{\textbf{\textit{User Story} 03}}\\
-% \hline		
-% \rowcolor{ballblue}
-% Tarefa & Descrição & Responsável & Estimativa de tempo (horas) & Tempo real (horas) & Status\\
-% \hline
-% T1 & Implementar Script para salvar um Produto & João Marcos & 2 & 1 & Finalizado\\
-% \hline
-% T2 & Implementar Script para validar informações do produto & João Marcos & 2 & 1 & Finalizado\\
-% \hline
-% T3 & Criar Formulário para cadastro de produto & João Marcos & 3 & 2 & Finalizado\\
-% \hline
-% T4 & Criar formulário para edição de produto & João Marcos & 2 & 1 & Finalizado\\
-% \hline
-% T5 & Criar página para o estoque, exibindo as informações básicas de cada produto com sua respectiva quantidade e link para ficha do produto & João Marcos & 4 & 3 & Finalizado\\
-% \hline
-% T6 & Criar botão para exclusão de um produto na página de estoque & João Marcos & 2 & 1 & Finalizado\\
-% \hline
-% \end{longtable}
-
-% \begin{longtable}{|l|p{11.8cm}|c|}
-% \caption{Teste de aceitação - US03}
-% \label{quadro:teste-aceitacaoi-us03}
-% \hline
-% \multicolumn{3}{|c|}{\textbf{\textit{User Story} 03}}\\
-% \hline		
-% \rowcolor{ballblue}
-% \multicolumn{2}{|c|}{Testes de aceitação} & Status\\	
-% \hline
-% TA1 & Dado que estou na página de cadastro de produto, quando eu preencher o formulário com os dados obrigatórios de forma correta , o produto deve ser salvo e informado uma mensagem de sucesso.   & Finalizado\\
-% \hline
-% TA2 & Dado que estou na página de cadastro de produto, quando eu preencher o formulário com os dados obrigatórios de forma incorreta , o produto não deve ser salvo e uma mensagem de erro deve ser exibida.   & Finalizado\\
-% \hline
-% TA3 & Dado que estou acessando a ficha de edição de produto, quando eu alterar alguma informação do formulário com os dados válidos, o produto deve ser atualizado e uma mensagem de sucesso deve ser exibida.   & Finalizado\\
-% \hline
-% TA4 & Dado que estou acessando a ficha de edição de produto, quando eu alterar alguma informação do formulário com os dados inválidos, tais informações não serão salvas e uma mensagem de erro deve ser exibida.   & Finalizado\\
-% \hline
-% TA5 & Dado que estou na página de estoque, quando eu selecionar a opção excluir este produto, um diálogo de confirmação deve ser exibido. Caso confirme o produto deve ser excluído  & Finalizado\\
-% \hline
-% TA6 & Dado que estou na página de estoque, quando eu selecionar a opção excluir este produto, um diálogo de confirmação deve ser exibido. Caso não confirme o produto não deve ser excluído  & Finalizado\\
-% \hline
-% \end{longtable}
+\chapter{Sudo Loja - \textit\small{Ainda não revisado}} % (fold)
+\label{cha:sudo_loja}
+
+Esta seção irá discutir o sistema desenvolvido, assim como as etapas de análise, projeto e implementação. Também será abordado o projeto arquitetural e as tecnologias utilizadas na construção do sistema. Na seção \ref{sec:ferramentas_relacionadas} uma análise das ferramentas relacionadas foi levantada, afim de destacar um diferencial dentre as ferramentas existentes.
+
+\section{Ferramentas Relacionadas} % (fold)
+\label{sec:ferramentas_relacionadas}
+
+A seguir, podemos ver um quadro comparativo com as principais ferramentas usadas na criação de lojas virtuais e suas respectivas funcionalidades comparando com o sistema desenvolvido.
+
+\begin{itemize}
+\item 1. Magento (www.magento.com) \nocite{magento}
+\item 2. Tray Commerce (www.tray.com.br) \nocite{tray}
+\item 3. Loja UolHost (www.uolhost.com.br) \nocite{uolhost}
+\item 4. Wix Commerce (pt.wix.com/ecommerce/website) \nocite{wix}
+\item 5. Loja Integrada (www.lojaintegrada.com.br) \nocite{lojaintegrada}
+
+\end{itemize}
+
+\begin{table}[H]
+\centering
+\caption{Funcionalidades das ferramentas}
+\label{quad:comparativo}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} |a|b|b|b|b|b|b|}	
+\hline
+\rowcolor{ballblue}
+& 1 	  & 2 	          & 3 			 & 4 			& 5   & Sudo Loja\\ 
+\hline
+Pago										 	& não     & sim			  & sim			 & sim 			& sim & \textbf{não}\\
+\hline
+Gerenciamento de produtos, 			& sim     & sim			  & sim			 & sim 			& sim & \textbf{sim}\\
+clientes e pedidos 			&      & 			  & 			 &  			&  & \\
+\hline
+Personalização do layout 					 	& sim     & sim			  & sim			 & sim 			& sim & \textbf{sim}\\
+\hline
+Múltiplas imagens por produto 				 	& sim     & sim			  & sim			 & sim 			& sim & \textbf{sim}\\
+\hline
+Site apropriado para dispositivos moveis    	& sim     & não			  & não			 & não 			& não & \textbf{sim}\\
+\hline
+Controle de estoque								& sim     & sim			  & sim			 & sim 			& sim & \textbf{sim}\\
+\hline
+Perguntas na página do produto 			& não     & não			  & não			 & não 			& não & \textbf{sim}\\
+\hline
+\end{tabular*}
+\end{table}
+
+Como o quadro \ref{quad:comparativo} mostra, a Sudo Loja contará com as funcionalidades encontradas nas ferramentas listadas acima e ainda com um diferencial, que será a possibilidade de fazer perguntas ao vendedor sobre determinado produto.
+
+% section ferramentas_relacionadas (end)
+
+\section{Análise} % (fold)
+\label{sec:analise}
+
+A seguir serão apresentados os artefatos produzidos na fase de análise, inerentes a uma \textit{User Story} específica. Para isso foi escolhida a \textit{User Story} 03 (O sistema deve realizar o gerenciamento do estoque da loja virtual).
+
+As \textit{User Stories} alocadas são quebradas em tarefas, e o cliente deve definir os testes de aceitação para cada \textit{User Story}. Para auxílio na gerência foi feito uso da Tabela de Alocação de Tarefas (TAT), na qual especificamos as \textit{\textit{User Stories}} envolvidas, tarefas, responsáveis, estimativas de tempo, tempo real consumido e status da tarefa. Nos quadros \ref{quadro:tati-us03} e \ref{quadro:teste-aceitacaoi-us03} podemos ver, respectivamente, a tabela de alocação de tarefas e os testes de aceitação geradas pra a US03. As demais \textit{\textit{User Stories}} serão apresentadas com detalhes no Apêndice \ref{app:user_stories_e_testes_de_aceitacao}.
+
+\newpage
+
+\begin{longtable}{|p{1.5cm}|p{3.5cm}|c|p{2cm}|p{2cm}|c|}
+\caption{Alocação de Tarefas - US03}
+\label{quadro:tati-us03}
+\hline
+\multicolumn{6}{|c|}{\textbf{\textit{User Story} 03}}\\
+\hline		
+\rowcolor{ballblue}
+Tarefa & Descrição & Responsável & Estimativa de tempo (horas) & Tempo real (horas) & Status\\
+\hline
+T1 & Implementar Script para salvar um Produto & João Marcos & 2 & 1 & Finalizado\\
+\hline
+T2 & Implementar Script para validar informações do produto & João Marcos & 2 & 1 & Finalizado\\
+\hline
+T3 & Criar Formulário para cadastro de produto & João Marcos & 3 & 2 & Finalizado\\
+\hline
+T4 & Criar formulário para edição de produto & João Marcos & 2 & 1 & Finalizado\\
+\hline
+T5 & Criar página para o estoque, exibindo as informações básicas de cada produto com sua respectiva quantidade e link para ficha do produto & João Marcos & 4 & 3 & Finalizado\\
+\hline
+T6 & Criar botão para exclusão de um produto na página de estoque & João Marcos & 2 & 1 & Finalizado\\
+\hline
+\end{longtable}
+
+\begin{longtable}{|l|p{11.8cm}|c|}
+\caption{Teste de aceitação - US03}
+\label{quadro:teste-aceitacaoi-us03}
+\hline
+\multicolumn{3}{|c|}{\textbf{\textit{User Story} 03}}\\
+\hline		
+\rowcolor{ballblue}
+\multicolumn{2}{|c|}{Testes de aceitação} & Status\\	
+\hline
+TA1 & Dado que estou na página de cadastro de produto, quando eu preencher o formulário com os dados obrigatórios de forma correta , o produto deve ser salvo e informado uma mensagem de sucesso.   & Finalizado\\
+\hline
+TA2 & Dado que estou na página de cadastro de produto, quando eu preencher o formulário com os dados obrigatórios de forma incorreta , o produto não deve ser salvo e uma mensagem de erro deve ser exibida.   & Finalizado\\
+\hline
+TA3 & Dado que estou acessando a ficha de edição de produto, quando eu alterar alguma informação do formulário com os dados válidos, o produto deve ser atualizado e uma mensagem de sucesso deve ser exibida.   & Finalizado\\
+\hline
+TA4 & Dado que estou acessando a ficha de edição de produto, quando eu alterar alguma informação do formulário com os dados inválidos, tais informações não serão salvas e uma mensagem de erro deve ser exibida.   & Finalizado\\
+\hline
+TA5 & Dado que estou na página de estoque, quando eu selecionar a opção excluir este produto, um diálogo de confirmação deve ser exibido. Caso confirme o produto deve ser excluído  & Finalizado\\
+\hline
+TA6 & Dado que estou na página de estoque, quando eu selecionar a opção excluir este produto, um diálogo de confirmação deve ser exibido. Caso não confirme o produto não deve ser excluído  & Finalizado\\
+\hline
+\end{longtable}
 
-% % section analise (end)
+% section analise (end)
 
-% \section{Projeto Arquitetural} % (fold)
-% \label{sec:projeto_arquitetural}
+\section{Projeto Arquitetural} % (fold)
+\label{sec:projeto_arquitetural}
 
-% O sistema será organizado em 3 camadas, são elas: Apresentação, Serviços e Persistência. As próximas seções abordarão individualmente cada uma delas. Segundo \citeonline{sommerville}, o modelo em camadas de uma arquitetura organiza o sistema em camadas, cada uma das quais fornecendo um conjunto de serviços, essa abordagem apoia o desenvolvimento incremental de sistemas. À medida que uma camada é desenvolvida, alguns serviços disponibilizados por essa camada podem ser disponibilizadas para os usuários. Na Figura \ref{fig:representacao-pa}, pode ser vista uma representação visual de como se dará a organização das camadas, onde cada camada só acessa diretamente suas camadas adjacentes.
+O sistema será organizado em 3 camadas, são elas: Apresentação, Serviços e Persistência. As próximas seções abordarão individualmente cada uma delas. Segundo \citeonline{sommerville}, o modelo em camadas de uma arquitetura organiza o sistema em camadas, cada uma das quais fornecendo um conjunto de serviços, essa abordagem apoia o desenvolvimento incremental de sistemas. À medida que uma camada é desenvolvida, alguns serviços disponibilizados por essa camada podem ser disponibilizadas para os usuários. Na Figura \ref{fig:representacao-pa}, pode ser vista uma representação visual de como se dará a organização das camadas, onde cada camada só acessa diretamente suas camadas adjacentes.
 
-% \begin{figure}[H]
-% \centering
-% \includegraphics[scale=0.5]{img/representacao-pa.eps}
-% \caption{Modelo em camadas do Sudo Loja}
-% \label{fig:representacao-pa}
-% \end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{img/representacao-pa.eps}
+\caption{Modelo em camadas do Sudo Loja}
+\label{fig:representacao-pa}
+\end{figure}
 
-% \subsection{Camada de Apresentação} % (fold)
-% \label{sub:camada_de_apresentacao}
+\subsection{Camada de Apresentação} % (fold)
+\label{sub:camada_de_apresentacao}
 
-% A partir desta camada o usuário poderá interagir diretamente com o sistema. Será composta por páginas JSP (\textit{Java Sever Pages}) e HTML(\textit{HyperText Markup Language}, que significa Linguagem de Marcação de Hipertexto), estas que serão estilizadas com o uso de CSS3. Para agilizar o processo de desenvolvimento dessas páginas, será usado o \textit{framework} \textit{Bootstrap} na versão 3. Com isso, a velocidade na criação das páginas aumentará devido a existência de dezenas de componentes já estilizados e estruturalmente organizados, que poderão ser reaproveitados. Alguns efeitos visuais da página serão implementados com o uso de \textit{JavaScript}. Todo conteúdo dinâmico dessas páginas serão implementados usando JSP em sua versão 2.1 e para o conteúdo estático será usado HTML.
+A partir desta camada o usuário poderá interagir diretamente com o sistema. Será composta por páginas JSP (\textit{Java Sever Pages}) e HTML(\textit{HyperText Markup Language}, que significa Linguagem de Marcação de Hipertexto), estas que serão estilizadas com o uso de CSS3. Para agilizar o processo de desenvolvimento dessas páginas, será usado o \textit{framework} \textit{Bootstrap} na versão 3. Com isso, a velocidade na criação das páginas aumentará devido a existência de dezenas de componentes já estilizados e estruturalmente organizados, que poderão ser reaproveitados. Alguns efeitos visuais da página serão implementados com o uso de \textit{JavaScript}. Todo conteúdo dinâmico dessas páginas serão implementados usando JSP em sua versão 2.1 e para o conteúdo estático será usado HTML.
 
-% Dois módulos serão implementados para esta camada. O módulo de gerenciamento do sistema, utilizado pelo Lojista e o módulo Loja Virtual que será utilizado pelos Clientes. O módulo gerenciamento irá conter as páginas de gerenciamento da Loja Virtual. E o módulo Loja Virtual as páginas para acesso dos clientes.
+Dois módulos serão implementados para esta camada. O módulo de gerenciamento do sistema, utilizado pelo Lojista e o módulo Loja Virtual que será utilizado pelos Clientes. O módulo gerenciamento irá conter as páginas de gerenciamento da Loja Virtual. E o módulo Loja Virtual as páginas para acesso dos clientes.
 
-% Esta camada poderá interagir diretamente (e apenas) com sua camada adjacente, a camada de Serviços que será discutida na seção \ref{sub:camada_de_servicos}.O estabelecimento desta comunicação será feita utilizando a API (\textit{Application Programming Interface}, no português Interface de Programação de Aplicação ) de \textit{Servlets} em sua versão 3.0, todas as páginas irão fazer requisições a um único \textit{servlet}, este irá chamar o serviço apropriado dependendo do comando recebido na requisição.
+Esta camada poderá interagir diretamente (e apenas) com sua camada adjacente, a camada de Serviços que será discutida na seção \ref{sub:camada_de_servicos}.O estabelecimento desta comunicação será feita utilizando a API (\textit{Application Programming Interface}, no português Interface de Programação de Aplicação ) de \textit{Servlets} em sua versão 3.0, todas as páginas irão fazer requisições a um único \textit{servlet}, este irá chamar o serviço apropriado dependendo do comando recebido na requisição.
 
-% % subsection camada_de_apresentacao (end)
+% subsection camada_de_apresentacao (end)
 
-% \subsection{Camada de Serviços} % (fold)
-% \label{sub:camada_de_servicos}
+\subsection{Camada de Serviços} % (fold)
+\label{sub:camada_de_servicos}
 
-% Esta camada fornecerá todos os serviços necessários para o funcionamento do sistema. Terá acesso direto às suas camadas adjacentes: Camada de Apresentação e Camada de Persistência. Para isso, fará uso da linguagem de programação Java. É composta por um conjunto de classes Java, cada qual com suas responsabilidades. Estas classes validarão e manipularão os dados vindo da camada de apresentação. Essas classes que fornecerão os serviços, irão acessar diretamente a camada de persistência, esta que por sua vez irá retornar algum resultado, para que o serviço realize o processamento e retorne para a camada de apresentação.
+Esta camada fornecerá todos os serviços necessários para o funcionamento do sistema. Terá acesso direto às suas camadas adjacentes: Camada de Apresentação e Camada de Persistência. Para isso, fará uso da linguagem de programação Java. É composta por um conjunto de classes Java, cada qual com suas responsabilidades. Estas classes validarão e manipularão os dados vindo da camada de apresentação. Essas classes que fornecerão os serviços, irão acessar diretamente a camada de persistência, esta que por sua vez irá retornar algum resultado, para que o serviço realize o processamento e retorne para a camada de apresentação.
 
-% Dois módulos serão implementados para esta camada. O módulo de serviços inerentes as operações do modulo de gerenciamento, este que poderá conter outros módulos como um módulo de personalização que fornecerá serviços para gerenciamento do layout; E um modulo de serviços inerentes as operações do modulo Loja Virtual. Um módulo de vendas responsável por prover os serviços inerentes a venda também fará parte do módulo Loja Virtual.
+Dois módulos serão implementados para esta camada. O módulo de serviços inerentes as operações do modulo de gerenciamento, este que poderá conter outros módulos como um módulo de personalização que fornecerá serviços para gerenciamento do layout; E um modulo de serviços inerentes as operações do modulo Loja Virtual. Um módulo de vendas responsável por prover os serviços inerentes a venda também fará parte do módulo Loja Virtual.
 
-% % subsection camada_de_servicos (end)
+% subsection camada_de_servicos (end)
 
-% \subsection{Camada de Persistência} % (fold)
-% \label{sub:camada_de_persistencia}
+\subsection{Camada de Persistência} % (fold)
+\label{sub:camada_de_persistencia}
 
-% Esta camada será responsável por manter e disponibilizar todos os dados do sistema. Para isto terá auxílio do provedor \textit{EclipseLink}, implementação da especificação JPA 2.0. Estas ferramentas automatizarão o processo criação das tabelas relacionais do banco de dados (onde será usado o \textit{PostgreSQL}), e auxiliarão  nas operações CRUD (acrônimo de \textit{Create}, \textit{Read}, \textit{Update} e \textit{Delete} na língua Inglesa) para as quatro operações básicas utilizadas em bases de dados relacionais (RDBMS) criação, consulta, atualização e exclusão de dados.
+Esta camada será responsável por manter e disponibilizar todos os dados do sistema. Para isto terá auxílio do provedor \textit{EclipseLink}, implementação da especificação JPA 2.0. Estas ferramentas automatizarão o processo criação das tabelas relacionais do banco de dados (onde será usado o \textit{PostgreSQL}), e auxiliarão  nas operações CRUD (acrônimo de \textit{Create}, \textit{Read}, \textit{Update} e \textit{Delete} na língua Inglesa) para as quatro operações básicas utilizadas em bases de dados relacionais (RDBMS) criação, consulta, atualização e exclusão de dados.
 
-% % subsection camada_de_persistencia (end)
+% subsection camada_de_persistencia (end)
 
-% \subsection{Diagrama de Componentes} % (fold)
-% \label{sub:diagrama_de_componentes}
+\subsection{Diagrama de Componentes} % (fold)
+\label{sub:diagrama_de_componentes}
 
-% Para possibilitar uma melhor compreensão da arquitetura do sistema, a Figura \ref{fig:cd} apresentará através de um diagrama de componentes, os módulos que irão existir em cada camada.
+Para possibilitar uma melhor compreensão da arquitetura do sistema, a Figura \ref{fig:cd} apresentará através de um diagrama de componentes, os módulos que irão existir em cada camada.
 
-% \begin{figure}[H]
-% \centering
-% \includegraphics[width=14cm]{img/diagramas/cd.eps}
-% \caption{Diagrama de Componentes do Sistema}
-% \label{fig:cd}
-% \end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=14cm]{img/diagramas/cd.eps}
+\caption{Diagrama de Componentes do Sistema}
+\label{fig:cd}
+\end{figure}
 
 
-% % subsection diagrama_de_componentes (end)
+% subsection diagrama_de_componentes (end)
 
-% \subsection{Tecnologias Utilizadas} % (fold)
-% \label{sub:tecnologias_ultilizadas}
+\subsection{Tecnologias Utilizadas} % (fold)
+\label{sub:tecnologias_ultilizadas}
 
-% Está seção apresentará com detalhes todas as tecnologias que serão utilizadas no sistema.
+Está seção apresentará com detalhes todas as tecnologias que serão utilizadas no sistema.
 
-% \begin{itemize}
-% \item \textbf{HTML} - No HTML (Hypertext Markup Language) ou Linguagem de Marcação de Hipertexto são definidos símbolos de marcação que informam ao navegador World Wide Web como exibir textos, imagens e uma variedade de recursos na página que é renderizada e apresentada ao usuário \cite{html}.
+\begin{itemize}
+\item \textbf{HTML} - No HTML (Hypertext Markup Language) ou Linguagem de Marcação de Hipertexto são definidos símbolos de marcação que informam ao navegador World Wide Web como exibir textos, imagens e uma variedade de recursos na página que é renderizada e apresentada ao usuário \cite{html}.
 
-% \item \textbf{JSP e Servlets} - \textit{JavaServer Pages} (JSP) e Servlets são tecnologias complementares para a produção páginas Web dinâmicas via Java. Servlets são a base para o \textit{server side} Java. JSP complementa Servlets  simplificando o desenvolvimento. Uma página JSP básica consiste em texto simples e de marcação e pode, opcionalmente, ter scripts incorporados e outras funcionalidades para a criação dinâmica de conteúdo \cite{jsp2007java}.
+\item \textbf{JSP e Servlets} - \textit{JavaServer Pages} (JSP) e Servlets são tecnologias complementares para a produção páginas Web dinâmicas via Java. Servlets são a base para o \textit{server side} Java. JSP complementa Servlets  simplificando o desenvolvimento. Uma página JSP básica consiste em texto simples e de marcação e pode, opcionalmente, ter scripts incorporados e outras funcionalidades para a criação dinâmica de conteúdo \cite{jsp2007java}.
 
-% \item \textbf{CSS} - Cascading Style Sheets (CSS) é uma “folha de estilo” composta por “camadas” e utilizada para definir a apresentação (aparência) em páginas da internet que adotam para o seu desenvolvimento linguagens de marcação (como XML, HTML e XHTML). O CSS define como serão exibidos os elementos contidos no código de uma página da internet e sua maior vantagem é efetuar a separação entre o formato e o conteúdo de um documento \cite{anapereira}.
+\item \textbf{CSS} - Cascading Style Sheets (CSS) é uma “folha de estilo” composta por “camadas” e utilizada para definir a apresentação (aparência) em páginas da internet que adotam para o seu desenvolvimento linguagens de marcação (como XML, HTML e XHTML). O CSS define como serão exibidos os elementos contidos no código de uma página da internet e sua maior vantagem é efetuar a separação entre o formato e o conteúdo de um documento \cite{anapereira}.
 
-% \item \textbf{JavaScript} - A linguagem Javascript é executada no navegador e trabalha juntamente com o mesmo de forma a tornar as páginas estáticas em páginas dinâmicas \cite{goodman}. É uma linguagem popular e hoje é empregada em diversas plataformas,tal como cliente, servidor, smartphones e desktops \cite{stefanov}.
+\item \textbf{JavaScript} - A linguagem Javascript é executada no navegador e trabalha juntamente com o mesmo de forma a tornar as páginas estáticas em páginas dinâmicas \cite{goodman}. É uma linguagem popular e hoje é empregada em diversas plataformas,tal como cliente, servidor, smartphones e desktops \cite{stefanov}.
 
-% \item \textbf{Bootstrap} - Originalmente criado por um designer e um desenvolvedor do Twitter \citeyear{twitter}, o \textit{Bootstrap} é um framework front-end popular e é um projeto de código aberto. O \textit{Bootstrap} em sua terceira versão se preocupa primeiramente com acesso por dispositivos móveis, focando-se no design responsivo \cite{bootstrap}.
+\item \textbf{Bootstrap} - Originalmente criado por um designer e um desenvolvedor do Twitter \citeyear{twitter}, o \textit{Bootstrap} é um framework front-end popular e é um projeto de código aberto. O \textit{Bootstrap} em sua terceira versão se preocupa primeiramente com acesso por dispositivos móveis, focando-se no design responsivo \cite{bootstrap}.
 
-% \item \textbf{Java} - Originalmente desenvolvida por uma equipe de desenvolvedores liderada por James Gosling na \textit{Sun Microsystems} (atualmente de propriedade da Oracle) e lançada em 1995, o Java é uma linguagem de programação orientada a objetos que atualmente faz parte do núcleo da Plataforma Java \cite{java}.
+\item \textbf{Java} - Originalmente desenvolvida por uma equipe de desenvolvedores liderada por James Gosling na \textit{Sun Microsystems} (atualmente de propriedade da Oracle) e lançada em 1995, o Java é uma linguagem de programação orientada a objetos que atualmente faz parte do núcleo da Plataforma Java \cite{java}.
 
-% \item \textbf{JPA} - JPA é um framework leve, baseado em POJOS (Plain Old Java Objects) para persistir objetos Java. A Java Persistence API, diferente do que muitos imaginam, não é apenas um framework para Mapeamento Objeto-Relacional (ORM - Object-Relational Mapping), ela também oferece diversas funcionalidades essenciais em qualquer aplicação corporativa \cite{medeiros}.
+\item \textbf{JPA} - JPA é um framework leve, baseado em POJOS (Plain Old Java Objects) para persistir objetos Java. A Java Persistence API, diferente do que muitos imaginam, não é apenas um framework para Mapeamento Objeto-Relacional (ORM - Object-Relational Mapping), ela também oferece diversas funcionalidades essenciais em qualquer aplicação corporativa \cite{medeiros}.
 
-% \item \textbf{PostgreSQL} - PostgreSQL é um sistema poderoso banco de dados objeto-relacional open source. Ele tem mais de 15 anos de desenvolvimento ativo e uma arquitetura comprovada que ela ganhou uma forte reputação de confiabilidade, integridade de dados e correção. Ele é executado em todos os principais sistemas operacionais, incluindo Linux, UNIX (AIX, BSD, HP-UX, SGI IRIX, Mac OS X, Solaris, Tru64), e Windows. É totalmente compatível com ACID, tem suporte completo para chaves estrangeiras, junções views, triggers e procedimentos armazenados (em várias línguas). Ele inclui mais 2008 tipos de dados SQL, incluindo INTEGER, NUMERIC, BOOLEAN, CHAR, VARCHAR, DATE, INTERVAL e TIMESTAMP. Ele também suporta o armazenamento de grandes objetos binários, incluindo imagens, sons ou vídeo. Ele tem interfaces de programação nativas para C / C ++, Java, .Net, Perl, Python, Ruby, Tcl, ODBC, entre outros, e documentação excepcional \cite{postgresql}.
+\item \textbf{PostgreSQL} - PostgreSQL é um sistema poderoso banco de dados objeto-relacional open source. Ele tem mais de 15 anos de desenvolvimento ativo e uma arquitetura comprovada que ela ganhou uma forte reputação de confiabilidade, integridade de dados e correção. Ele é executado em todos os principais sistemas operacionais, incluindo Linux, UNIX (AIX, BSD, HP-UX, SGI IRIX, Mac OS X, Solaris, Tru64), e Windows. É totalmente compatível com ACID, tem suporte completo para chaves estrangeiras, junções views, triggers e procedimentos armazenados (em várias línguas). Ele inclui mais 2008 tipos de dados SQL, incluindo INTEGER, NUMERIC, BOOLEAN, CHAR, VARCHAR, DATE, INTERVAL e TIMESTAMP. Ele também suporta o armazenamento de grandes objetos binários, incluindo imagens, sons ou vídeo. Ele tem interfaces de programação nativas para C / C ++, Java, .Net, Perl, Python, Ruby, Tcl, ODBC, entre outros, e documentação excepcional \cite{postgresql}.
 
-% \end{itemize}
+\end{itemize}
 
-% % subsection tecnologias_ultilizadas (end)
+% subsection tecnologias_ultilizadas (end)
 
-% \subsection{O Que Deve Ser Produzido} % (fold)
-% \label{sub:o_que_deve_ser_produzido}
+\subsection{O Que Deve Ser Produzido} % (fold)
+\label{sub:o_que_deve_ser_produzido}
 
-% Como o sistema será web e utilizará Java como linguagem \textit{server side} o sistema deverá funcionar em um servidor para sistemas  Java. Para o desenvolvimento será  utilizado o \textit{containner} Apache Tomcat 7.0. 
+Como o sistema será web e utilizará Java como linguagem \textit{server side} o sistema deverá funcionar em um servidor para sistemas  Java. Para o desenvolvimento será  utilizado o \textit{containner} Apache Tomcat 7.0. 
 
-% Quanto ao processo de instalação, basta que o arquivo .war gerado no \textit{deploy} da aplicação seja colocado dentro da pasta do servidor. No caso do Tomcat esta pasta é chamada de “WebApps”. Após implantado nesta pasta, basta iniciar o \textit{containner} e acessar a URL do mesmo / (barra) o nome da aplicação.
+Quanto ao processo de instalação, basta que o arquivo .war gerado no \textit{deploy} da aplicação seja colocado dentro da pasta do servidor. No caso do Tomcat esta pasta é chamada de “WebApps”. Após implantado nesta pasta, basta iniciar o \textit{containner} e acessar a URL do mesmo / (barra) o nome da aplicação.
 
-% % subsection o_que_deve_ser_produzido (end)
+% subsection o_que_deve_ser_produzido (end)
 
-% % section projeto_arquitetural (end)
+% section projeto_arquitetural (end)
 
-% \section{Diagrama de Classes} % (fold)
-% \label{sec:diagrama_de_classes}
+\section{Diagrama de Classes} % (fold)
+\label{sec:diagrama_de_classes}
 
-% Na Figura \ref{fig:diagrama-classe-estoque}, será apresentado um diagrama de classes que ilustra uma visão mais baixo nível de como as classes necessárias para realizar as operações da US03, deverão se comunicar. 
+Na Figura \ref{fig:diagrama-classe-estoque}, será apresentado um diagrama de classes que ilustra uma visão mais baixo nível de como as classes necessárias para realizar as operações da US03, deverão se comunicar. 
 
-% \begin{figure}[H]
-% \centering
-% \includegraphics[width=14cm]{img/diagramas/class-diagram-estoque.eps}
-% \caption{Diagrama de classes US03}
-% \label{fig:diagrama-classe-estoque}
-% \end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=14cm]{img/diagramas/class-diagram-estoque.eps}
+\caption{Diagrama de classes US03}
+\label{fig:diagrama-classe-estoque}
+\end{figure}
 
-% A classe Controller ainda na camada de apresentação invocará um comando apropriado na camada de serviços, que fará uso da Classe Dao na camada de persistência que por sua vez retornará para o serviço o resultado que será repassado para a apresentação.
+A classe Controller ainda na camada de apresentação invocará um comando apropriado na camada de serviços, que fará uso da Classe Dao na camada de persistência que por sua vez retornará para o serviço o resultado que será repassado para a apresentação.
 
-% % section diagrama_de_classes (end)
+% section diagrama_de_classes (end)
 
-% \section{Implementação} % (fold)
-% \label{sec:implementacao}
+\section{Implementação} % (fold)
+\label{sec:implementacao}
 
-% Na Figura \ref{fig:sd-atualiza}, será apresentado um diagrama de sequência que ilustra como se dá a atualização de um produto do estoque, tarefa esta que faz parte da US03.
+Na Figura \ref{fig:sd-atualiza}, será apresentado um diagrama de sequência que ilustra como se dá a atualização de um produto do estoque, tarefa esta que faz parte da US03.
 
-% \begin{figure}[H]
-% \centering
-% \includegraphics[width=15cm]{img/diagramas/sd-atualiza-produto.eps}
-% \caption{Diagrama de sequência - atualizar informações do Produto}
-% \label{fig:sd-atualiza}
-% \end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{img/diagramas/sd-atualiza-produto.eps}
+\caption{Diagrama de sequência - atualizar informações do Produto}
+\label{fig:sd-atualiza}
+\end{figure}
 
-% Suponhamos que o usuário já esteja devidamente cadastrado e logado no sistema e agora está na página de edição de um produto do estoque, como representa a figura \ref{fig:ficha-produto}. O usuário altera as informações que jugar necessário e clica no botão salvar, isto gera uma requisição para o servlet controlador, que por sua vez irá invocar o serviço de atualizar produto. Antes de salvar as alterações o serviço irá validar os dados, sendo válidos o Dao de produto é invocado e as alterações são salvas na base de dados e será exibida uma mensagem de sucesso na tela. Caso as informações não sejam válidas será apresentada uma mensagem de erro na mesma tela.
+Suponhamos que o usuário já esteja devidamente cadastrado e logado no sistema e agora está na página de edição de um produto do estoque, como representa a figura \ref{fig:ficha-produto}. O usuário altera as informações que jugar necessário e clica no botão salvar, isto gera uma requisição para o servlet controlador, que por sua vez irá invocar o serviço de atualizar produto. Antes de salvar as alterações o serviço irá validar os dados, sendo válidos o Dao de produto é invocado e as alterações são salvas na base de dados e será exibida uma mensagem de sucesso na tela. Caso as informações não sejam válidas será apresentada uma mensagem de erro na mesma tela.
 
-% \begin{figure}[H]
-% \centering
-% \includegraphics[width=15cm]{img/sistema/ficha-produto.eps}
-% \caption{Ficha de edição de Produto}
-% \label{fig:ficha-produto}
-% \end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{img/sistema/ficha-produto.eps}
+\caption{Ficha de edição de Produto}
+\label{fig:ficha-produto}
+\end{figure}
 
-% O estoque de uma loja do sistema é ilustrado na Figura \ref{fig:sistema-estoque}. Nessa página o usuário pode adicionar um novo produto, clicando no botão \textbf{Novo Produto}, onde será exibido um formulário para inserção dos dados do produto; Poderá também editar um produto, clicando sobre o botão destacado em azul com descrição \textbf{Ficha}, exibindo uma ficha, onde o usuário poderá ver com detalhes todas as informações inerentes ao produto, podendo atualizá-las; E excluir um produto clicando sobre o botão destacado na cor vermelha com descrição \textbf{Excluir}, onde será exibida uma janela para confirmar a operação, resultando ou não na exclusão do produto. 
+O estoque de uma loja do sistema é ilustrado na Figura \ref{fig:sistema-estoque}. Nessa página o usuário pode adicionar um novo produto, clicando no botão \textbf{Novo Produto}, onde será exibido um formulário para inserção dos dados do produto; Poderá também editar um produto, clicando sobre o botão destacado em azul com descrição \textbf{Ficha}, exibindo uma ficha, onde o usuário poderá ver com detalhes todas as informações inerentes ao produto, podendo atualizá-las; E excluir um produto clicando sobre o botão destacado na cor vermelha com descrição \textbf{Excluir}, onde será exibida uma janela para confirmar a operação, resultando ou não na exclusão do produto. 
 
-% \begin{figure}[H]
-% \centering
-% \includegraphics[width=15cm]{img/sistema/pagina-estoque.eps}
-% \caption{Página do estoque de uma loja do sistema}
-% \label{fig:sistema-estoque}
-% \end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{img/sistema/pagina-estoque.eps}
+\caption{Página do estoque de uma loja do sistema}
+\label{fig:sistema-estoque}
+\end{figure}
 
 
 % section implementacao (end)
