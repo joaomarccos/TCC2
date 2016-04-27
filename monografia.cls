@@ -344,11 +344,11 @@
 \def\sigla#1{\gdef\@sigla{#1}}%
 \def\unidadeacademica#1{\gdef\@unidadeacademica{#1}}
 \def\setesp{%
-        \sc Curso de Especializa\c{c}\~{a}o em \@curso}
+        \sf Curso de Especializa\c{c}\~{a}o em \@curso}
 \def\setpos{%
-         \sc Curso de P\'{o}s-gradua\c{c}\~{a}o em \@curso}
+         \sf Curso de P\'{o}s-gradua\c{c}\~{a}o em \@curso}
 \def\setcurso{%
-         \sc Curso de \@curso}
+         \sf Curso de \@curso}
 \def\assinaturaum{%
              \rule{9.0cm}{0.1mm} \\
              {\@orientador \\ \footnotesize\@ttorientador}\\
@@ -388,9 +388,10 @@
   \newcommand\maketitle{\begin{titlepage}%
   %%
   \lineskip .0em
-  \begin{flushleft}%
-  {\rmfamily \sc
-  \begin{tabular}{p{20.0cm}}
+  \begin{center}%
+  {\rmfamily \sf
+  \begin{tabular}
+  \centering  
   \@instituicao\\
   \@unidadeacademica\\
 {\ifps@d
@@ -405,7 +406,7 @@
 \hfill  
 \end{tabular}      
   }
-  \end{flushleft} % edited by João Marcos F
+  \end{center} % edited by João Marcos F
   \vspace{8.0em}
   \begin{center}
     {\rmfamily \@autor \par}%
