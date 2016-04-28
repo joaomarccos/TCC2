@@ -437,8 +437,8 @@
   \end{center}
   \begin{comentario}
   {        \@tipo\ apresentada ao Curso
-           de \@curso\ da \@sigla, como 
-           requisito para a obten\c{c}\~ao parcial do grau
+           de \@curso\ do \@sigla, como 
+           requisito para a obten\c{c}\~ao do grau
            de \@grau\ em \@curso. }
   \end{comentario}
  \vspace{1.5em}
@@ -487,10 +487,9 @@
   \end{center}
   \begin{comentario}
   {        \@tipo\ apresentada ao Curso
-           de \@curso\ da \@sigla, como 
+           de \@curso\ do \@sigla, como 
            requisito para a obten\c{c}\~ao 
-           parcial do grau
-           de \@grau\ em \@curso. }
+           do grau de \@grau\ em \@curso. }
   \end{comentario}
   \vfill
   {\rmfamily Aprovado em \@data} \\

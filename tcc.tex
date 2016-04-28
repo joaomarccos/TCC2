@@ -99,7 +99,6 @@ Nowadays many people prefer to do their shopping at home using your computer or 
 %----Sumário, lista de figuras, quadros------------
 \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}
 
-
 {% Lista de Figuras 
 \let\oldnumberline\numberline%
 \renewcommand{\numberline}{\figurename~\oldnumberline}%
@@ -118,45 +117,48 @@ Nowadays many people prefer to do their shopping at home using your computer or 
 
 \addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
 \tableofcontents
+\thispagestyle{empty}
 %---------------------
 % 
 \chapter{Introdução} % (fold)
 \label{cha:intro}
-\setcounter{page}{1}
 
-Comprar na Internet traz muitas vantagens para um consumidor. É possível fazer compras sempre que quiser e à hora que desejar, no conforto da sua casa. Não existem filas. As compras são feitas sem a utilização de dinheiro físico, proporcionando mais segurança ao cliente.  Além de diversas outras vantagens.
+Comprar na Internet traz muitas vantagens para um consumidor. É possível fazer compras sempre que quiser e à hora que desejar, no conforto da sua casa; Não existem filas; As compras são feitas sem a utilização de dinheiro físico, proporcionando mais segurança ao cliente;  Além de diversas outras vantagens.
 
-Para os comerciantes as vantagens também são muitas: o produto fica acessível aos clientes 24 horas por dia, todos os dias da semana; pessoas de todos os lugares podem ver o produto; não precisa de um espaço físico para expor os produtos; custo de investimento inicial mínimo; sem risco de assalto, entre outras.
+Para os comerciantes as vantagens também são muitas: o produto fica acessível aos clientes 24 horas por dia, todos os dias da semana; pessoas de todos os lugares podem ver o produto; não é necessário um espaço físico para expor os produtos; custo de investimento inicial mínimo; sem risco de assalto, entre outras.
 
-Dados indicam que os consumidores virtuais demonstram altos índices de intenção de compra, ou seja, continuam consumindo apesar do estabelecimento de um cenário de crise, e pricipalmente na Internet, onde os preços geralmente são mais baratos, se compara-dos aos do varejo tradicional.
+Dados indicam que os consumidores virtuais demonstram altos índices de intenção de compra, ou seja, continuam consumindo apesar do estabelecimento de um cenário de crise, e principalmente na Internet, onde os preços geralmente são mais baratos, se comparados aos do varejo tradicional \cite{webshoppers}.
 
-O \textit{WebShoppers} \citeonline{webshoppers}, relatório sólido e respeitado sobre o comércio eletrônico anualmente publicado, no qual são analisadas a evolução do \textit{e-commerce}, tendências, estimativas, as mudanças de comportamento e preferências dos e-consumidores, apresentou boas estatísticas sobre o \textit{e-commerce} no Brasil. A seguir veremos esses dados em forma de figuras e gráficos.
+O \textit{WebShoppers} \citeonline{webshoppers}, relatório sólido e respeitado sobre o comércio eletrônico anualmente publicado, no qual são analisadas a evolução do \textit{e-commerce}, tendências, estimativas, mudanças de comportamento e preferências dos e-consumidores, apresentou boas estatísticas sobre o \textit{e-commerce} no Brasil. A seguir serão apresentados dados em forma de figuras e gráficos.
 
 A figura \ref{figura:consumidores} apresenta a quantidade de e-consumidores ativos (pessoas que efetivaram pelo
 menos uma compra virtual, ao longo de 2015). Percebe-se um crescimento, se comparada com anos anteriores. Em 2015, esse número chegou ao total de 39,1 milhões de consumidores.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{img/webshoppers/consumidores.eps}
 \caption{Consumidores únicos ativos}
+\centering
+\includegraphics[width=12cm]{img/webshoppers/consumidores.eps}\\
 \small{Fonte: \citeonline{webshoppers} - Relatório WebShoppers}
 \label{figura:consumidores}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=10cm]{img/webshoppers/total-pedidos.eps}
 \caption{Total de pedidos realizados no \textit{e-commerce} no Brasil}
+\centering
+\includegraphics[width=10cm]{img/webshoppers/total-pedidos.eps}\\
 \small{Fonte: \citeonline{webshoppers} - Relatório WebShoppers}
 \label{figura:pedidos}
 \end{figure}
 
-O número de pedidos e o faturamento do comércio eletrônico também foram notavalmente altos. Como mostra a figura \ref{figura:pedidos}, com um total de 106,2 milhões em 2015, o incremento no número de pedidos no mercado brasileiro foi de 3\%, em relação a 2014. O faturamento do comércio eletrônico foi de R\$ 41,3 bilhões. O número representa um crescimento nominal de 15,3\%, em relação a 2014, quando as vendas somaram um total de R\$ 35,8 bilhões como pode ser visto na figura \ref{figura:vendas}.
+O número de pedidos e o faturamento do comércio eletrônico também foram notavelmente altos. Como mostra a figura \ref{figura:pedidos}, com um total de 106,2 milhões em 2015, o incremento no número de pedidos no mercado brasileiro foi de 3\%, em relação a 2014. O faturamento do comércio eletrônico foi de R\$ 41,3 bilhões. O número representa um crescimento nominal de 15,3\%, em relação a 2014, quando as vendas somaram um total de R\$ 35,8 bilhões como pode ser visto na figura \ref{figura:vendas}.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=10cm]{img/webshoppers/faturamento.eps}
 \caption{Total de faturamento do \textit{e-commerce} no Brasil}
+\centering
+\includegraphics[width=10cm]{img/webshoppers/faturamento.eps}\\
 \small{Fonte: \citeonline{webshoppers} - Relatório WebShoppers}
 \label{figura:vendas}
 \end{figure}
@@ -165,8 +167,9 @@ O relatório também destaca dados sobre a satisfação dos clientes em realizar
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{img/webshoppers/nps.eps}
 \caption{Satisfação e fidelização de clientes}
+\centering
+\includegraphics[width=12cm]{img/webshoppers/nps.eps}\\
 \small{Fonte: \citeonline{webshoppers} - Relatório WebShoppers}
 \label{figura:nps}
 \end{figure}
@@ -174,20 +177,21 @@ O relatório também destaca dados sobre a satisfação dos clientes em realizar
 Vitor Augusto Meira França, economista da Fecomercio-SP principal entidade sindical paulista dos setores de comércio e serviços. Responsável por administrar, no Estado, o Serviço Social do Comércio (Sesc) e o Serviço Nacional de Aprendizagem Comercial (Senac) afirma o seguinte:
 
 \begin{citacao}
-Diante de um quadro de instabilidade política, inflação alta, taxas de juros elevadas, escassez de crédito, aumento do desemprego e consequente conservadorismo dos consumidores, o varejo brasileiro deve repetir o fraco desempenho do ano passado e registrar nova queda das vendas neste ano. por outrolado, o e-commerce deve apresentar crescimento como ocorreu em 2015. \cite{webshoppers}
+Diante de um quadro de instabilidade política, inflação alta, taxas de juros elevadas, escassez de crédito, aumento do desemprego e consequente conservadorismo dos consumidores, o varejo brasileiro deve repetir o fraco desempenho do ano passado e registrar nova queda das vendas neste ano. por outro lado, o e-commerce deve apresentar crescimento como ocorreu em 2015. \cite{webshoppers}
 \end{citacao}
 
 A figura \ref{figura:estimativa:faturamento} apresenta estimativas relacionadas ao faturamento do \textif{e-commerce}, para o ano de 2016, no Brasil.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{img/webshoppers/estimativa-faturamento.eps}
 \caption{Estimativa de faturamento do \textit{e-commerce} para 2016}
+\centering
+\includegraphics[width=12cm]{img/webshoppers/estimativa-faturamento.eps}\\
 \small{Fonte: \citeonline{webshoppers} - Relatório WebShoppers}
 \label{figura:estimativa:faturamento}
 \end{figure}
 
-Diante esses dados sobre o \textit{e-commerce} no brasil, percebe-se que o comércio eletrônico é um mercado em ascenção.
+Diante esses dados sobre o \textit{e-commerce} no brasil, percebe-se que o comércio eletrônico é um mercado em ascensão.
 
 Entre os empresários que se aventuram nesse ambiente, um dos anseios é ter uma loja que tenha a identidade visual da sua marca, que possibilite formas práticas e seguras de compra pelos clientes e, claro, que seja de fácil manuseio e administração para ele mesmo. Com ferramentas como o Mercado Livre\footnote{https//www.mercadolivre.com.br}, por exemplo, é possível disponibilizar produtos para a venda, mas em um ambiente diferente de uma loja virtual particular.
 % chapter introdução(end)
@@ -195,15 +199,15 @@ Entre os empresários que se aventuram nesse ambiente, um dos anseios é ter uma
 \section{Motivação} % (fold)
 \label{sec:motivacao}
 
-Existem muitas ferramentas que facilitam a criação e gestão de lojas virtuais, porém algumas delas não são populares e as vezes desconhecidas, tais ferramentas poderiam ajudar a expandir um negócio ou criar uma oportunidade para aqueles que desejam empreeder através de vendas na Internet. 
+Existem muitas ferramentas que facilitam a criação e gestão de lojas virtuais, porém algumas delas não são populares e as vezes desconhecidas, tais ferramentas poderiam ajudar a expandir um negócio ou criar uma oportunidade para aqueles que desejam empreender através de vendas na Internet. 
 
-Segundo \citeonline{felipini}, ``Um e-commerce pode ser implantado aos poucos e testado''. Diferentemente de uma empresa tradicional, em que o início das operações ocorre somente com o empreendimento totalmente estruturado, um negócio na Internet pode ser implantado em etapas, o que dilui o investimento e facilita a correção de erros. Por exemplo, um estabelecimento de vendas só receberá seu primeiro cliente após a loja estiver totalmente pronta. Na Internet, você pode montar um site de conteúdo, com ou sem sua marca definitiva, testar a aceitabilidade de seu modelo de negócio e produtos, avaliar a visitação e, somente depois, começar a vender. Dessa forma, mesmo aqueles que ainda não possuam um negócio, poderão investir em um \textit{e-commerce}.
+Segundo \citeonline{felipini}, \textit{Um e-commerce pode ser implantado aos poucos e testado}. Diferentemente de uma empresa tradicional, em que o início das operações ocorre somente com o empreendimento totalmente estruturado, um negócio na Internet pode ser implantado em etapas, o que dilui o investimento e facilita a correção de erros. Por exemplo, um estabelecimento de vendas só receberá seu primeiro cliente após a loja estiver totalmente pronta. Na Internet, você pode montar um site de conteúdo, com ou sem sua marca definitiva, testar a aceitabilidade de seu modelo de negócio e produtos, avaliar a visitação e, somente depois, começar a vender. Dessa forma, mesmo aqueles que ainda não possuam um negócio, poderão investir em um \textit{e-commerce}.
 
-Os comerciantes já fixados no mercado e interessados em colocar seu negócio na rede, procuram por empresas especializadas em desenvolvimento de softwares para desenvolver seu site de vendas. O problema nisso é que o custo pode ser alto. \citeonline{jalote} afirma: ``O software é caro porque torna se uma atividade difícil e trabalhosa de ser realizado pelo engenheiro de software''.  Outro problema realacionado ao desenvolvimento de software no geral, isso inclui uma loja virtual, é o tempo. O que gera insatisfação dos clientes, pela demora no cumprimento dos prazos \cite{pressman}.
+Os comerciantes já fixados no mercado e interessados em colocar seu negócio na rede, procuram por empresas especializadas em desenvolvimento de softwares para desenvolver seu site de vendas. O problema nisso é que o custo pode ser alto. \citeonline{jalote} afirma: \textit{O software é caro porque torna se uma atividade difícil e trabalhosa de ser realizado pelo engenheiro de software}.  Outro problema relacionado ao desenvolvimento de software no geral, isso inclui uma loja virtual, é o tempo. O que gera insatisfação dos clientes, pela demora no cumprimento dos prazos \cite{pressman}.
 
-Além desses, um outro problema é a manutenção do site. Segundo \citeonline{sommervile} manutenção de software é a modificação de um programa após ter sido colocado em uso. Mundanças por exemplo, em alterar o \textit{layout}\footnote{Aspecto visual das páginas do site} geram custos e podem também ser demoradas.
+Além desses, um outro problema é a manutenção do site. Segundo \citeonline{sommervile} manutenção de software é a modificação de um programa após ter sido colocado em uso. Mudanças por exemplo, em alterar o \textit{layout}\footnote{Aspecto visual das páginas do site} geram custos e podem também ser demoradas.
 
-A Sudo Loja, visa resolver esses problemas oferecendo um CMS (do inglês \textit{Content Management System}), capaz de criar, gerenciar e tornar possível a personalização de uma loja virtual. O CMS proposto busca facilitar a criação e gestão de um \textit{e-commerce}, promovendo uma entrada rápida ao mercado virtual à pequenas e médias empresas. Podem ser vistos vários sistemas que funcionam dessa maneira, como por exemplo: a \citeonline{tray} e \citeonline{lojaintegrada}. Na Seção \ref{cha:ferramentas_relacionadas} será apresentado um comparativo entre estas e outras ferramentas.
+A Sudo Loja, visa resolver esses problemas oferecendo um CMS (do inglês \textit{Content Management System}), capaz de criar, gerenciar e tornar possível a personalização de uma loja virtual. O CMS proposto busca facilitar a criação e gestão de um \textit{e-commerce}, promovendo uma entrada rápida ao mercado virtual à pequenas e médias empresas. Podem ser vistos vários sistemas que funcionam dessa maneira, como por exemplo: a Tray commerce\footnote{https://www.tray.com.br/} e Loja integrada\footnote{https://lojaintegrada.com.br/}. Na Seção \ref{cha:ferramentas_relacionadas} será apresentado um comparativo entre estas e outras ferramentas.
 
 
 % section motivacao (end)
@@ -240,7 +244,7 @@ Esse trabalho tem como objetivo principal o desenvolvimento de uma ferramenta pa
 \label{sec:organizacao_do_documento}
 
 % section organizacao_do_documento (end)
-A Seção \ref{cha:fundamentaco_teorica} apresenta a fundamentação teórica para o desenvolvimento deste trabalho. Na Seção \ref{cha:metodologia} é descrita a metodologia adotada para execução do projeto. A Seção \ref{cha:sudoloja} descreve a solução proposta no trabalho, um comparativo entre ferramentas do gênero e também as etapas de análise, projeto, implementação e validação do sistema. A Seção \ref{cha:consideracoes_finais} apresenta as considerações finais do trabalho, assim como discuções sobre trabalhos futuros. Por fim, os artefatos gerados no decorrer do desenvolvimento do trabalho podem ser vistos nos Apêndices.
+A Seção \ref{cha:fundamentaco_teorica} apresenta a fundamentação teórica para o desenvolvimento deste trabalho. Na Seção \ref{cha:metodologia} é descrita a metodologia adotada para execução do projeto. A Seção \ref{cha:sudoloja} descreve a solução proposta no trabalho, um comparativo entre ferramentas do gênero e também as etapas de análise, projeto, implementação e validação do sistema. A Seção \ref{cha:considera_es_finais} apresenta as considerações finais do trabalho, assim como discussões sobre trabalhos futuros. Por fim, os artefatos gerados no decorrer do desenvolvimento do trabalho podem ser vistos nos Apêndices.
 
 \chapter{Fundamentação Teórica} % (fold)
 \label{cha:fundamentaco_teorica}
@@ -253,16 +257,16 @@ Essa seção discutirá sobre alguns assuntos necessários para obter um melhor 
 Sistemas de Gerenciamento de Conteúdo (SGC) ou Content Management System (CMS), segundo \citeonline{mercer} são softwares que facilitam a criação, organização, manipulação e remoção de dados em forma de imagens, documentos, scripts, textos, etc.
 Já \citeonline{barcia}, diz que um CMS, é uma plataforma de gestão de conteúdos, ou seja, um sistema que integra ferramentas que permitem criar, editar e publicar conteúdo em tempo real, onde os utilizadores manipulam uma interface sem terem a necessidade de saber programar. \citeonline{barcia} ainda ressalta que os gerenciadores também dispensam o uso de programação, facilitando dessa forma a gestão dos dados e o acesso às funcionalidades da ferramenta.
 
-O uso de um CMS pode facilitar o trabalho dos administradores de aplicações, que envolvem muitas atualizações no seu conteúdo, como por exemplo, blogs, portais corporativos\footnote{Instrumento de gestão de informação e de conhecimento}. ``Os benefícios ligados a adoção de um CMS incluem desde a redução do custo de atualização dos conteúdos nos websites até o aumento da eficiência das equipes de TI'' \cite{pereira}.
+O uso de um CMS pode facilitar o trabalho dos administradores de aplicações, que envolvem muitas atualizações no seu conteúdo, como por exemplo, blogs, portais corporativos\footnote{Instrumento de gestão de informação e de conhecimento}. \textit{Os benefícios ligados a adoção de um CMS incluem desde a redução do custo de atualização dos conteúdos nos web sites até o aumento da eficiência das equipes de TI''} \cite{pereira}.
 
-Em linhas gerais, um CMS permitiria administrar conteúdos em meio digital. E para o caso particular que nos ocupa, um CMS permitiria gerenciar os conteúdos de uma loja virtual.
+Em linhas gerais, um CMS permitiria administrar conteúdos em meio digital. E para o caso particular desse trabalho, um CMS permitiria gerenciar os conteúdos de uma loja virtual.
 
 Em outras palavras, um CMS é uma ferramenta que permite a um editor criar e publicar qualquer tipo de informação em uma página web. Geralmente, um CMS trabalha manipulando um banco de dados, de modo que o editor simplesmente atualiza este banco, incluindo nova informação ou editando a existente.
 
 Contudo, o mais interessante, é que essa ferramenta é feita de tal maneira que mesmo aqueles que nunca ouviram falar de JAVA, PHP, MySQL, Javascript ou qualquer outra linguagem voltada para web poderá usá-lo, inclusive esta é sua principal função, tornar acessível a todos a sua presença na Internet através de um site, facilitando a inserção de textos, de comentários e dezenas de outras funcionalidades, de acordo com as características de cada aplicação. Alguns Exemplos de CMS podem ser vistos a seguir.
 
 \begin{itemize}
-\item \textit{Drupal} - É uma plataforma de gerenciamento de conteúdo de código aberto, usado em milhares de web sites e aplicações. Ele é desenvoldivo, usado, e apoiado por uma comunidade ativa e diversificada de pessoas ao redor do mundo \cite{drupal}.
+\item \textit{Drupal} - É uma plataforma de gerenciamento de conteúdo de código aberto, usado em milhares de web sites e aplicações. Ele é desenvolvido, usado, e apoiado por uma comunidade ativa e diversificada de pessoas ao redor do mundo \cite{drupal}.
 
 \item \textit{OpenText} \citeyear{opentext} - O primeiro sistema CMS comercial que apareceu no mercado. A OpenText é líder em Gestão de Informação Corporativa. Seus produtos de gerenciamento de conteúdo permitem uma coleta mais eficiente de todos os tipos de informação - estruturada e não estruturada - e fornecem essa informação em contexto por qualquer aplicativo, plataforma ou processo \cite{opentext}.
 
@@ -274,11 +278,13 @@ Contudo, o mais interessante, é que essa ferramenta é feita de tal maneira que
 \section{\textit{E-commerce}} % (fold)
 \label{sec:e_commerce} 
 
-Segundo \citeonline{kalakota}, o Comércio Eletrônico (CE) pode ser definido como sendo a compra e a venda de informações, produtos e serviços através de redes de computadores. \citeonline{bloch} estenderam esta definição incluindo que CE é o suporte para qualquer tipo de transações de negócio sobre uma infra-estrutura digital.
+Segundo \citeonline{kalakota}, o Comércio Eletrônico (CE) pode ser definido como sendo a compra e a venda de informações, produtos e serviços através de redes de computadores. \citeonline{bloch} estenderam esta definição incluindo que CE (Comércio Eletrônico) é o suporte para qualquer tipo de transações de negócio sobre uma infraestrutura digital.
 
 \apudonline{kalakota}{albertin} há muito tempo, consideravam que o ambiente tradicional de negócio estava mudando rapidamente, com os consumidores e negócios procurando flexibilidade para mudar os parceiros de negócio, plataformas, carreiras e redes. O \textit{e-commerce} começava a se disseminar.
 
-O comércio eletrônico ou \textit{e-commerce}, é aplicável a qualquer tipo de transação comercial que pode envolver compra, venda, transferência ou troca de produtos, serviços ou informações por meio de redes de computadores, incluindo a Internet \cite{turban}.
+\begin{citacao}
+	O comércio eletrônico ou \textit{e-commerce}, é aplicável a qualquer tipo de transação comercial que pode envolver compra, venda, transferência ou troca de produtos, serviços ou informações por meio de redes de computadores, incluindo a Internet \cite{turban}.
+\end{citacao}
 
 Existem diferenças entre \textit{e-commerce} e \textit{e-business}. \textit{E-business} é definido como o uso das tecnologias da informação para executar funções de negócios. \textit{E-business} é, portanto, um termo mais amplo que inclui \textit{e-commerce} \cite{gordon}. 
 
@@ -301,12 +307,24 @@ O \textit{easyProcess}, comumente chamado de YP. É um processo de \texit{softwa
 
 \begin{figure}[H]	
 \centering
-\includegraphics[width=15cm]{img/yp.eps}
 \caption{Fluxo do \textit{easyProcess}}
+\includegraphics[width=15cm]{img/yp.eps}
+\small{Fonte: \cite{easyprocess}}
 \label{figura:yp}
 \end{figure}
 
-A primeira etapa do processo consiste na \textbf{Definição de papéis}. Em seguida deve ser realizada uma \textbf{Conversa com o cliente}. Na fase de \textbf{Inicialização} o cliente define as \textit{User Stories}\footnote{Funções que o sistema deve desempenhar e que são definidas pelo cliente e pelo desenvolvedor} e são elaborados o projeto arquitetural e o modelo lógico de dados, este último apenas se necessário. Parte-se então para o \textbf{Planejamento} e em seguida para a \textbf{Implementação}. O andamento do processo deve ser coordenado pelo gerente através da \textbf{Reunião de Acompanhamento} semanal que visa recolher e analisar métricas.
+A primeira etapa do processo consiste na \textbf{Definição de papéis}. O YP sugere os seguintes papéis: cliente, usuário, testador, desenvolvedor e gerente, podendo uma mesma pessoa desempenhar mais de um papel dentro do processo, principalmente quando se tratam de equipes de desenvolvimento pequenas \cite{easyprocess}.
+
+Em seguida deve ser realizada uma \textbf{Conversa com o cliente}. Aqui é onde as informações sobre o escopo do problema
+são adquiridas. A partir de então, a equipe encontra-se apta a gerar o documento de visão, que após ser validado pelo cliente, funciona como um acordo de trabalho entre cliente e equipe de desenvolvimento \cite{easyprocess}.
+
+Na fase de \textbf{Inicialização} o cliente define as \textit{User Stories}\footnote{Funções que o sistema deve desempenhar e que são definidas pelo cliente e pelo desenvolvedor} e são elaborados o projeto arquitetural e o modelo lógico de dados, este último apenas se necessário. O cliente deve priorizar as User Stories e a equipe deve fazer uma estimativa inicial do tempo para implementação de cada uma delas. Baseado nessa estimativa pode-se então verificar a viabilidade de desenvolvimento do projeto no escopo e tempo definidos \cite{easyprocess}.
+
+Parte-se então para o \textbf{Planejamento} fase composta por dois planos, o de release e o de iteração. Ambos possuem tempo fixo com variação de escopo permitida. Tratando-se do ambiente acadêmico são sugeridos três releases, cada um com duas iterações de duas semanas, por semestre letivo \cite{easyprocess}. 
+
+Para a \textbf{Implementação}, o processo prega o uso de algumas práticas, tais como: \textit{Design} Simples, Padrões de Codificação, Padrões de Projeto, Refatoramento e Propriedade Coletiva de Código, a fim de produzir um código com mais qualidade \cite{easyprocess}. 
+
+O andamento do processo deve ser coordenado pelo gerente através da \textbf{Reunião de Acompanhamento} semanal que visa recolher e analisar métricas.
 
 % section yp (end)
 
@@ -316,37 +334,39 @@ A primeira etapa do processo consiste na \textbf{Definição de papéis}. Em seg
 \chapter{Metodologia} % (fold)
 \label{cha:metodologia}
 
-A realização dos estudos deste trabalho segue a mesma metodologia de trabalhos científicos. "Ciêntifico não é considerado como algo pronto, acabado ou definitivo” \cite{sa2010anuario}, isso permite que os contextos existentes sejam interpretados e discutidos de diferentes formas por diferentes pessoas.
+A realização dos estudos deste trabalho segue a mesma metodologia de trabalhos científicos. "Cientifico não é considerado como algo pronto, acabado ou definitivo” \cite{sa2010anuario}, isso permite que os contextos existentes sejam interpretados e discutidos de diferentes formas por diferentes pessoas.
 
 Métodos científicos são as formas mais seguras inventada pelo homem para controlar o movimento das coisas que cerceiam um fato e montar formas de compreensão adequadas de fenômenos \cite{bunge}.
 
-Abaixo está descrita a metodologia seguida para o desenvolvimento deste trabalho:
+\section{Atividades} % (fold)
+\label{sec:atividades}
+
+Esta seção apresenta as atividades seguidas para o desenvolvimento deste trabalho, foram elas:
 
 \begin{itemize}
-	\item \textbf{Determinação do tema} - Nesta fase, foi verificada o tema foco do trabalho, o qual foi posteriormente avaliado por membros do corpo docente da instituição.
+\item \textbf{Determinação do tema} - Nesta fase, foi verificada o tema foco do trabalho, o qual foi posteriormente avaliado por membros do corpo docente da instituição.
 
-	\item \textbf{Levantamento bibliográfico} - Com o tema estabalecido, foi efetuado um estudo bibliográfico, afim de fundamentar o tema.
+\item \textbf{Levantamento bibliográfico} - Com o tema estabelecido, foi efetuado um estudo bibliográfico, afim de fundamentar o tema.
 
-	\item \textbf{Leitura e Documentação} - Foi de competência desta fase, a filtragem e entendimento do material encontrado conforme a relevância da publicação;
+\item \textbf{Leitura e Documentação} - Foi de competência desta fase, a filtragem e entendimento do material encontrado conforme a relevância da publicação;
 
-	\item \textbf{Construção lógica} - As ideias da pesquisa foram estruturadas conforme as exigências racionais da sistematização própria do trabalho.
+\item \textbf{Projeto e desenvolvimento} - Fase prática da exploração das referências bibliográficas, para esta etapa o uso do processo de desenvolvimento YP foi adotado e é descrito em detalhes na seção \ref{sec:processo_de_desenvolvimento}.
 
-	\item \textbf{Construção do texto e articulação dos parágrafos} - O desenvolvimento do texto foi organizado em capítulos, cada qual abordando diferentes ênfases.
+\item \textbf{Construção do texto e articulação dos parágrafos} - O desenvolvimento do texto foi organizado em capítulos, cada qual abordando diferentes ênfases.
 
-	\item \textbf{Projeto e desenvolvimento} - Fase prática da exploração das referências bibliográficas, para esta etapa o uso do processo de desenvolvimento YP foi adotado e é descrito em detalhes na seção \ref{sec:processo_de_desenvolvimento}.
-
-	\item \textbf{Conclusão} - Terminado as fases anteriores, a conclusão define o resultado obtido, a aplicabilidade da Sudo Loja e discussões sobre trabalhos futuros.
+\item \textbf{Conclusão} - Terminado as fases anteriores, a conclusão define o resultado obtido, a aplicabilidade da Sudo Loja e discussões sobre trabalhos futuros.
 \end{itemize}
+% section atividades (end)
 
 \section{Processo de desenvolvimento} % (fold)
 \label{sec:processo_de_desenvolvimento}
 
 Esta seção abordará em detalhes como se deu a utilização do processo \textit{easYProcess} no desenvolvimento do sistema.
 
-\section{Atividades} % (fold)
+\section{Etapas do processo} % (fold)
 \label{sec:atividades}
 
-Nesta seção serão abordadas as atividades realizadas durante o processo de desenvolvimento do sistema, seguindo as diretrizes do \textit{easYProcess}, estas são: Definição de papéis, na Subseção \ref{sub:definicao_de_papeis}; Conversa com o Cliente, na Subseção \ref{sub:conversa_com_o_cliente}; Inicialização, na Subseção \ref{sub:inicializacao}; E Planejamento de \textit{Releases}, na Subseção \ref{sub:planejamento_de_releases}.
+Nesta seção serão abordadas cada etapa realizada durante o processo de desenvolvimento do sistema, seguindo as diretrizes do \textit{easYProcess}, estas são: Definição de papéis, na Subseção \ref{sub:definicao_de_papeis}; Conversa com o Cliente, na Subseção \ref{sub:conversa_com_o_cliente}; Inicialização, na Subseção \ref{sub:inicializacao}; E Planejamento de \textit{Releases}, na Subseção \ref{sub:planejamento_de_releases}.
 
 \subsection{Definição de Papéis} % (fold)
 \label{sub:definicao_de_papeis}
@@ -380,13 +400,17 @@ Gerente 	   & João Marcos Ferreira\\
 
 \subsection{Conversa Com o Cliente} % (fold)
 \label{sub:conversa_com_o_cliente}
-Aqui são onde informações sobre o escopo do problema são adquiridas. A partir de então, a equipe encontra-se apta a gerar o documento de visão, que após ser validado pelo cliente, funciona como um acordo de trabalho entre cliente e equipe de desenvolvimento. O Documento de visão produzido durante esta etapa pode ser visto no Apêndice \ref{ap:documento_visao} Documento de Visão.
+Nessa etapa foi gerado o Documento de Visão. Pretende-se que ele sirva como ferramenta de auxílio, a evitar problemas mais custosos. Ele apresenta os problemas a serem solucionados, as necessidades dos principais envolvidos, o alcance do projeto e as funcionalidades esperadas do sistema. 
+
+Segundo \citeonline{bianca}, o objetivo desse documento é expor as necessidades e funcionalidades gerais do sistema, definindo os requisitos de alto nível em termos de necessidades dos usuários finais.
+
+O Documento de visão produzido durante esta etapa pode ser visto no Apêndice \ref{ap:documento_visao}.
 
 % subsection conversa_com_o_cliente (end)
 
 \subsection{Inicialização} % (fold)
 \label{sub:inicializacao}
-Como sugerido pelo YP, nesta fase foram definidas as \textit{Users Stories} e suas respectivas estimativas de tempo para implementação.  Com isso pôde-se verificar a viabilidade de desenvolvimento do projeto no escopo e tempo definidos. As \textit{Users Stories} capturadas podem ser vistas a seguir no quadro \ref{quadro:userstories}. Nas seções seguintes uma delas será apresentada com detalhes e as demais poderão ser vistas no Apêndice \ref{app:user_stories_e_testes_de_aceitacao} \textit{\textit{User Stories}} e Testes de Aceitação.	
+Como sugerido pelo YP, nesta fase foram definidas as \textit{Users Stories} e suas respectivas estimativas de tempo para implementação.  As \textit{Users Stories} capturadas podem ser vistas a seguir no quadro \ref{quadro:userstories}. Nas seções seguintes uma delas será apresentada com detalhes e as demais poderão ser vistas no Apêndice \ref{app:user_stories_e_testes_de_aceitacao} \textit{\textit{User Stories}} e Testes de Aceitação.	
 
 \begin{longtable}{|p{3cm}|p{9cm}|p{3cm}|}
 \caption{\textit{\textit{User Stories}} levantadas}
@@ -419,32 +443,25 @@ Como sugerido pelo YP, nesta fase foram definidas as \textit{Users Stories} e su
 \hline
 \end{longtable}	
 
-Também foi elaborado o modelo lógico de dados da aplicação que pode ser visto na figura \ref{figura:modelo_logico}. Algumas entidades do modelo lógico apresentado a seguir, não foram documentadas por não estarem completamente definidas no projeto de TCC1. No documento de TCC2 poderá ser visto um modelo que contemplará o sistema como um todo.
+De acordo com \citeonline{heuser2009projeto}, um modelo lógico de um BD (base de dados) relacional, deve definir quais as tabelas que o banco contém e, para cada tabela, quais os nomes das colunas. O modelo lógico para o DB em questão pode ser visto no apêndice \ref{cha:modelo_l_gigo_de_dados}.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=15cm]{img/modelo_logico.eps}
-\caption{Modelo logico de Dados}
-\label{figura:modelo_logico}
-\end{figure}
 
 \subsection{Planejamento de Releases} % (fold)
 \label{sub:planejamento_de_releases}
 
-Durante esta etapa foram definidas as \textit{Releases}, juntamente com a data estimada para o termino de seu desenvolvimento. Esses dados podem ser vistos no apendice \ref{apdc:plano_de_itercao} Plano de Iteração.
+Durante esta etapa foram definidas as \textit{Releases}, juntamente com a data estimada para o termino de seu desenvolvimento. Esses dados podem ser vistos no apêndice \ref{apdc:plano_de_itercao} Plano de Iteração.
 
 % subsection planejamento_de_releases (end)
-
-% section atividades (end)
 % section processo_de_desenvolvimento (end)
-
 % chapter metodologia (end)
 
 
-\chapter{Sudo Loja - \textit\small{Ainda não revisado}} % (fold)
+\chapter{Sudo Loja} % (fold)
 \label{cha:sudo_loja}
 
-Esta seção irá discutir o sistema desenvolvido, assim como as etapas de análise, projeto e implementação. Também será abordado o projeto arquitetural e as tecnologias utilizadas na construção do sistema. Na seção \ref{sec:ferramentas_relacionadas} uma análise das ferramentas relacionadas foi levantada, afim de destacar um diferencial dentre as ferramentas existentes.
+A Sudo Loja é um CMS voltado a construção de lojas virtuais. A ferramenta possibilita o gerenciamento e personalização das páginas, assim como outras capacidades.
+
+Esta seção irá discutir as etapas de análise, projeto e implementação d Sudo Loja. Na seção \ref{sec:ferramentas_relacionadas}, uma análise das ferramentas relacionadas foi levantada.
 
 \section{Ferramentas Relacionadas} % (fold)
 \label{sec:ferramentas_relacionadas}
@@ -494,9 +511,9 @@ Como o quadro \ref{quad:comparativo} mostra, a Sudo Loja contará com as funcion
 \section{Análise} % (fold)
 \label{sec:analise}
 
-A seguir serão apresentados os artefatos produzidos na fase de análise, inerentes a uma \textit{User Story} específica. Para isso foi escolhida a \textit{User Story} 03 (O sistema deve realizar o gerenciamento do estoque da loja virtual).
+A seguir serão apresentados os artefatos produzidos na fase de análise, inerentes a algumas \textit{User Stories} específicas. Para isso foram escolhidas as \textit{User Stories} US03 (O sistema deve realizar o gerenciamento do estoque da loja virtual) e US10 (O sistema deve concretizar vendas através de diferentes meios de pagamento).
 
-As \textit{User Stories} alocadas são quebradas em tarefas, e o cliente deve definir os testes de aceitação para cada \textit{User Story}. Para auxílio na gerência foi feito uso da Tabela de Alocação de Tarefas (TAT), na qual especificamos as \textit{\textit{User Stories}} envolvidas, tarefas, responsáveis, estimativas de tempo, tempo real consumido e status da tarefa. Nos quadros \ref{quadro:tati-us03} e \ref{quadro:teste-aceitacaoi-us03} podemos ver, respectivamente, a tabela de alocação de tarefas e os testes de aceitação geradas pra a US03. As demais \textit{\textit{User Stories}} serão apresentadas com detalhes no Apêndice \ref{app:user_stories_e_testes_de_aceitacao}.
+As \textit{User Stories} alocadas são quebradas em tarefas, e o cliente deve definir os testes de aceitação para cada \textit{User Story}. Para auxílio na gerência foi feito uso da Tabela de Alocação de Tarefas (TAT), na qual especificamos as \textit{\textit{User Stories}} envolvidas, tarefas, responsáveis, estimativas de tempo, tempo real consumido e status da tarefa. Nos quadros \ref{quadro:tati-us03} e \ref{quadro:teste-aceitacaoi-us03} é possível ver, respectivamente, a tabela de alocação de tarefas e os testes de aceitação geradas pra a US03. As demais \textit{\textit{User Stories}} são apresentadas com detalhes no Apêndice \ref{app:user_stories_e_testes_de_aceitacao}.	
 
 \newpage
 
@@ -555,8 +572,9 @@ O sistema será organizado em 3 camadas, são elas: Apresentação, Serviços e 
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{img/representacao-pa.eps}
 \caption{Modelo em camadas do Sudo Loja}
+\centering
+\includegraphics[scale=0.7]{img/representacao-pa.eps}\\
 \label{fig:representacao-pa}
 \end{figure}
 
@@ -565,37 +583,61 @@ O sistema será organizado em 3 camadas, são elas: Apresentação, Serviços e 
 
 A partir desta camada o usuário poderá interagir diretamente com o sistema. Será composta por páginas JSP (\textit{Java Sever Pages}) e HTML(\textit{HyperText Markup Language}, que significa Linguagem de Marcação de Hipertexto), estas que serão estilizadas com o uso de CSS3. Para agilizar o processo de desenvolvimento dessas páginas, será usado o \textit{framework} \textit{Bootstrap} na versão 3. Com isso, a velocidade na criação das páginas aumentará devido a existência de dezenas de componentes já estilizados e estruturalmente organizados, que poderão ser reaproveitados. Alguns efeitos visuais da página serão implementados com o uso de \textit{JavaScript}. Todo conteúdo dinâmico dessas páginas serão implementados usando JSP em sua versão 2.1 e para o conteúdo estático será usado HTML.
 
-Dois módulos serão implementados para esta camada. O módulo de gerenciamento do sistema, utilizado pelo Lojista e o módulo Loja Virtual que será utilizado pelos Clientes. O módulo gerenciamento irá conter as páginas de gerenciamento da Loja Virtual. E o módulo Loja Virtual as páginas para acesso dos clientes.
+Esta camada poderá interagir diretamente (e apenas) com sua camada adjacente, a camada de Serviços que será discutida na seção \ref{sub:camada_de_servicos}.O estabelecimento desta comunicação será feita utilizando o Spring MVC, a
+través de controladores. Toda a configuração necessária para a inicialização desta camada é feita através do  módulo Spring Boot.
 
-Esta camada poderá interagir diretamente (e apenas) com sua camada adjacente, a camada de Serviços que será discutida na seção \ref{sub:camada_de_servicos}.O estabelecimento desta comunicação será feita utilizando a API (\textit{Application Programming Interface}, no português Interface de Programação de Aplicação ) de \textit{Servlets} em sua versão 3.0, todas as páginas irão fazer requisições a um único \textit{servlet}, este irá chamar o serviço apropriado dependendo do comando recebido na requisição.
+Segundo \citeonline{souza1998framework}, um Framework pode ser visto como um projeto genérico em um domínio que pode ser adaptado a aplicações específicas, servindo como um molde para a construção de aplicações.
 
+O Spring Boot, o Spring MVC, assim como o Spring Data fazem parte do Spring \textid{Framework}, trata-se de um poderoso \textit{framework}  de código aberto desenvolvido em Java, para suporte a injeção de dependências, gerenciamento de transações, aplicações web, manipulação de dados, troca de mensagens, testes e muito mais \cite{Spring}. 
+
+O Spring Boot é usado responsável por toda a configuração da aplicação, foi escolhido por ser ideal para construir aplicações Spring prontos para produção, tornando a tarefa de configuração a mais simples possível. 
+
+O Spring MVC é o framework MVC nativo do Spring framework e usado para desenvolver aplicações web em Java, seguindo o padrão MVC de arquitetura.
+
+A junção do Spring Boot e Spring MVC em um projeto torna o desenvolvimento de uma aplicação web em Java bem mais fácil, pois não há mais a necessidade do desenvolvedor ficar se preocupando com arquivos de configuração seja Java ou XML.
 % subsection camada_de_apresentacao (end)
 
 \subsection{Camada de Serviços} % (fold)
 \label{sub:camada_de_servicos}
 
-Esta camada fornecerá todos os serviços necessários para o funcionamento do sistema. Terá acesso direto às suas camadas adjacentes: Camada de Apresentação e Camada de Persistência. Para isso, fará uso da linguagem de programação Java. É composta por um conjunto de classes Java, cada qual com suas responsabilidades. Estas classes validarão e manipularão os dados vindo da camada de apresentação. Essas classes que fornecerão os serviços, irão acessar diretamente a camada de persistência, esta que por sua vez irá retornar algum resultado, para que o serviço realize o processamento e retorne para a camada de apresentação.
+Esta camada fornecerá todos os serviços necessários para o funcionamento do sistema. Terá acesso direto às suas camadas adjacentes: Camada de Apresentação e Camada de Persistência. Para isso, fará uso da linguagem de programação Java e uso da especificação CDI (Injeção de Dependência e Contextos, em português) para facilitar o uso de injeção de dependências. É composta por um conjunto de classes Java, cada qual com suas responsabilidades. Estas classes validarão e manipularão os dados vindo da camada de apresentação. Essas classes que fornecerão os serviços, irão acessar diretamente a camada de persistência, esta que por sua vez irá retornar algum resultado, para que o serviço realize o processamento e retorne para a camada de apresentação.
 
-Dois módulos serão implementados para esta camada. O módulo de serviços inerentes as operações do modulo de gerenciamento, este que poderá conter outros módulos como um módulo de personalização que fornecerá serviços para gerenciamento do layout; E um modulo de serviços inerentes as operações do modulo Loja Virtual. Um módulo de vendas responsável por prover os serviços inerentes a venda também fará parte do módulo Loja Virtual.
+Para \citeonline{foldoc}, Interface de Programação de Aplicação (português brasileiro)), cujo acrônimo API provém do Inglês Application Programming Interface, é um conjunto de rotinas e padrões estabelecidos por um software para a utilização das suas funcionalidades por aplicativos que não pretendem envolver-se em detalhes da implementação do software, mas apenas usar seus serviços.
+
+Esta camada tem acesso a alguns serviços externos e usadas em forma de APIs. O PagSeguro, uma solução de comércio eletrônico para transações comerciais através de pagamentos onlines ou móveis \cite{pagseguro}. E a API de cálculo de frete dos correios.
 
 % subsection camada_de_servicos (end)
 
 \subsection{Camada de Persistência} % (fold)
 \label{sub:camada_de_persistencia}
 
-Esta camada será responsável por manter e disponibilizar todos os dados do sistema. Para isto terá auxílio do provedor \textit{EclipseLink}, implementação da especificação JPA 2.0. Estas ferramentas automatizarão o processo criação das tabelas relacionais do banco de dados (onde será usado o \textit{PostgreSQL}), e auxiliarão  nas operações CRUD (acrônimo de \textit{Create}, \textit{Read}, \textit{Update} e \textit{Delete} na língua Inglesa) para as quatro operações básicas utilizadas em bases de dados relacionais (RDBMS) criação, consulta, atualização e exclusão de dados.
+Esta camada será responsável por manter e disponibilizar todos os dados do sistema. Para isto terá auxílio dos módulos Spring Data JPA e Spring Data Redis. Estes módulos automatizarão o processo criação e manipulação dos dados e auxiliarão  nas operações CRUD (acrônimo de \textit{Create}, \textit{Read}, \textit{Update} e \textit{Delete} na língua Inglesa) para as quatro operações básicas utilizadas em bases de dados relacionais (RDBMS) criação, consulta, atualização e exclusão de dados.
+
+Segundo \citeonline{kaufeld1996access}, o modelo de banco de dados relacional possui a capacidade de lidar com grandes volumes de informações, eliminando dados redundantes. 
+
+\begin{citacao}
+	No modelo relacional existe a possibilidade de elaboração de um relacionamento lógico entre as informações referentes à espécie e as referentes ao indivíduo, evitando-se a necessidade da repetição de informações e agilizando as consultas feitas às duas fontes de dados \cite{da2002banco}.
+\end{citacao}
+
+O \citeonline{postgresql} foi escolhido como SGBDR (Sistema Gerenciador de Banco de Dados Relacional) por ter sido o mais abordado durante a período acadêmico. E o \citeonline{redis} foi escolhido para a manipulação de preferências de usuário por ser um banco extremamente rápido e simples de usar, livre e open source. Além disso, Segundo \citeonline{pauloNosql}, bancos de dados chave valor são ótimos para serem usados para manter preferências de usuários. ``O Redis fornece operações de relâmpago em conjuntos de dados em memória, e também torna mais fácil para persistir no disco'' \cite{Carlson:2013:RA:2505464}.
+
 
 % subsection camada_de_persistencia (end)
 
 \subsection{Diagrama de Componentes} % (fold)
 \label{sub:diagrama_de_componentes}
 
-Para possibilitar uma melhor compreensão da arquitetura do sistema, a Figura \ref{fig:cd} apresentará através de um diagrama de componentes, os módulos que irão existir em cada camada.
+Os diagramas estruturais da Linguagem de Modelagem Unificada (do inglês, UML - Unified Modeling Language), existem para visualizar, especificar, construir e documentar os aspectos estáticos do sistema \cite{booch2006uml}. 
+
+\citeonline{booch2006uml} nos dizem que esses aspectos podem ser considerados uma representação de seu esqueleto e estrutura relativamente estáveis. O diagrama de componentes por ser um diagrama estrutural, é útil para representarmos a arquitetura de um sistema.
+
+A figura \ref{fig:cd} apresenta o diagrama de componentes do sistema, e possibilitará uma melhor visualização de sua arquitetura, mostrando como cada camada interage com as outras.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=14cm]{img/diagramas/cd.eps}
 \caption{Diagrama de Componentes do Sistema}
+\centering
+\includegraphics[width=15cm]{img/diagramas/cd.eps}\\
 \label{fig:cd}
 \end{figure}
 
@@ -614,7 +656,7 @@ Está seção apresentará com detalhes todas as tecnologias que serão utilizad
 
 \item \textbf{CSS} - Cascading Style Sheets (CSS) é uma “folha de estilo” composta por “camadas” e utilizada para definir a apresentação (aparência) em páginas da internet que adotam para o seu desenvolvimento linguagens de marcação (como XML, HTML e XHTML). O CSS define como serão exibidos os elementos contidos no código de uma página da internet e sua maior vantagem é efetuar a separação entre o formato e o conteúdo de um documento \cite{anapereira}.
 
-\item \textbf{JavaScript} - A linguagem Javascript é executada no navegador e trabalha juntamente com o mesmo de forma a tornar as páginas estáticas em páginas dinâmicas \cite{goodman}. É uma linguagem popular e hoje é empregada em diversas plataformas,tal como cliente, servidor, smartphones e desktops \cite{stefanov}.
+\item \textbf{JavaScript} - A linguagem JavaScript \cite{goodman}. É uma linguagem popular e hoje é empregada em diversas plataformas,tal como cliente, servidor, smartphones e desktops \cite{stefanov}.
 
 \item \textbf{Bootstrap} - Originalmente criado por um designer e um desenvolvedor do Twitter \citeyear{twitter}, o \textit{Bootstrap} é um framework front-end popular e é um projeto de código aberto. O \textit{Bootstrap} em sua terceira versão se preocupa primeiramente com acesso por dispositivos móveis, focando-se no design responsivo \cite{bootstrap}.
 
@@ -628,12 +670,14 @@ Está seção apresentará com detalhes todas as tecnologias que serão utilizad
 
 % subsection tecnologias_ultilizadas (end)
 
-\subsection{O Que Deve Ser Produzido} % (fold)
+\subsection{Implantação} % (fold)
 \label{sub:o_que_deve_ser_produzido}
 
-Como o sistema será web e utilizará Java como linguagem \textit{server side} o sistema deverá funcionar em um servidor para sistemas  Java. Para o desenvolvimento será  utilizado o \textit{containner} Apache Tomcat 7.0. 
+Como o sistema será web e utilizará Java como linguagem \textit{server side}, o sistema deverá funcionar em um servidor para sistemas  Java. O servidor escolhida para realizar o teste de implantação foi o Heroku \footnote{https://www.heroku.com/}.
 
-Quanto ao processo de instalação, basta que o arquivo .war gerado no \textit{deploy} da aplicação seja colocado dentro da pasta do servidor. No caso do Tomcat esta pasta é chamada de “WebApps”. Após implantado nesta pasta, basta iniciar o \textit{containner} e acessar a URL do mesmo / (barra) o nome da aplicação.
+Quanto ao processo de instalação, basta que o arquivo .war gerado no \textit{deploy} da aplicação seja executado com o comando java -jar ``\textit{arquivo}''.war.
+
+O sistema se encontra \textit{online} e pode ser acessado a partir das URLs \url{https://sudoloja.herokuapp.com} e \url{http://sudoloja.tk}.
 
 % subsection o_que_deve_ser_produzido (end)
 
@@ -646,12 +690,13 @@ Na Figura \ref{fig:diagrama-classe-estoque}, será apresentado um diagrama de cl
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=14cm]{img/diagramas/class-diagram-estoque.eps}
 \caption{Diagrama de classes US03}
+\centering
+\includegraphics[width=15cm]{img/diagramas/class-diagram-estoque.eps}\\
 \label{fig:diagrama-classe-estoque}
 \end{figure}
 
-A classe Controller ainda na camada de apresentação invocará um comando apropriado na camada de serviços, que fará uso da Classe Dao na camada de persistência que por sua vez retornará para o serviço o resultado que será repassado para a apresentação.
+Um \textit{Controller} ainda na camada de apresentação invocará um serviço chamado \textit{ProductServiceImpl}, que fará uso da Classe \textit{ProductRepository}, que por sua vez retornará para o serviço, o resultado que será repassado para a apresentação.
 
 % section diagrama_de_classes (end)
 
@@ -662,35 +707,43 @@ Na Figura \ref{fig:sd-atualiza}, será apresentado um diagrama de sequência que
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=15cm]{img/diagramas/sd-atualiza-produto.eps}
 \caption{Diagrama de sequência - atualizar informações do Produto}
+\centering
+\includegraphics[width=16cm]{img/diagramas/sd-atualiza-produto.eps}\\
 \label{fig:sd-atualiza}
 \end{figure}
 
-Suponhamos que o usuário já esteja devidamente cadastrado e logado no sistema e agora está na página de edição de um produto do estoque, como representa a figura \ref{fig:ficha-produto}. O usuário altera as informações que jugar necessário e clica no botão salvar, isto gera uma requisição para o servlet controlador, que por sua vez irá invocar o serviço de atualizar produto. Antes de salvar as alterações o serviço irá validar os dados, sendo válidos o Dao de produto é invocado e as alterações são salvas na base de dados e será exibida uma mensagem de sucesso na tela. Caso as informações não sejam válidas será apresentada uma mensagem de erro na mesma tela.
+Suponhamos que o usuário já esteja devidamente cadastrado e logado no sistema e agora está na página de edição de um produto do estoque, como representa a figura \ref{fig:ficha-produto}. O usuário altera as informações que jugar necessário e clica no botão salvar, isto gera uma requisição para o controlador, que por sua vez irá invocar o serviço de atualizar produto. Antes de salvar as alterações o serviço irá validar os dados, sendo válidos o repositório de produtos é invocado e as alterações são salvas na base de dados. Por fim,  em caso de sucesso, será exibida uma mensagem positiva para o usuário confirmando a alteração, caso contrário será apresentada uma mensagem de erro.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=15cm]{img/sistema/ficha-produto.eps}
 \caption{Ficha de edição de Produto}
+\centering
+\includegraphics[width=15cm]{img/sistema/ficha-produto.eps}\\
 \label{fig:ficha-produto}
 \end{figure}
 
-O estoque de uma loja do sistema é ilustrado na Figura \ref{fig:sistema-estoque}. Nessa página o usuário pode adicionar um novo produto, clicando no botão \textbf{Novo Produto}, onde será exibido um formulário para inserção dos dados do produto; Poderá também editar um produto, clicando sobre o botão destacado em azul com descrição \textbf{Ficha}, exibindo uma ficha, onde o usuário poderá ver com detalhes todas as informações inerentes ao produto, podendo atualizá-las; E excluir um produto clicando sobre o botão destacado na cor vermelha com descrição \textbf{Excluir}, onde será exibida uma janela para confirmar a operação, resultando ou não na exclusão do produto. 
+O estoque de uma loja do sistema é ilustrado na Figura \ref{fig:sistema-estoque}. Nessa página o usuário pode adicionar um novo produto, clicando no botão \textbf{Cadastrara novo produto}, onde será exibido um formulário para inserção dos dados do produto; Poderá também editar um produto, clicando sobre ele na tabela, sua ficha será exibida, onde o usuário poderá ver com detalhes todas as informações inerentes ao produto, podendo atualizá-las.
 
+\vspace{1,5cm}
 \begin{figure}[H]
 \centering
-\includegraphics[width=15cm]{img/sistema/pagina-estoque.eps}
 \caption{Página do estoque de uma loja do sistema}
+\centering
+\includegraphics[width=15cm]{img/sistema/pagina-estoque.eps}\\
 \label{fig:sistema-estoque}
 \end{figure}
 
 
 % section implementacao (end)
-% chapter o_sistema (end)
-
-
 % chapter sudo_loja (end)
+
+\chapter{Considerações Finais} % (fold)
+\label{cha:considera_es_finais}
+
+
+
+% chapter considera_es_finais (end)
 
 \bibliography{referencias}
 
@@ -848,36 +901,41 @@ O sistema será uma aplicação WEB com design totalmente responsivo, o que sign
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{img/prototipos/produtos-cadastrados.eps}
 \caption{Visualização de produtos cadastrados}
+\centering
+\includegraphics[width=12cm]{img/prototipos/produtos-cadastrados.eps}\\
 \label{figura:produtos_cadastrados}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{img/prototipos/cadastro-produto.eps}
 \caption{Cadastro de produtos}
+\centering
+\includegraphics[width=12cm]{img/prototipos/cadastro-produto.eps}\\
 \label{figura:Cadastro_de_Produtos}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{img/prototipos/visualizacao-pedido.eps}
 \caption{Visualização de pedidos}
+\centering
+\includegraphics[width=12cm]{img/prototipos/visualizacao-pedido.eps}\\
 \label{figura:visualizacao_pedidos}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{img/prototipos/painel-personalizacao.eps}
 \caption{Painel de Personalização}
+\centering
+\includegraphics[width=12cm]{img/prototipos/painel-personalizacao.eps}\\
 \label{figura:painel_personalizacao}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{img/prototipos/estoque.eps}
 \caption{Controle de estoque}
+\centering
+\includegraphics[width=12cm]{img/prototipos/estoque.eps}\\
 \label{figura:controle_estoque}
 \end{figure}
 
@@ -1090,7 +1148,7 @@ TA2 & Dado que selecionei uma seção no menu de personalização, um conjunto d
 \hline
 TA3 & Dado que alterei o estilo de algo usando o formulário, ao clicar em salvar, as alterações devem ser salvas.   & Finalizado\\
 \hline
-TA4 & Dado que retornei a uma seção de menu de personalizações já alterada, a mesma deve carregar as preferencias alteriormente salvas.  & Finalizado\\
+TA4 & Dado que retornei a uma seção de menu de personalizações já alterada, a mesma deve carregar as preferencias anteriormente salvas.  & Finalizado\\
 \hline
 TA5 & Dado que cliquei no botão ``reverter alterações'' as modificações devem ser ignoradas e as configurações padrões aplicadas  & Finalizado\\
 \hline
@@ -1122,9 +1180,9 @@ T3 & Criar página para visualização de usuários para cada loja & João Marco
 \rowcolor{ballblue}
 \multicolumn{2}{|c|}{Testes de aceitação} & Status\\	
 \hline
-TA1 & Dado que estou na página de cadastro, ao informar email e senha corretos devo ser redirecionado para a página principal da loja & Finalizado\\
+TA1 & Dado que estou na página de cadastro, ao informar e-mail e senha corretos devo ser redirecionado para a página principal da loja & Finalizado\\
 \hline
-TA2 & Quando clicar no bõtão ``sair'' minha seção seja encerrada e devo ser redirecionado para a página inicial  & Finalizado\\
+TA2 & Quando clicar no botão ``sair'' minha seção seja encerrada e devo ser redirecionado para a página inicial  & Finalizado\\
 \hline
 TA3 & Dado que estou no painel de controle, ao selecionar a opção ``usuários'' a lista de usuários cadastrado em minha loja deve ser exibida.   & Finalizado\\
 \hline
@@ -1200,7 +1258,7 @@ TA1 & Dado que estou logado como usuário de loja, devo poder fazer quantas perg
 \hline
 TA2 & Dado que submeti um pergunta, a mesma deve ser salva e alertada ao lojista  & Finalizado\\
 \hline
-TA3 & Dado que sou um lojista logado no sistema, ao perceber uma nova pergunta poderei responde-la e a resposta deve aparecer junto a pergunta feita pelo usuário na página do produto   & Finalizado\\
+TA3 & Dado que sou um lojista logado no sistema, ao perceber uma nova pergunta poderei respondê-la e a resposta deve aparecer junto a pergunta feita pelo usuário na página do produto   & Finalizado\\
 \hline
 \end{longtable}
 
@@ -1220,9 +1278,9 @@ T2 & Definir endereço padrão de origem dos produto & João Marcos & 2 & 1 & Fi
 \hline
 T3 & Implementar script para consulta frete SEDEX e PAC & João Marcos & 3 & 3 & Finalizado\\
 \hline
-T4 & Adicionar campo peso ao produto, e borão para definir se este é passível ao cálculo de frete ou não & João Marcos & 2 & 1 & Finalizado\\
+T4 & Adicionar campo peso ao produto, e botão para definir se este é passível ao cálculo de frete ou não & João Marcos & 2 & 1 & Finalizado\\
 \hline
-T5 & Implementar script para simular valor de frete a partir de um cep informado & João Marcos & 2 & 1 & Finalizado\\
+T5 & Implementar script para simular valor de frete a partir de um CEP informado & João Marcos & 2 & 1 & Finalizado\\
 \hline
 T6 & Criar formulário para simulação de frete & João Marcos & 2 & 1 & Finalizado\\
 \hline
@@ -1249,7 +1307,7 @@ TA2 & Ao informar um CEP válido para simulação o resultado deve ser apresenta
 \hline
 TA3 & Ao informar um CEP inválido para simulação o usuário deve ser alertado sobre isso  & Finalizado\\
 \hline
-TA4 & Dado que submeti um CEP para simulação do valor de entrega, e este seja válido, quando os produtos não possuirem frete, a palavra ``Grátis'' é exibida no local onde seria exibido o valor do frete  & Finalizado\\
+TA4 & Dado que submeti um CEP para simulação do valor de entrega, e este seja válido, quando os produtos não possuírem frete, a palavra ``Grátis'' é exibida no local onde seria exibido o valor do frete  & Finalizado\\
 \hline
 TA5 & Dado que estou na página de checkout, o frete deve ser automaticamente calculado com base no ultimo endereço informado pelo usuário  & Finalizado\\
 \hline
@@ -1272,7 +1330,7 @@ T1 & Implementar script para salvar imagens & João Marcos & 2 & 1 & Finalizado\
 \hline
 T2 & Implementar script para atualizar imagens & João Marcos & 2 & 1 & Finalizado\\
 \hline
-T3 & Criar formulário para inserção e modificação das imagems de um produto & João Marcos & 3 & 1 & Finalizado\\
+T3 & Criar formulário para inserção e modificação das imagens de um produto & João Marcos & 3 & 1 & Finalizado\\
 \hline
 T4 & Criar uma galeria na página do produto, com as imagens cadastradas para o mesmo & João Marcos & 4 & 3 & Finalizado\\
 \hline
@@ -1289,7 +1347,7 @@ T5 & Alternar imagem em destaque na galeria através de clique & João Marcos & 
 \rowcolor{ballblue}
 \multicolumn{2}{|c|}{Testes de aceitação} & Status\\	
 \hline
-TA1 & Dado que estou na página do prduto, a galeria deve ser exibida com suas imagens & Finalizado\\
+TA1 & Dado que estou na página do produto, a galeria deve ser exibida com suas imagens & Finalizado\\
 \hline
 TA2 & Ao clicar em uma imagem da galeria a mesma dever ficar em destaque  & Finalizado\\
 \hline
@@ -1304,10 +1362,10 @@ TA5 & Caso cadastre uma imagem não válida devo ser informado disso através de
 
 
 \begin{longtable}{|p{1.5cm}|p{3.5cm}|c|p{2cm}|p{2cm}|c|}
-\caption{Alocação de Tarefas - US10}
-\label{quadro:tat-us10}
+\caption{Alocação de Tarefas - US11}
+\label{quadro:tat-us11}
 \hline
-\multicolumn{6}{|c|}{\textbf{\textit{User Story} 10}}\\
+\multicolumn{6}{|c|}{\textbf{\textit{User Story} 11}}\\
 \hline		
 \rowcolor{ballblue}
 Tarefa & Descrição & Responsável & Estimativa de tempo (horas) & Tempo real (horas) & Status\\
@@ -1316,11 +1374,11 @@ T1 & Implementar script realizar pagamento (integração PagSeguro) & João Marc
 \hline
 T2 & Implementar script para salvar dados de pagamento (PagSeguro) & João Marcos & 1 & 1 & Finalizado\\
 \hline
-T3 & Criar formulário para inserção de dados de pagamento no painel admnistrativo & João Marcos & 2 & 1 & Finalizado\\
+T3 & Criar formulário para inserção de dados de pagamento no painel administrativo & João Marcos & 2 & 1 & Finalizado\\
 \hline
 T4 & Criar página para visualização de pedidos para lojistas e clientes & João Marcos & 5 & 4 & Finalizado\\
 \hline
-T5 & Criar formulário para alteração de status de pedido no painel adminstrativo & João Marcos & 2 & 2 & Finalizado\\
+T5 & Criar formulário para alteração de status de pedido no painel administrativo & João Marcos & 2 & 2 & Finalizado\\
 \hline
 \end{longtable}
 
@@ -1335,13 +1393,13 @@ T5 & Criar formulário para alteração de status de pedido no painel adminstrat
 \hline
 TA1 & Dado que estou na página de pagamento, ao clicar em pagar as opções de pagamento devem ser exibidas & Finalizado\\
 \hline
-TA2 & Dado que sou um lojista, se as informações prestadas por mim sobre o pagamento não forem válidas o pagamento não pode ser concluído e o usuário deve ser informado  & Finalizado\\
+TA2 & Dado que sou um lojista, se as informações prestadas por mim sobre o pagamento, não forem válidas, o pagamento não pode ser concluído e o usuário deve ser informado  & Finalizado\\
 \hline
 TA3 & Caso conclua o pagamento, o lojista deve ser alertado sobre  & Finalizado\\
 \hline
 TA4 & Dado que estou na pagina de gerenciamento de pedidos e sou um lojista, quando o pagamento for aprovado, poderei informar ao cliente que o pedido foi aprovado e está a caminho  & Finalizado\\
 \hline
-TA5 & Dado que estou na pagina de gerenciamento de pedidos e sou um lojista, quando um pedido for estraviado, poderei informar ao cliente  & Finalizado\\
+TA5 & Dado que estou na pagina de gerenciamento de pedidos e sou um lojista, quando um pedido for extraviado, poderei informar ao cliente  & Finalizado\\
 \hline
 \end{longtable}
 
@@ -1436,9 +1494,88 @@ Iteração 9    & US05  & 12/03/2016 - 02/04/2016\\
 
 % chapter plano_de_itera_o (end)
 
-\chapter{Telas do Sistema} % (fold)
-\label{cha:telas_do_sistema}
+\chapter{Modelo lógigo de dados} % (fold)
+\label{cha:modelo_l_gigo_de_dados}
 
-% chapter telas_do_sistema (end)
+Este documento apresenta o modelo lógico de dados da Sudo Loja. Para melhor entendimento o diagrama foi decomposto em partes menores, divididos em grau de relacionamento com cada entidade.
+
+
+\begin{figure}[H]
+\centering
+\caption{Produto e seus relacionamentos}
+\centering
+\includegraphics[scale=0.7]{img/diagramas/schema/store_products.1degree.png.eps}\\
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\caption{Pedido e seus relacionamentos}
+\centering
+\includegraphics[scale=0.7]{img/diagramas/schema/store_order_items.1degree.png.eps}\\
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\caption{Pedido e seus relacionamentos}
+\centering
+\includegraphics[scale=0.7]{img/diagramas/schema/store_order.1degree.png.eps}\\
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\caption{Endereço e seus relacionamentos}
+\centering
+\includegraphics[scale=0.7]{img/diagramas/schema/address.1degree.png.eps}\\
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\caption{Usuário da loja e seus relacionamentos}
+\centering
+\includegraphics[scale=0.7]{img/diagramas/schema/address.1degree.png.eps}\\
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\caption{Loja e seus relacionamentos}
+\centering
+\includegraphics[scale=0.7]{img/diagramas/schema/store.1degree.png.eps}\\
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\caption{Lojista e seus relacionamentos}
+\centering
+\includegraphics[scale=0.7]{img/diagramas/schema/shopkeeper.1degree.png.eps}\\
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\caption{Produto e seus relacionamentos}
+\centering
+\includegraphics[scale=0.7]{img/diagramas/schema/product.1degree.png.eps}\\
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\caption{Categoria de Produto e seus relacionamentos}
+\centering
+\includegraphics[scale=0.7]{img/diagramas/schema/product_categories.1degree.png.eps}\\
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\caption{Variação de produto e seus relacionamentos}
+\centering
+\includegraphics[scale=0.7]{img/diagramas/schema/product_variation.1degree.png.eps}\\
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\caption{Comentários e seus relacionamentos}
+\centering
+\includegraphics[scale=0.7]{img/diagramas/schema/comment.1degree.png.eps}\\
+\end{figure}
+% chapter modelo_l_gigo_de_dados (end)
 
 \end{document}
