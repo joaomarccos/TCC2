@@ -436,10 +436,9 @@
   \vspace{2.0em}
   \end{center}
   \begin{comentario}
-  {        \@tipo\ apresentada ao Curso
-           Superior de Tecnologia em \@curso\ do \@sigla, como 
+  {        \@tipo\ apresentada ao \@instituicao, como 
            requisito para a obten\c{c}\~ao do grau
-           de \@grau\ em \@curso. }
+           de \@grau\ no curso Superior de Tecnologia em \@curso. }
   \end{comentario}
  \vspace{1.5em}
  \begin{flushright}
@@ -486,10 +485,9 @@
   \vfill
   \end{center}
   \begin{comentario}
-  {        \@tipo\ apresentada ao Curso
-           Superior de Tecnologia em \@curso\ do \@sigla, como 
+  {        \@tipo\ apresentada ao \@instituicao, como 
            requisito para a obten\c{c}\~ao 
-           do grau de \@grau\ em \@curso. }
+           do grau de \@grau\ no curso Superior de Tecnologia em \@curso. }
   \end{comentario}
   \vfill
   {\rmfamily Aprovado em \@data} \\
