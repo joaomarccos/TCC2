@@ -348,7 +348,7 @@
 \def\setpos{%
          \sf Curso de P\'{o}s-gradua\c{c}\~{a}o em \@curso}
 \def\setcurso{%
-         \sf Curso de \@curso}
+         \sf Curso Superior de Tecnologia em \@curso}
 \def\assinaturaum{%
              \rule{9.0cm}{0.1mm} \\
              {\@orientador \\ \footnotesize\@ttorientador}\\
@@ -437,7 +437,7 @@
   \end{center}
   \begin{comentario}
   {        \@tipo\ apresentada ao Curso
-           de \@curso\ do \@sigla, como 
+           Superior de Tecnologia em \@curso\ do \@sigla, como 
            requisito para a obten\c{c}\~ao do grau
            de \@grau\ em \@curso. }
   \end{comentario}
@@ -487,7 +487,7 @@
   \end{center}
   \begin{comentario}
   {        \@tipo\ apresentada ao Curso
-           de \@curso\ do \@sigla, como 
+           Superior de Tecnologia em \@curso\ do \@sigla, como 
            requisito para a obten\c{c}\~ao 
            do grau de \@grau\ em \@curso. }
   \end{comentario}
