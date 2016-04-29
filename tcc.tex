@@ -257,7 +257,7 @@ Essa seção discutirá sobre alguns assuntos necessários para obter um melhor 
 Sistemas de Gerenciamento de Conteúdo (SGC) ou Content Management System (CMS), segundo \citeonline{mercer} são softwares que facilitam a criação, organização, manipulação e remoção de dados em forma de imagens, documentos, scripts, textos, etc.
 Já \citeonline{barcia}, diz que um CMS, é uma plataforma de gestão de conteúdos, ou seja, um sistema que integra ferramentas que permitem criar, editar e publicar conteúdo em tempo real, onde os utilizadores manipulam uma interface sem terem a necessidade de saber programar. \citeonline{barcia} ainda ressalta que os gerenciadores também dispensam o uso de programação, facilitando dessa forma a gestão dos dados e o acesso às funcionalidades da ferramenta.
 
-O uso de um CMS pode facilitar o trabalho dos administradores de aplicações, que envolvem muitas atualizações no seu conteúdo, como por exemplo, blogs, portais corporativos\footnote{Instrumento de gestão de informação e de conhecimento}. \textit{Os benefícios ligados a adoção de um CMS incluem desde a redução do custo de atualização dos conteúdos nos web sites até o aumento da eficiência das equipes de TI''} \cite{pereira}.
+O uso de um CMS pode facilitar o trabalho dos administradores de aplicações, que envolvem muitas atualizações no seu conteúdo, como por exemplo, blogs, portais corporativos\footnote{Instrumento de gestão de informação e de conhecimento}. \textit{Os benefícios ligados a adoção de um CMS incluem desde a redução do custo de atualização dos conteúdos nos web sites até o aumento da eficiência das equipes de TI} \cite{pereira}.
 
 Em linhas gerais, um CMS permitiria administrar conteúdos em meio digital. E para o caso particular desse trabalho, um CMS permitiria gerenciar os conteúdos de uma loja virtual.
 
@@ -641,6 +641,10 @@ A figura \ref{fig:cd} apresenta o diagrama de componentes do sistema, e possibil
 \label{fig:cd}
 \end{figure}
 
+\subsection{subsection name} % (fold)
+\label{sub:subsection_name}
+
+% subsection subsection_name (end)
 
 % subsection diagrama_de_componentes (end)
 
@@ -741,8 +745,24 @@ O estoque de uma loja do sistema é ilustrado na Figura \ref{fig:sistema-estoque
 \chapter{Considerações Finais} % (fold)
 \label{cha:considera_es_finais}
 
+Para \citeonline{suh2002content}, um CMS busca atomatizar o processo de criação, publicação e atualização de conteúdo em um web site. A Sudo Loja como sendo um CMS, automatiza uma série de tarefas quando se trata de criar uma loja virtual. O sistema torna a tarefa de criar, manter e atualizar o conteúdo de um \textit{e-commerce} mais fácil, e não apenas para usuários com algum conhecimento técnico. Aqueles cujo conhecimento seja considerado mínimo, poderá fácilmente criar e introduzir conteúdo no seu site de vendas. 
 
+Tudo isso feito a partir de um editor {front-end}, por onde o usuário conseguirá abastecer sua loja com dados; um sitema \textit{back-end} para armazenar e processar o conteúdo; e um mecanismo que obtém o conteúdo e o renderiza, com base num modelo predefinido de site. Este modelo pode ser personalizado pelo próprio usuário, da mesma forma que acontece com o conteúdo.
 
+Algumas tecnologias tiveram que ser abordadas com mais profundidade, para que o sistema pudesse ser finalizado e concluído como planejado. O Spring \textit{Framework}, por exemplo, tornou o desenvolvimento muito mais eficiente e rápido. O projeto foi iniciado sem o uso do Spring. Após sua integração notou-se maior velocidade e qualidade na confecção do código fonte.
+
+\section{Trabalhos futuros} % (fold)
+\label{sec:trabalhos_futuros}
+
+O sistema desenvolvido trouxe um resultado satisfatório, porém alguns pontos ainda podem ser melhorados, e  novas funcionalidades poderiam ser acopladas.
+
+\begin{itemize}
+	\item O sistema ultilizou apenas uma estratégia para a realização de pagamentos. O uso do PagSeguro. Outras plataformas poderiam ser integradas ao sistema.
+	\item A personalização foi feita apartir de um template pré definido. O sistema poderia disponibilizar a escolha dentre diversos templates.
+	\item O sistema poderia possibilitar o uso de cupoms de desconto em compras.
+	\item O sistema poderia disponibilizar diferentes tipos de relatórios, como por exemplo, de vendas, ou produtos menos vendidos, entre outros.
+\end{itemize}
+% section trabalhos_futuros (end)
 % chapter considera_es_finais (end)
 
 \bibliography{referencias}
