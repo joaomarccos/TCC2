@@ -91,7 +91,7 @@ Na atualidade muitas pessoas preferem fazer suas compras em casa usando seu comp
 
 Nowadays many people prefer to do their shopping at home using your computer or smartphone, instead of moving to a store or supermarket. With a number of requests in e-commerce continually increasing and moving increasingly larger amounts, it is clear that it is a growing market. Traders in the region are still unaware of tools that facilitate the creation and management of a virtual store. This paper presents a tool to create, manage and customize a virtual store. Use of this tool will benefit those interested in selling on the Internet, they may easily, without bureaucracy, without high costs and without having advanced knowledge about programming, create and manage your own e-commerce.
 
-\noindent \textbf{Keywords:} Content Management System. Virtual Store. Sales.
+\noindent \textbf{Keywords:} Content Management Syste. Virtual Store. Sales.
 \newpage
 
 %---------------------- EPÍGRAFE I (OPCIONAL)--------------
@@ -266,7 +266,7 @@ Em linhas gerais, um CMS permitiria administrar conteúdos em meio digital. E pa
 
 Em outras palavras, um CMS é uma ferramenta que permite a um editor criar e publicar qualquer tipo de informação em uma página web. Geralmente, um CMS trabalha manipulando um banco de dados, de modo que o editor simplesmente atualiza este banco, incluindo nova informação ou editando a existente.
 
-Contudo, o mais interessante, é que essa ferramenta é feita de tal maneira que mesmo aqueles que nunca ouviram falar de JAVA, PHP, MySQL, Javascript ou qualquer outra linguagem voltada para web poderá utilizá-la, inclusive esta é sua principal função, tornar acessível a todos a sua presença na Internet através de um site, facilitando a inserção de textos, de comentários e dezenas de outras funcionalidades, de acordo com as características de cada aplicação. Alguns Exemplos de CMS podem ser vistos a seguir.
+Contudo, o mais interessante, é que essa ferramenta é feita de tal maneira que mesmo aqueles que nunca ouviram falar de JAVA, PHP, MySQL, Javascript ou qualquer outra linguagem voltada para web poderá ultiliza-la, inclusive esta é sua principal função, tornar acessível a todos a sua presença na Internet através de um site, facilitando a inserção de textos, de comentários e dezenas de outras funcionalidades, de acordo com as características de cada aplicação. Alguns Exemplos de CMS podem ser vistos a seguir.
 
 \begin{itemize}
 \item \textit{Drupal} - É uma plataforma de gerenciamento de conteúdo de código aberto, usado em milhares de web sites e aplicações. Ele é desenvolvido, usado, e apoiado por uma comunidade ativa e diversificada de pessoas ao redor do mundo \cite{drupal}.
@@ -334,7 +334,7 @@ O andamento do processo deve ser coordenado pelo gerente através da \textbf{Reu
 Os bancos de dados NOSQL surgiram como uma solução para a questão da escalabilidade no armazenamento e processamento de grandes volumes de dados na Web 2.0. No início, grandes empresas enfrentando esse tipo de problema criaram suas próprias soluções e publicaram alguns artigos, mas sem usar ainda o nome NOSQL O nome só surgiu alguns anos depois, em 2009, quando algumas novas empresas da Web 2.0 e a comunidade de software livre e código aberto começaram a desenvolver novas opções de bancos de dados, inspiradas nas ideias que apareceram no artigos \cite{de2010nosql}.
 
 \begin{citacao}
-A web é composta por uma grande quantidade de dados semi estruturados e crús, como as páginas web (cuja estrutura descrita no documento HTML expressa muito pouco sobre o significado do conteúdo do documento) e conteúdo multimídia (imagens, sons e vídeos). Ao reconhecer a natureza particular dos dados é possível criar soluções otimizadas para eles, ao invés de se tentar estruturá-los \cite{de2010nosql}.
+A web é composta por uma grande quantidade de dados semiestruturados e crús, como as páginas web (cuja estrutura descrita no documento HTML expressa muito pouco sobre o significado do conteúdo do documento) e conteúdo multimídia (imagens, sons e vídeos). Ao reconhecer a natureza particular dos dados é possível criar soluções otimizadas para eles, ao invés de se tentar estruturá-los \cite{de2010nosql}.
 \end{citacao}
 
 A constatação de que os dados na web não são estruturados é um dos fatores que favoreceram o surgimento de tecnologias de gerenciamento de dados diferentes das tradicionais. Os tipos mais comuns de bancos de dados NOSQL são:
@@ -346,7 +346,7 @@ A constatação de que os dados na web não são estruturados é um dos fatores 
 
 	\item \textbf{Bancos de dados de famílias de colunas} - Otimizado para leitura de dados estruturados, bancos de dados de famílias de colunas são mais interessantes, pois eles guardam os dados contiguamente por coluna em vez de linhas como em bancos relacionais \cite{stonebraker2005c}.
 
-	\item \textbf{Bancos de dados de grafos} Diferentemente de outros tipos de bancos de dados NOSQL, esse está diretamente relacionado a um modelo de dados estabelecido, o modelo de grafos. A ideia desse modelo é representar os dados e / ou o esquema dos dados como grafos dirigidos, ou como estruturas que generalizem a noção de grafos \cite{angles2008survey}. Muito usado em redes sociais, roteamento baseado em localização e mecanismos de recomendação.
+	\item \textbf{Bancos de dados de grafos} Diferentemente de outros tipos de bancos de dados NOSQL, esse está diretamente relacionado a um modelo de dados estabelecido, o modelo de grafos. A ideia desse modelo é representar os dados e / ou o esquema dos dados como grafos dirigidos, ou como estruturas que generalizem a noção de grafos \cite{angles2008survey}. Muito usado em redes sociais, roteamento baseado em localização e mecanimos de recomendação.
 
 \end{itemize}
 
@@ -373,7 +373,7 @@ Esta seção apresenta as atividades seguidas para o desenvolvimento deste traba
 
 \item \textbf{Leitura e Documentação} - Foi de competência desta fase, a filtragem e entendimento do material encontrado conforme a relevância da publicação.
 
-\item \textbf{Análise} - Nesta fase as primeiras reuniões foram feitas afim de obter um maior conhecimento das funcionalidades do sistema que seria desenvolvido.
+\item \textbf{Análise} - Nesta fase as primeiras reuniões foram feitas afim de obter um maior conhececimento das funcionalidades do sistema que seria desenvolvido.
 
 \item \textbf{Projeto e desenvolvimento} - Fase prática da exploração das referências bibliográficas, para esta etapa o uso do processo de desenvolvimento YP foi adotado e é descrito em detalhes na seção \ref{sec:processo_de_desenvolvimento}.
 
@@ -768,9 +768,9 @@ O estoque de uma loja do sistema é ilustrado na Figura \ref{fig:sistema-estoque
 \chapter{Considerações Finais} % (fold)
 \label{cha:considera_es_finais}
 
-Para \citeonline{suh2002content}, um CMS busca automatizar o processo de criação, publicação e atualização de conteúdo em um web site. A Sudo Loja como sendo um CMS, automatiza uma série de tarefas quando se trata de criar uma loja virtual. O sistema torna a tarefa de criar, manter e atualizar o conteúdo de um \textit{e-commerce} mais fácil, e não apenas para usuários com algum conhecimento técnico. Aqueles cujo conhecimento seja considerado mínimo, poderá facilmente criar e introduzir conteúdo no seu site de vendas. 
+Para \citeonline{suh2002content}, um CMS busca atomatizar o processo de criação, publicação e atualização de conteúdo em um web site. A Sudo Loja como sendo um CMS, automatiza uma série de tarefas quando se trata de criar uma loja virtual. O sistema torna a tarefa de criar, manter e atualizar o conteúdo de um \textit{e-commerce} mais fácil, e não apenas para usuários com algum conhecimento técnico. Aqueles cujo conhecimento seja considerado mínimo, poderá fácilmente criar e introduzir conteúdo no seu site de vendas. 
 
-Tudo isso feito a partir de um editor {front-end}, por onde o usuário conseguirá abastecer sua loja com dados; um sistema \textit{back-end} para armazenar e processar o conteúdo; e um mecanismo que obtém o conteúdo e o renderiza, com base num modelo predefinido de site. Este modelo pode ser personalizado pelo próprio usuário, da mesma forma que acontece com o conteúdo.
+Tudo isso feito a partir de um editor {front-end}, por onde o usuário conseguirá abastecer sua loja com dados; um sitema \textit{back-end} para armazenar e processar o conteúdo; e um mecanismo que obtém o conteúdo e o renderiza, com base num modelo predefinido de site. Este modelo pode ser personalizado pelo próprio usuário, da mesma forma que acontece com o conteúdo.
 
 Algumas tecnologias tiveram que ser abordadas com mais profundidade, para que o sistema pudesse ser finalizado e concluído como planejado. O Spring \textit{Framework}, por exemplo, tornou o desenvolvimento muito mais eficiente e rápido. O projeto foi iniciado sem o uso do Spring. Após sua integração notou-se maior velocidade e qualidade na confecção do código fonte.
 
@@ -780,9 +780,9 @@ Algumas tecnologias tiveram que ser abordadas com mais profundidade, para que o 
 O sistema desenvolvido trouxe um resultado satisfatório, porém alguns pontos ainda podem ser melhorados, e  novas funcionalidades poderiam ser acopladas.
 
 \begin{itemize}
-	\item O sistema utilizou apenas uma estratégia para a realização de pagamentos. O uso do PagSeguro. Outras plataformas poderiam ser integradas ao sistema.
-	\item A personalização foi feita a partir de um template pré definido. O sistema poderia disponibilizar a escolha dentre diversos templates.
-	\item O sistema poderia possibilitar o uso de cupons de desconto em compras.
+	\item O sistema ultilizou apenas uma estratégia para a realização de pagamentos. O uso do PagSeguro. Outras plataformas poderiam ser integradas ao sistema.
+	\item A personalização foi feita apartir de um template pré definido. O sistema poderia disponibilizar a escolha dentre diversos templates.
+	\item O sistema poderia possibilitar o uso de cupoms de desconto em compras.
 	\item O sistema poderia disponibilizar diferentes tipos de relatórios, como por exemplo, de vendas, ou produtos menos vendidos, entre outros.
 \end{itemize}
 % section trabalhos_futuros (end)
@@ -1537,7 +1537,7 @@ Iteração 9    & US05  & 12/03/2016 - 02/04/2016\\
 
 % chapter plano_de_itera_o (end)
 
-\chapter{Modelo lógico de dados} % (fold)
+\chapter{Modelo lógigo de dados} % (fold)
 \label{cha:modelo_l_gigo_de_dados}
 
 Este documento apresenta o modelo lógico de dados da Sudo Loja. Para melhor entendimento o diagrama foi decomposto em partes menores, divididos em grau de relacionamento com cada entidade.
