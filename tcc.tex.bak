@@ -42,7 +42,7 @@ tablewithin=none,
 %
 %---------- Informe o Curso e Grau -----
 \tecnologo \curso{Análise e Desenvolvimento de Sistemas} \ano{2016}
-\data{dd/MM/2016} % data da aprovação
+\data{\underline{\hspace{1cm}}/\underline{\hspace{1cm}}/2016} % data da aprovação
 \cidade{Cajazeiras/PB}
 %
 %----------Informações sobre a Instituição -----------------
@@ -91,7 +91,7 @@ Na atualidade muitas pessoas preferem fazer suas compras em casa usando seu comp
 
 Nowadays many people prefer to do their shopping at home using your computer or smartphone, instead of moving to a store or supermarket. With a number of requests in e-commerce continually increasing and moving increasingly larger amounts, it is clear that it is a growing market. Traders in the region are still unaware of tools that facilitate the creation and management of a virtual store. This paper presents a tool to create, manage and customize a virtual store. Use of this tool will benefit those interested in selling on the Internet, they may easily, without bureaucracy, without high costs and without having advanced knowledge about programming, create and manage your own e-commerce.
 
-\noindent \textbf{Keywords:} Content Management Syste. Virtual Store. Sales.
+\noindent \textbf{Keywords:} Content Management System. Virtual Store. Sales.
 \newpage
 
 %---------------------- EPÍGRAFE I (OPCIONAL)--------------
@@ -127,16 +127,13 @@ Nowadays many people prefer to do their shopping at home using your computer or 
 \chapter{Introdução} % (fold)
 \label{cha:intro}
 
-Comprar na Internet traz muitas vantagens para um consumidor. É possível fazer compras sempre que quiser e à hora que desejar, no conforto da sua casa; Não existem filas; As compras são feitas sem a utilização de dinheiro físico, proporcionando mais segurança ao cliente,  Além de diversas outras vantagens.
+Comprar na Internet traz muitas vantagens para um consumidor. É possível fazer compras sempre que quiser e à hora que desejar, no conforto da sua casa; Não existem filas; As compras são feitas sem a utilização de dinheiro físico, proporcionando mais segurança ao cliente, além de diversas outras vantagens.
 
-Para os comerciantes as vantagens também são muitas: o produto fica acessível aos clientes 24 horas por dia, todos os dias da semana; pessoas de todos os lugares podem ver o produto; não é necessário um espaço físico para expor os produtos; custo de investimento inicial mínimo; sem risco de assalto, entre outras.
+Para os comerciantes as vantagens também são muitas: o produto fica acessível aos clientes 24 horas por dia, todos os dias da semana; pessoas de todos os lugares podem ver o produto; não é necessário um espaço físico para expor os produtos; custo de investimento inicial mínimo, entre outras.
 
-Dados indicam que os consumidores virtuais demonstram altos índices de intenção de compra, ou seja, continuam consumindo apesar do estabelecimento de um cenário de crise, e principalmente na Internet, onde os preços geralmente são mais baratos, se comparados aos do varejo tradicional \cite{webshoppers}.
+Apesar de existirem algums problemas como fraudes; entrega dos produtos de forma incorreta ou fora do prazo; ou até mesmo o não recebimento do produto; os consumidores virtuais demonstram altos índices de intenção de compra. Segundo \citeonline{webshoppers} essa intenção de compra significa dizer que os clientes continuam buscando e acima de tudo usando o comércio eletrônico.
 
-O \textit{WebShoppers} \citeonline{webshoppers}, relatório sólido e respeitado sobre o comércio eletrônico anualmente publicado, no qual são analisadas a evolução do \textit{e-commerce}, tendências, estimativas, mudanças de comportamento e preferências dos e-consumidores, apresentou boas estatísticas sobre o \textit{e-commerce} no Brasil. A seguir serão apresentados dados em forma de figuras e gráficos.
-
-A figura \ref{figura:consumidores} apresenta a quantidade de e-consumidores ativos (pessoas que efetivaram pelo
-menos uma compra virtual, ao longo de 2015). Percebe-se um crescimento, se comparada com anos anteriores. Em 2015, esse número chegou ao total de 39,1 milhões de consumidores.
+O \textit{WebShoppers} \citeonline{webshoppers}, relatório sobre o comércio eletrônico anualmente publicado, no qual são analisadas a evolução do \textit{e-commerce}, tendências, estimativas, mudanças de comportamento e preferências dos e-consumidores, apresentou boas estatísticas sobre o \textit{e-commerce} no Brasil. A seguir serão apresentados dados em forma de figuras e gráficos.
 
 \begin{figure}[H]
 \centering
@@ -147,7 +144,8 @@ menos uma compra virtual, ao longo de 2015). Percebe-se um crescimento, se compa
 \label{figura:consumidores}
 \end{figure}
 
-O número de pedidos e o faturamento do comércio eletrônico também foram notavelmente altos. Como mostra a figura \ref{figura:pedidos}, com um total de 106,2 milhões em 2015, o incremento no número de pedidos no mercado brasileiro foi de 3\%, em relação a 2014. O faturamento do comércio eletrônico foi de R\$ 41,3 bilhões. O número representa um crescimento nominal de 15,3\%, em relação a 2014, quando as vendas somaram um total de R\$ 35,8 bilhões como pode ser visto na figura \ref{figura:vendas}.
+A figura \ref{figura:consumidores} apresenta a quantidade de e-consumidores ativos (pessoas que efetivaram pelo
+menos uma compra virtual, ao longo de 2015). Percebe-se um crescimento, se comparada com anos anteriores. Em 2015, esse número chegou ao total de 39,1 milhões de consumidores.
 
 \begin{figure}[H]
 \centering
@@ -157,6 +155,8 @@ O número de pedidos e o faturamento do comércio eletrônico também foram nota
 \small{Fonte: \citeonline{webshoppers} - Relatório WebShoppers}
 \label{figura:pedidos}
 \end{figure}
+
+O número de pedidos e o faturamento do comércio eletrônico também foram notavelmente altos. Como mostra a figura \ref{figura:pedidos}, com um total de 106,2 milhões em 2015, o incremento no número de pedidos no mercado brasileiro foi de 3\%, em relação a 2014. O faturamento do comércio eletrônico foi de R\$ 41,3 bilhões. O número representa um crescimento nominal de 15,3\%, em relação a 2014, quando as vendas somaram um total de R\$ 35,8 bilhões como pode ser visto na figura \ref{figura:vendas}.
 
 \begin{figure}[H]
 \centering
@@ -203,15 +203,15 @@ Entre os empresários que se aventuram nesse ambiente, um dos anseios é ter uma
 \section{Motivação} % (fold)
 \label{sec:motivacao}
 
-Existem muitas ferramentas que facilitam a criação e gestão de lojas virtuais, porém algumas delas não são populares e as vezes desconhecidas, tais ferramentas poderiam ajudar a expandir um negócio ou criar uma oportunidade para aqueles que desejam empreender através de vendas na Internet. 
+Existem muitas ferramentas que facilitam a criação e gestão de lojas virtuais. Estas que serão citadas e comparadas com o sistema desenvolvido na seção \ref{cha:sudoloja}, porém algumas delas não são populares e as vezes desconhecidas. Essas ferramentas poderiam ajudar a expandir um negócio ou criar uma oportunidade para aqueles que desejam empreender através de vendas na Internet. 
 
 Segundo \citeonline{felipini}, \textit{Um e-commerce pode ser implantado aos poucos e testado}. Diferentemente de uma empresa tradicional, em que o início das operações ocorre somente com o empreendimento totalmente estruturado, um negócio na Internet pode ser implantado em etapas, o que dilui o investimento e facilita a correção de erros. Por exemplo, um estabelecimento de vendas só receberá seu primeiro cliente após a loja estiver totalmente pronta. Na Internet, você pode montar um site de conteúdo, com ou sem sua marca definitiva, testar a aceitabilidade de seu modelo de negócio e produtos, avaliar a visitação e, somente depois, começar a vender. Dessa forma, mesmo aqueles que ainda não possuam um negócio, poderão investir em um \textit{e-commerce}.
 
-Os comerciantes já fixados no mercado e interessados em colocar seu negócio na rede, procuram por empresas especializadas em desenvolvimento de softwares para desenvolver seu site de vendas. O problema nisso é que o custo pode ser alto. \citeonline{jalote} afirma: \textit{O software é caro porque torna se uma atividade difícil e trabalhosa de ser realizado pelo engenheiro de software}.  Outro problema relacionado ao desenvolvimento de software no geral, isso inclui uma loja virtual, é o tempo. O que gera insatisfação dos clientes, pela demora no cumprimento dos prazos \cite{pressman}.
+Os comerciantes já fixados no mercado e interessados em colocar seu negócio na rede, procuram por empresas especializadas em desenvolvimento de softwares para desenvolver seu site de vendas. O problema nisso é que o custo pode ser alto. \citeonline{jalote} afirma: \textit{O software é caro porque torna se uma atividade difícil e trabalhosa de ser realizado pelo engenheiro de software}.  Outro problema relacionado ao desenvolvimento de software no geral, isso inclui uma loja virtual, é a demora no desenvolvimento. O que gera insatisfação dos clientes, pela demora no cumprimento dos prazos \cite{pressman}.
 
 Além desses, um outro problema é a manutenção do site. Segundo \citeonline{sommervile} manutenção de software é a modificação de um programa após ter sido colocado em uso. Mudanças por exemplo, em alterar o \textit{layout}\footnote{Aspecto visual das páginas do site} geram custos e podem também ser demoradas.
 
-A Sudo Loja, visa resolver esses problemas oferecendo um CMS (do inglês \textit{Content Management System}), capaz de criar, gerenciar e tornar possível a personalização de uma loja virtual. O CMS proposto busca facilitar a criação e gestão de um \textit{e-commerce}, promovendo uma entrada rápida ao mercado virtual à pequenas e médias empresas. Podem ser vistos vários sistemas que funcionam dessa maneira, como por exemplo: a Tray commerce\footnote{https://www.tray.com.br/} e Loja integrada\footnote{https://lojaintegrada.com.br/}. Na Seção \ref{sec:ferramentas_relacionadas} será apresentado um comparativo entre estas e outras ferramentas.
+A Sudo Loja, visa resolver esses problemas oferecendo um CMS (do inglês \textit{Content Management System}) gratuito, capaz de criar, gerenciar e tornar possível a personalização de uma loja virtual. O CMS proposto busca facilitar a criação e gestão de um \textit{e-commerce}, promovendo uma entrada rápida ao mercado virtual à pequenas e médias empresas. Podem ser vistos vários sistemas que funcionam dessa maneira, como por exemplo: a Tray commerce\footnote{https://www.tray.com.br/} e Loja integrada\footnote{https://lojaintegrada.com.br/}. Na Seção \ref{sec:ferramentas_relacionadas} será apresentado um comparativo entre estas e outras ferramentas.
 
 
 % section motivacao (end)
@@ -219,26 +219,20 @@ A Sudo Loja, visa resolver esses problemas oferecendo um CMS (do inglês \textit
 \section{Objetivos} % (fold)
 \label{sec:objetivos}
 
-Esta seção apresenta os objetivos que direcionarão a construção do sistema.
+Esta seção apresenta os propósitos que direcionarão a construção do sistema.
 
 \subsection{Objetivo Geral} % (fold)
 \label{sub:objetivo_geral}
 
-Esse trabalho tem como objetivo principal o desenvolvimento de uma ferramenta para criação de lojas virtuais, onde um usuário cadastrado poderá criar um ou mais lojas, personalizar seu \textit{layout} e disponibilizar produtos para a venda.
+Esse trabalho tem como objetivo principal o desenvolvimento de uma ferramenta para criação de lojas virtuais.
 
 % subsection objetivo_geral (end)
 
 \subsection{Objetivos Específicos} % (fold)
 \label{sub:objetivos_espec}
 
-\begin{itemize}
-\item Prover uma alternativa de \textit{e-commerce} para a região.
-\item Incentivar o uso de novas soluções em TI nas pequenas e médias empresas comerciais da região.
-\item Facilitar a entrada de novos comerciantes no mercado virtual.
-\item Desenvolver um painel administrativo para que os usuários possam acompanhar e gerenciar sua loja.
-\item Tornar possível a criação de mais de uma loja com a mesma conta de usuário.
-\item Disponibilizar um módulo para personalização das lojas.
-\end{itemize}
+Como resultado, esperasse que o sistema desenvolvido seja uma alternativa de \textit{e-commerce} para a região, vindo de certa forma a incentivar o uso de novas soluções em TI, em pequenas e médias empresas comerciais da região do sertão paraibano. Facilitando assim, a entrada de novos comerciantes no mercado virtual. Para isso, o desenvolvimento de um painel administrativo para que os usuários possam acompanhar, gerenciar e personalizar suas lojas, se faz necessário. 
+
 % subsection objetivos_espec (end)
 
 % section objetivos (end)
@@ -266,7 +260,7 @@ Em linhas gerais, um CMS permitiria administrar conteúdos em meio digital. E pa
 
 Em outras palavras, um CMS é uma ferramenta que permite a um editor criar e publicar qualquer tipo de informação em uma página web. Geralmente, um CMS trabalha manipulando um banco de dados, de modo que o editor simplesmente atualiza este banco, incluindo nova informação ou editando a existente.
 
-Contudo, o mais interessante, é que essa ferramenta é feita de tal maneira que mesmo aqueles que nunca ouviram falar de JAVA, PHP, MySQL, Javascript ou qualquer outra linguagem voltada para web poderá ultiliza-la, inclusive esta é sua principal função, tornar acessível a todos a sua presença na Internet através de um site, facilitando a inserção de textos, de comentários e dezenas de outras funcionalidades, de acordo com as características de cada aplicação. Alguns Exemplos de CMS podem ser vistos a seguir.
+Contudo, o mais interessante, é que essa ferramenta é feita de tal maneira que mesmo aqueles que nunca ouviram falar de JAVA, PHP, MySQL, Javascript ou qualquer outra linguagem voltada para web poderá utilizá-la, inclusive esta é sua principal função, tornar acessível a todos a sua presença na Internet através de um site, facilitando a inserção de textos, de comentários e dezenas de outras funcionalidades, de acordo com as características de cada aplicação. Alguns Exemplos de CMS podem ser vistos a seguir.
 
 \begin{itemize}
 \item \textit{Drupal} - É uma plataforma de gerenciamento de conteúdo de código aberto, usado em milhares de web sites e aplicações. Ele é desenvolvido, usado, e apoiado por uma comunidade ativa e diversificada de pessoas ao redor do mundo \cite{drupal}.
@@ -301,10 +295,12 @@ Dentre os modelos existentes de \textit{e-business}, \citeonline{asfoura} destac
 
 O sistema que será apresentado se encaixa no modelo de negócio B2C (\textit{Business to Consumer}), onde o lojista fará o negócio diretamente com os consumidores finais.
 
-\section{YP} % (fold)
+\section{EasYProcess} % (fold)
 \label{sec:yp}
 
 Quando se trabalha na elaboração de um produto os sistema, é importante seguir uma série de passos previsíveis - um roteiro que ajude a criar um resultado de alta qualidade e dentro de prazo estabelecido. O roteiro é denominado ``Processo de Software'' \cite{pressman}.
+
+Esse processe foi escolhido, por ser voltado especificamente ao âmbito acadêmico, e a projetos menores e de curta duração. Além de ser um processo de fácil adaptação para o discente.
 
 O \textit{easyProcess}, comumente chamado de YP. É um processo de \texit{software} criado com o objetivo de sanar as dificuldades dos alunos em se adaptar aos processos já existentes para o uso na academia. Voltado a projetos de pequeno escopo, o YP foca-se na aprendizagem do processo com alguns elementos qualificadores: uma boa produtividade, bom uso do ferramental de apoio e geração mínima de artefatos, além de se buscar uma consolidação do entendimento das práticas e conceitos da Engenharia de Software \cite{easyprocess}. O fluxo básico do YP está ilustrado na figura \ref{figura:yp}.
 
@@ -331,10 +327,13 @@ O andamento do processo deve ser coordenado pelo gerente através da \textbf{Reu
 
 \section{Bancos de dados NoSQL} % (fold)
 \label{sec:bancos_de_dados_nosql}
-Os bancos de dados NOSQL surgiram como uma solução para a questão da escalabilidade no armazenamento e processamento de grandes volumes de dados na Web 2.0. No início, grandes empresas enfrentando esse tipo de problema criaram suas próprias soluções e publicaram alguns artigos, mas sem usar ainda o nome NOSQL O nome só surgiu alguns anos depois, em 2009, quando algumas novas empresas da Web 2.0 e a comunidade de software livre e código aberto começaram a desenvolver novas opções de bancos de dados, inspiradas nas ideias que apareceram no artigos \cite{de2010nosql}.
+
+Durante o desenvolvimento do sistema, se fez necessário o uso de uma base de dados simples, sem necessidade de modelo e com alta velocidade de resposta. A melhor solução encontrada foi usar um banco de dados NoSQL, em específico o Redis, que será discutido na seção \ref{sub:redis_db}.
+
+Os bancos de dados NoSQL surgiram como uma solução para a questão da escalabilidade no armazenamento e processamento de grandes volumes de dados na Web 2.0. No início, grandes empresas enfrentando esse tipo de problema criaram suas próprias soluções e publicaram alguns artigos, mas sem usar ainda o nome NOSQL O nome só surgiu alguns anos depois, em 2009, quando algumas novas empresas da Web 2.0 e a comunidade de software livre e código aberto começaram a desenvolver novas opções de bancos de dados, inspiradas nas ideias que apareceram no artigos \cite{de2010nosql}.
 
 \begin{citacao}
-A web é composta por uma grande quantidade de dados semiestruturados e crús, como as páginas web (cuja estrutura descrita no documento HTML expressa muito pouco sobre o significado do conteúdo do documento) e conteúdo multimídia (imagens, sons e vídeos). Ao reconhecer a natureza particular dos dados é possível criar soluções otimizadas para eles, ao invés de se tentar estruturá-los \cite{de2010nosql}.
+A web é composta por uma grande quantidade de dados semi estruturados e crús, como as páginas web (cuja estrutura descrita no documento HTML expressa muito pouco sobre o significado do conteúdo do documento) e conteúdo multimídia (imagens, sons e vídeos). Ao reconhecer a natureza particular dos dados é possível criar soluções otimizadas para eles, ao invés de se tentar estruturá-los \cite{de2010nosql}.
 \end{citacao}
 
 A constatação de que os dados na web não são estruturados é um dos fatores que favoreceram o surgimento de tecnologias de gerenciamento de dados diferentes das tradicionais. Os tipos mais comuns de bancos de dados NOSQL são:
@@ -346,13 +345,24 @@ A constatação de que os dados na web não são estruturados é um dos fatores 
 
 	\item \textbf{Bancos de dados de famílias de colunas} - Otimizado para leitura de dados estruturados, bancos de dados de famílias de colunas são mais interessantes, pois eles guardam os dados contiguamente por coluna em vez de linhas como em bancos relacionais \cite{stonebraker2005c}.
 
-	\item \textbf{Bancos de dados de grafos} Diferentemente de outros tipos de bancos de dados NOSQL, esse está diretamente relacionado a um modelo de dados estabelecido, o modelo de grafos. A ideia desse modelo é representar os dados e / ou o esquema dos dados como grafos dirigidos, ou como estruturas que generalizem a noção de grafos \cite{angles2008survey}. Muito usado em redes sociais, roteamento baseado em localização e mecanimos de recomendação.
+	\item \textbf{Bancos de dados de grafos} Diferentemente de outros tipos de bancos de dados NOSQL, esse está diretamente relacionado a um modelo de dados estabelecido, o modelo de grafos. A ideia desse modelo é representar os dados e / ou o esquema dos dados como grafos dirigidos, ou como estruturas que generalizem a noção de grafos \cite{angles2008survey}. Muito usado em redes sociais, roteamento baseado em localização e mecanismos de recomendação.
 
 \end{itemize}
 
 Em relação a SGBD tradicionais, a distribuição dos dados de forma elástica é inviabilizado pois o modelo de garantia de consistência é fortemente baseado no controle transacional ACID (Atomicity, Consistency, Isolation e Durability). Esse tipo de controle transacional é praticamente inviável quando os dados e o processamento são distribuídos em vários nós. O teorema CAP (Consistency, Availability e Partition tolerance) mostra que somente duas dessas 3 propriedades podem ser garantidas simultaneamente em um ambiente de processamento distribuído de grande porte. A partir desse teorema, os produtos NoSQL utilizam o paradigma BASE (Basically Available, Soft-state, Eventually consistency) para o controle de consistência, o que consequentemente traz uma sensível diminuição no custo computacional para a garantia de consistência dos dados em relação a SGBD tradicionais \cite{vieira2012bancos}.
 
 % section bancos_de_dados_nosql (end)
+
+\subsection{Redis DB} % (fold)
+\label{sub:redis_db}
+
+O Redis é um armazenador de estrutura de dados em memória, usado como banco de dados, cache e \textit{message broker}. Suporta estrutura de dados como \textit{strings}, \textit{hashes}, listas, conjuntos e várias outras \cite{redis}.
+
+É um banco NoSQL do tipo chave-valor. \citeonline{Carlson:2013:RA:2505464} o define da seguinte forma:  ``O Redis fornece operações de relâmpago em conjuntos de dados em memória''. Ou seja operações quase que instantâneas por ser um banco que opera totalmente em memória RAM.
+
+Foi usado por possuir as características necessárias, para atender a necessidade de salvar e obter, as preferências de usuário inerentes a personalização da loja virtual, de forma rápida e indexada.
+
+% subsection redis_db (end)
 
 % chapter fundamenta_o_te_rica (end)
 
@@ -367,30 +377,28 @@ Esta seção aborda a metodologia usada para o desenvolvimento desse trabalho
 Esta seção apresenta as atividades seguidas para o desenvolvimento deste trabalho, foram elas:
 
 \begin{itemize}
-\item \textbf{Determinação do tema} - Nesta fase, foi verificada o tema foco do trabalho, o qual foi posteriormente avaliado por membros do corpo docente da instituição.
+\item \textbf{Determinação do tema} - Nesta fase, foi definido o tema foco do trabalho, o qual foi posteriormente avaliado por membros do corpo docente da instituição.
 
 \item \textbf{Levantamento bibliográfico} - Com o tema estabelecido, foi efetuado um estudo bibliográfico, afim de fundamentar o tema.
 
-\item \textbf{Leitura e Documentação} - Foi de competência desta fase, a filtragem e entendimento do material encontrado conforme a relevância da publicação.
+\item \textbf{Análise} - Nesta fase, as primeiras reuniões foram feitas afim de obter um maior conhecimento das funcionalidades do sistema que seria desenvolvido.
 
-\item \textbf{Análise} - Nesta fase as primeiras reuniões foram feitas afim de obter um maior conhececimento das funcionalidades do sistema que seria desenvolvido.
-
-\item \textbf{Projeto e desenvolvimento} - Fase prática da exploração das referências bibliográficas, para esta etapa o uso do processo de desenvolvimento YP foi adotado e é descrito em detalhes na seção \ref{sec:processo_de_desenvolvimento}.
+\item \textbf{Projeto e desenvolvimento} - Fase onde se deu início ao desenvolvimento da ferramenta, auxíliado pelo processo de desenvolvimento easYProcess. Seu uso é descrito em detalhes na seção \ref{sec:processo_de_desenvolvimento}.
 
 \item \textbf{Escrita de documentos} - O desenvolvimento do texto foi organizado em capítulos, cada qual abordando diferentes ênfases.
 
 \end{itemize}
 % section atividades (end)
 
-\section{Etapas do YP} % (fold)
+\section{Etapas do easYProcess} % (fold)
 \label{sec:processo_de_desenvolvimento}
 
-Nesta seção serão abordadas cada etapa realizada durante o processo de desenvolvimento do sistema, seguindo as diretrizes do \textit{easYProcess}, estas são: Definição de papéis, na Subseção \ref{sub:definicao_de_papeis}; Conversa com o Cliente, na Subseção \ref{sub:conversa_com_o_cliente}; Inicialização, na Subseção \ref{sub:inicializacao}; E Planejamento de \textit{Releases}, na Subseção \ref{sub:planejamento_de_releases}.
+Nesta seção serão abordadas cada etapa realizada durante o processo de desenvolvimento do sistema, seguindo as diretrizes do \textit{easYProcess}, estas são: Definição de papéis, na subseção \ref{sub:definicao_de_papeis}; conversa com o cliente, na subseção \ref{sub:conversa_com_o_cliente}; inicialização, na subseção \ref{sub:inicializacao}; e planejamento de \textit{Releases}, na subseção \ref{sub:planejamento_de_releases}.
 
 \subsection{Definição de Papéis} % (fold)
 \label{sub:definicao_de_papeis}
 
-Após a etapa de definição de Papéis chega-se ao resultado visto no quadro \ref{quadro:papeis}:
+Esta fase encarregou-se de definir qual seria o papel ou função de cada envolvido no desenvolvimento da ferramenta. Chegou-se então ao resultado visto no quadro \ref{quadro:papeis}:
 
 \begin{table}[H]
 \centering
@@ -419,17 +427,17 @@ Gerente 	   & João Marcos Ferreira\\
 
 \subsection{Conversa Com o Cliente} % (fold)
 \label{sub:conversa_com_o_cliente}
-Nessa etapa foi gerado o Documento de Visão. Pretende-se que ele sirva como ferramenta de auxílio, a evitar problemas mais custosos. Ele apresenta os problemas a serem solucionados, as necessidades dos principais envolvidos, o alcance do projeto e as funcionalidades esperadas do sistema. 
+Nessa etapa foi gerado o Documento de Visão. Ele apresenta os problemas a serem solucionados, as necessidades dos principais envolvidos, o alcance do projeto e as funcionalidades esperadas do sistema. 
 
-Segundo \citeonline{bianca}, o objetivo desse documento é expor as necessidades e funcionalidades gerais do sistema, definindo os requisitos de alto nível em termos de necessidades dos usuários finais.
+Segundo \citeonline{bianca} o objetivo desse documento é expor as necessidades e funcionalidades gerais do sistema, definindo os requisitos de alto nível em termos de necessidades dos usuários finais.
 
-O Documento de visão produzido durante esta etapa pode ser visto no Apêndice \ref{ap:documento_visao}.
+O Documento de visão produzido durante esta etapa pode ser visto no Apêndice \ref{ap:documento_visao} - Documento de Visão.
 
 % subsection conversa_com_o_cliente (end)
 
 \subsection{Inicialização} % (fold)
 \label{sub:inicializacao}
-Como sugerido pelo YP, nesta fase foram definidas as \textit{Users Stories} e suas respectivas estimativas de tempo para implementação.  As \textit{Users Stories} capturadas podem ser vistas a seguir no quadro \ref{quadro:userstories}. Nas seções seguintes uma delas será apresentada com detalhes e as demais poderão ser vistas no Apêndice \ref{app:user_stories_e_testes_de_aceitacao} \textit{\textit{User Stories}} e Testes de Aceitação.	
+Como sugerido pelo YP, nesta fase foram definidas as \textit{Users Stories} e suas respectivas estimativas de tempo para implementação.  As \textit{Users Stories} capturadas podem ser vistas no Quadro \ref{quadro:userstories}. Nas seções seguintes uma delas será apresentada com detalhes e as demais poderão ser vistas no Apêndice \ref{app:user_stories_e_testes_de_aceitacao} \textit{\textit{User Stories}} e Testes de Aceitação.	
 
 \begin{longtable}{|p{3cm}|p{9cm}|p{3cm}|}
 \caption{\textit{\textit{User Stories}} levantadas}
@@ -462,8 +470,17 @@ Como sugerido pelo YP, nesta fase foram definidas as \textit{Users Stories} e su
 \hline
 \end{longtable}	
 
-De acordo com \citeonline{heuser2009projeto}, um modelo lógico de um BD (base de dados) relacional, deve definir quais as tabelas que o banco contém e, para cada tabela, quais os nomes das colunas. O modelo lógico para o DB em questão pode ser visto no apêndice \ref{cha:modelo_l_gigo_de_dados}.
+Ainda nessa etapa foi gerado o modelo conceitual da base de dados, apresentado na figura \ref{fig:der} através de uma diagrama entidade relacionamento. No qual é mostrado sem os atributos de cada entidade, para que a imagem se tornasse o mais legível possível. 
 
+\begin{figure}[H]
+\centering
+\caption{Diagrama entidade relacionamento}
+\centering
+\includegraphics[width=15cm]{img/diagramas/der.eps}\\
+\label{fig:der}
+\end{figure}
+
+Tendo como base essa modelagem, o banco de dados foi mapeado, resultando no modelo lógico, que de acordo com \citeonline{heuser2009projeto}, deve definir quais as tabelas que o banco contém e, para cada tabela, quais os nomes das colunas. O modelo logico é apresentado no apêndice \ref{cha:modelo_l_gigo_de_dados} - Modelo Lógico de Dados.
 
 \subsection{Planejamento de Releases} % (fold)
 \label{sub:planejamento_de_releases}
@@ -478,9 +495,11 @@ Durante esta etapa foram definidas as \textit{Releases}, juntamente com a data e
 \chapter{Sudo Loja} % (fold)
 \label{cha:sudoloja}
 
-A Sudo Loja é um CMS voltado a construção de lojas virtuais. A ferramenta possibilita o gerenciamento e personalização das páginas, assim como outras capacidades.
+A Sudo Loja é uma plataforma voltada a construção de lojas virtuais. A ferramenta visa facilitar o ingresso de um comerciante ao mercado virtual, fornecendo uma ferramenta capaz de criar uma loja virtual onde um usuário, sem ajuda especializada, poderá gerenciar e customizar sua loja de maneira simples. É voltado ao ambito comercial, contemplando todos aqueles que desejam criar uma loja virtal e disponibilizar produtos para venda.
 
-Esta seção irá discutir as etapas de análise, projeto e implementação d Sudo Loja.
+O Apêndice \ref{ap:documento_visao} possui detalhes quanto aos objetivos do projeto, sua abrangência, o problema atacado, os envolvidos no uso da ferramenta, e suas principais funcionalidades.
+
+Esta seção irá discutir as etapas de análise, projeto e implementação da Sudo Loja. Assim como a descrição de algumas funcionalidades.
 
 \section{Ferramentas Relacionadas} % (fold)
 \label{sec:ferramentas_relacionadas}
@@ -505,8 +524,6 @@ Foram analisadas algumas ferramentas em busca de compreender as funcionalidades 
 \rowcolor{ballblue}
 & 1 	  & 2 	          & 3 			 & 4 			& 5   & Sudo Loja\\ 
 \hline
-Pago										 	& não     & sim			  & sim			 & sim 			& sim & \textbf{não}\\
-\hline
 Gerenciamento de produtos, 			& sim     & sim			  & sim			 & sim 			& sim & \textbf{sim}\\
 clientes e pedidos 			&      & 			  & 			 &  			&  & \\
 \hline
@@ -518,21 +535,21 @@ Site apropriado para dispositivos moveis    	& sim     & não			  & não			 & n�
 \hline
 Controle de estoque								& sim     & sim			  & sim			 & sim 			& sim & \textbf{sim}\\
 \hline
-Perguntas na página do produto 			& não     & não			  & não			 & não 			& não & \textbf{sim}\\
+Perguntas na página do produto 			& sim     & não			  & não			 & não 			& não & \textbf{sim}\\
 \hline
 \end{tabular*}
 \end{table}
 
-Como o quadro \ref{quad:comparativo} mostra, a Sudo Loja contará com as funcionalidades encontradas nas ferramentas listadas acima e ainda com um diferencial, que será a possibilidade de fazer perguntas ao vendedor sobre determinado produto.
+Como o quadro \ref{quad:comparativo} mostra, a Sudo Loja conta com as funcionalidades encontradas nas ferramentas listadas acima e está disponível gratuitamente.
 
 % section ferramentas_relacionadas (end)
 
 \section{Análise} % (fold)
 \label{sec:analise}
 
-A seguir serão apresentados os artefatos produzidos na fase de análise, inerentes a algumas \textit{User Stories} específicas. Para isso foi escolhida a \textit{User Story} US03 (O sistema deve realizar o gerenciamento do estoque da loja virtual).
+Aqui foram levantados, documentados e validados os requisitos do sistema, estes em forma de \textit{User Stories}. Vejamos os artefatos inerentes a \textit{User Story} US03 (O sistema deve realizar o gerenciamento do estoque da loja virtual). Essa \textit{User Story} abrange funcionalidades envolvendo o estoque de produtos de uma loja virtual, tais como inserção de produtos, atualizações, controle do número de produtos e outras a fim.
 
-As \textit{User Stories} alocadas são quebradas em tarefas, e o cliente deve definir os testes de aceitação para cada \textit{User Story}. Para auxílio na gerência foi feito uso da Tabela de Alocação de Tarefas (TAT), na qual especifica-se as \textit{\textit{User Stories}} envolvidas, tarefas, responsáveis, estimativas de tempo, tempo real consumido e status da tarefa. Nos quadros \ref{quadro:tati-us03} e \ref{quadro:teste-aceitacaoi-us03} é possível ver, respectivamente, a tabela de alocação de tarefas e os testes de aceitação geradas pra a US03. As demais \textit{\textit{User Stories}} são apresentadas com detalhes no Apêndice \ref{app:user_stories_e_testes_de_aceitacao}.	
+Durante a fase de planejamento do YP, cada \textit{User Story} é analisada, para que seja possível destacar um conjunto de funcionalidades, estas que são dispostas em tarefas a serem executadas. A fim de validarmos uma \textit{User Storie} são definidos testes de aceitação para cada uma. Para auxílio na gerência foi feito uso da Tabela de Alocação de Tarefas (TAT), na qual especifica-se as \textit{\textit{User Stories}} envolvidas, tarefas, responsáveis, estimativas de tempo, tempo real consumido e status da tarefa. Nos quadros \ref{quadro:tati-us03} e \ref{quadro:teste-aceitacaoi-us03} é possível ver, respectivamente, a tabela de alocação de tarefas e os testes de aceitação geradas pra a US03. As demais \textit{\textit{User Stories}} são apresentadas com detalhes no Apêndice \ref{app:user_stories_e_testes_de_aceitacao}.	
 
 \newpage
 
@@ -587,7 +604,9 @@ TA6 & Dado que estou na página de estoque, quando eu selecionar a opção exclu
 \section{Projeto Arquitetural} % (fold)
 \label{sec:projeto_arquitetural}
 
-O sistema será organizado em 3 camadas, são elas: Apresentação, Serviços e Persistência. As próximas seções abordarão individualmente cada uma delas. Segundo \citeonline{sommerville}, o modelo em camadas de uma arquitetura organiza o sistema em camadas, cada uma das quais fornecendo um conjunto de serviços, essa abordagem apoia o desenvolvimento incremental de sistemas. À medida que uma camada é desenvolvida, alguns serviços disponibilizados por essa camada podem ser disponibilizadas para os usuários. Na Figura \ref{fig:representacao-pa}, pode ser vista uma representação visual de como se dará a organização das camadas, onde cada camada só acessa diretamente suas camadas adjacentes.
+O sistema será organizado em 3 camadas, são elas: Apresentação, Serviços e Persistência. As próximas seções abordarão individualmente cada uma delas. Segundo \citeonline{sommerville}, o modelo em camadas de uma arquitetura organiza o sistema em camadas, cada uma das quais fornecendo um conjunto de serviços, essa abordagem apoia o desenvolvimento incremental de sistemas. À medida que uma camada é desenvolvida, alguns serviços disponibilizados por essa camada podem ser disponibilizadas para os usuários. 
+
+Na Figura \ref{fig:representacao-pa}, pode ser vista uma representação visual de como dar-se a organização das camadas, onde cada camada só acessa diretamente suas camadas adjacentes.
 
 \begin{figure}[H]
 \centering
@@ -600,10 +619,9 @@ O sistema será organizado em 3 camadas, são elas: Apresentação, Serviços e 
 \subsection{Camada de Apresentação} % (fold)
 \label{sub:camada_de_apresentacao}
 
-A partir desta camada o usuário poderá interagir diretamente com o sistema. Será composta por páginas JSP (\textit{Java Sever Pages}) e HTML(\textit{HyperText Markup Language}, que significa Linguagem de Marcação de Hipertexto), estas que serão estilizadas com o uso de CSS3. Para agilizar o processo de desenvolvimento dessas páginas, será usado o \textit{framework} \textit{Bootstrap} na versão 3. Com isso, a velocidade na criação das páginas aumentará devido a existência de dezenas de componentes já estilizados e estruturalmente organizados, que poderão ser reaproveitados. Alguns efeitos visuais da página serão implementados com o uso de \textit{JavaScript}. Todo conteúdo dinâmico dessas páginas serão implementados usando JSP em sua versão 2.1 e para o conteúdo estático será usado HTML.
+A partir desta camada o usuário poderá interagir diretamente com o sistema. É composta por páginas JSP (\textit{Java Sever Pages}) e HTML(\textit{HyperText Markup Language}, que significa Linguagem de Marcação de Hipertexto), são estilizadas com o uso de CSS3. Para agilizar o processo de desenvolvimento dessas páginas, foi usado o \textit{framework} \textit{Bootstrap} na versão 3 e o \textit{framework} AdminLTE. Com isso, a velocidade na criação das páginas aumenta devido a existência de dezenas de componentes já estilizados e estruturalmente organizados, que podem ser reaproveitados. Alguns efeitos visuais da página são implementados com o uso de \textit{JavaScript}. Todo conteúdo dinâmico dessas páginas são implementados usando JSP em sua versão 2.1 e para o conteúdo estático é usado HTML5.
 
-Esta camada poderá interagir diretamente (e apenas) com sua camada adjacente, a camada de Serviços que será discutida na seção \ref{sub:camada_de_servicos}.O estabelecimento desta comunicação será feita utilizando o Spring MVC, a
-través de controladores. Toda a configuração necessária para a inicialização desta camada é feita através do  módulo Spring Boot.
+Esta camada pode interagir diretamente (e apenas) com a camada de Serviços, que será discutida na seção \ref{sub:camada_de_servicos}. O estabelecimento desta comunicação será feita utilizando o Spring MVC, através de controladores. Toda a configuração necessária para a inicialização desta camada é feita através do  módulo Spring Boot.
 
 Segundo \citeonline{souza1998framework}, um Framework pode ser visto como um projeto genérico em um domínio que pode ser adaptado a aplicações específicas, servindo como um molde para a construção de aplicações.
 
@@ -619,7 +637,7 @@ A junção do Spring Boot e Spring MVC em um projeto torna o desenvolvimento de 
 \subsection{Camada de Serviços} % (fold)
 \label{sub:camada_de_servicos}
 
-Esta camada fornecerá todos os serviços necessários para o funcionamento do sistema. Terá acesso direto às suas camadas adjacentes: Camada de Apresentação e Camada de Persistência. Para isso, fará uso da linguagem de programação Java e uso da especificação CDI (Injeção de Dependência e Contextos, em português) para facilitar o uso de injeção de dependências. É composta por um conjunto de classes Java, cada qual com suas responsabilidades. Estas classes validarão e manipularão os dados vindo da camada de apresentação. Essas classes que fornecerão os serviços, irão acessar diretamente a camada de persistência, esta que por sua vez irá retornar algum resultado, para que o serviço realize o processamento e retorne para a camada de apresentação.
+Esta camada fornecerá todos os serviços necessários para o funcionamento do sistema. Digamos que um serviço aqui é uma classe Java contendo determinada lógica, afim de atender uma regra de negócio. Esta camada terá acesso direto às suas camadas adjacentes: Camada de Apresentação e Camada de Persistência. Para isso, fará uso da linguagem de programação Java e uso da especificação CDI (Injeção de Dependência e Contextos, em português) para facilitar o uso de injeção de dependências. É composta por um conjunto de classes Java, cada qual com suas responsabilidades. Estas classes validarão e manipularão os dados vindo da camada de apresentação. Essas classes que fornecerão os serviços, irão acessar diretamente a camada de persistência, esta que por sua vez irá retornar algum resultado, para que o serviço realize o processamento e retorne para a camada de apresentação.
 
 Para \citeonline{foldoc}, Interface de Programação de Aplicação (português brasileiro), cujo acrônimo API provém do Inglês Application Programming Interface, é um conjunto de rotinas e padrões estabelecidos por um software para a utilização das suas funcionalidades por aplicativos que não pretendem envolver-se em detalhes da implementação do software, mas apenas usar seus serviços.
 
@@ -630,7 +648,7 @@ Esta camada tem acesso a alguns serviços externos e usadas em forma de APIs. O 
 \subsection{Camada de Persistência} % (fold)
 \label{sub:camada_de_persistencia}
 
-Esta camada será responsável por manter e disponibilizar todos os dados do sistema. Para isto terá auxílio dos módulos Spring Data JPA e Spring Data Redis. Estes módulos automatizarão o processo criação e manipulação dos dados e auxiliarão  nas operações CRUD (acrônimo de \textit{Create}, \textit{Read}, \textit{Update} e \textit{Delete} na língua Inglesa) para as quatro operações básicas utilizadas em bases de dados relacionais (RDBMS) criação, consulta, atualização e exclusão de dados.
+Esta camada será responsável por manter e disponibilizar todos os dados do sistema. Para isto terá auxílio dos módulos Spring Data JPA e Spring Data Redis, e da especificação JPA (Java Persistence API). Estes módulos automatizarão o processo criação e manipulação dos dados e auxiliarão  nas operações CRUD (acrônimo de \textit{Create}, \textit{Read}, \textit{Update} e \textit{Delete} na língua Inglesa) para as quatro operações básicas utilizadas em bases de dados relacionais (RDBMS) criação, consulta, atualização e exclusão de dados. a especificação JPA é usada no mapeamento das classes correspondentes ao modelo, através de anotações (Java \textit{anotations}).
 
 Segundo \citeonline{kaufeld1996access}, o modelo de banco de dados relacional possui a capacidade de lidar com grandes volumes de informações, eliminando dados redundantes. 
 
@@ -638,8 +656,7 @@ Segundo \citeonline{kaufeld1996access}, o modelo de banco de dados relacional po
 	No modelo relacional existe a possibilidade de elaboração de um relacionamento lógico entre as informações referentes à espécie e as referentes ao indivíduo, evitando-se a necessidade da repetição de informações e agilizando as consultas feitas às duas fontes de dados \cite{da2002banco}.
 \end{citacao}
 
-O \citeonline{postgresql} foi escolhido como SGBDR (Sistema Gerenciador de Banco de Dados Relacional) por ter sido o mais abordado durante a período acadêmico. E o \citeonline{redis} foi escolhido para a manipulação de preferências de usuário por ser um banco extremamente rápido e simples de usar e open source. \textit{O Redis fornece operações de relâmpago em conjuntos de dados em memória, e também torna mais fácil para persistir no disco} \cite{Carlson:2013:RA:2505464}.
-
+O \citeonline{postgresql} foi escolhido como SGBDR (Sistema Gerenciador de Banco de Dados Relacional) por ter sido o mais abordado durante a período acadêmico. E o \citeonline{redis} foi escolhido para a manipulação de preferências de usuário por ser um banco extremamente rápido e simples de usar, e open source.
 
 % subsection camada_de_persistencia (end)
 
@@ -660,17 +677,12 @@ A figura \ref{fig:cd} apresenta o diagrama de componentes do sistema, e possibil
 \label{fig:cd}
 \end{figure}
 
-\subsection{subsection name} % (fold)
-\label{sub:subsection_name}
-
-% subsection subsection_name (end)
-
 % subsection diagrama_de_componentes (end)
 
 \subsection{Tecnologias Utilizadas} % (fold)
 \label{sub:tecnologias_ultilizadas}
 
-Está seção apresentará com detalhes todas as tecnologias que serão utilizadas no sistema.
+Está seção apresentará com detalhes as principais tecnologias que serão utilizadas no sistema.
 
 \begin{itemize}
 \item \textbf{HTML} - No HTML (Hypertext Markup Language) ou Linguagem de Marcação de Hipertexto são definidos símbolos de marcação que informam ao navegador World Wide Web como exibir textos, imagens e uma variedade de recursos na página que é renderizada e apresentada ao usuário \cite{html}.
@@ -683,6 +695,8 @@ Está seção apresentará com detalhes todas as tecnologias que serão utilizad
 
 \item \textbf{Bootstrap} - Originalmente criado por um designer e um desenvolvedor do Twitter \citeyear{twitter}, o \textit{Bootstrap} é um framework front-end popular e é um projeto de código aberto. O \textit{Bootstrap} em sua terceira versão se preocupa primeiramente com acesso por dispositivos móveis, focando-se no design responsivo \cite{bootstrap}.
 
+\item \textbf{AdminLTE} - AdminLTE é um \textit{framework front end} baseado no Bootstrap 3, voltado para painéis de controle e dashboards \cite{adminlte}. 
+
 \item \textbf{Java} - Originalmente desenvolvida por uma equipe de desenvolvedores liderada por James Gosling na \textit{Sun Microsystems} (atualmente de propriedade da Oracle) e lançada em 1995, o Java é uma linguagem de programação orientada a objetos que atualmente faz parte do núcleo da Plataforma Java \cite{java}.
 
 \item \textbf{JPA} - JPA é um framework leve, baseado em POJOS (Plain Old Java Objects) para persistir objetos Java. A Java Persistence API, diferente do que muitos imaginam, não é apenas um framework para Mapeamento Objeto-Relacional (ORM - Object-Relational Mapping), ela também oferece diversas funcionalidades essenciais em qualquer aplicação corporativa \cite{medeiros}.
@@ -690,8 +704,6 @@ Está seção apresentará com detalhes todas as tecnologias que serão utilizad
 \item \textbf{PostgreSQL} - PostgreSQL é um sistema poderoso banco de dados objeto-relacional open source. Ele tem mais de 15 anos de desenvolvimento ativo e uma arquitetura comprovada que ela ganhou uma forte reputação de confiabilidade, integridade de dados e correção. Ele é executado em todos os principais sistemas operacionais, incluindo Linux, UNIX (AIX, BSD, HP-UX, SGI IRIX, Mac OS X, Solaris, Tru64), e Windows. É totalmente compatível com ACID, tem suporte completo para chaves estrangeiras, junções views, triggers e procedimentos armazenados (em várias línguas). Ele inclui mais 2008 tipos de dados SQL, incluindo INTEGER, NUMERIC, BOOLEAN, CHAR, VARCHAR, DATE, INTERVAL e TIMESTAMP. Ele também suporta o armazenamento de grandes objetos binários, incluindo imagens, sons ou vídeo. Ele tem interfaces de programação nativas para C / C ++, Java, .Net, Perl, Python, Ruby, Tcl, ODBC, entre outros, e documentação excepcional \cite{postgresql}.
 
 \item \textbf{Spring data} - 0 Spring data É um módulo de Spring \textit{Framework}. Sua missão é prover um modelo de programação baseado em Spring, consistente e familiar, para ser usado no acesso a dados em bancos relacionais e não relacionais \cite{springdata}.
-
-\item \textbf{Redis} - O Redis é um armazenador de estrutura de dados em memória, usado como banco de dados, cache e \textit{message broker}. Suporta estrutura de dados como \textit{strings}, \textit{hashes}, \textit{listas}, \textit{conjuntos} e várias outras \cite{redis}.
 
 \end{itemize}
 
@@ -710,10 +722,10 @@ O sistema se encontra \textit{online} e pode ser acessado a partir da URL \url{h
 
 % section projeto_arquitetural (end)
 
-\section{Diagrama de Classes} % (fold)
+\subsection{Diagrama de Classes} % (fold)
 \label{sec:diagrama_de_classes}
 
-Na Figura \ref{fig:diagrama-classe-estoque}, será apresentado um diagrama de classes que ilustra uma visão mais baixo nível de como as classes necessárias para realizar as operações da US03, deverão se comunicar. 
+Na Figura \ref{fig:diagrama-classe-estoque}, é apresentado um diagrama de classes que ilustra uma visão mais baixo nível de como as classes necessárias para realizar as operações da US03, deverão se comunicar. 
 
 \begin{figure}[H]
 \centering
@@ -723,14 +735,14 @@ Na Figura \ref{fig:diagrama-classe-estoque}, será apresentado um diagrama de cl
 \label{fig:diagrama-classe-estoque}
 \end{figure}
 
-Um \textit{Controller} ainda na camada de apresentação invocará um serviço chamado \textit{ProductServiceImpl}, que fará uso da Classe \textit{ProductRepository}, que por sua vez retornará para o serviço, o resultado que será repassado para a apresentação.
+Um \textit{Controller}, ainda na camada de apresentação, invocará um serviço chamado \textit{ProductServiceImpl}, que fará uso da Classe \textit{ProductRepository}, que por sua vez retornará o resultado que será repassado para a apresentação.
 
 % section diagrama_de_classes (end)
 
 \section{Implementação} % (fold)
 \label{sec:implementacao}
 
-Na Figura \ref{fig:sd-atualiza}, será apresentado um diagrama de sequência que ilustra como se dá a atualização de um produto do estoque, tarefa esta que faz parte da US03.
+Na Figura \ref{fig:sd-atualiza}, é apresentado um diagrama de sequência que ilustra como se dá a atualização de um produto do estoque, tarefa esta que faz parte da US03.
 
 \begin{figure}[H]
 \centering
@@ -763,16 +775,172 @@ O estoque de uma loja do sistema é ilustrado na Figura \ref{fig:sistema-estoque
 
 
 % section implementacao (end)
-% chapter sudo_loja (end)
 
+\section{Funcionalidades} % (fold)
+\label{sec:funcionalidades}
+
+Esta seção apresenta as principais funcionalidades do sistema. Poderá ser visto como funciona a plataforma, e come se dá as operações de cadastro, criação de uma loja, gerenciamento de produtos e pedidos e personalização.
+
+A página inicial da loja é apresentada na figura \ref{fig:inicial}. O botão para se cadastrar apesar de não visível na imagem, pode ser visto ao rolar um pouco a página.
+
+\begin{figure}[H]
+\centering
+\caption{Página inicial da Sudo Loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/sudoloja.eps}\\
+\label{fig:inicial}
+\end{figure}
+
+Ao clicar em cadastrar, o usuário é levado para a página de registro, onde é necessário que o usuário entre com seu nome completo, email e senha. A tela de cadastro poder ser vista na figura \ref{fig:registro}.
+
+\begin{figure}[H]
+\centering
+\caption{Página de cadastro da Sudo Loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/registro.png.eps}\\
+\label{fig:registro}
+\end{figure}
+
+Após a inserção e validação dos dados, um link de confirmação é enviado ao email passado pelo usuário, somente após a abertura desse link que o será possível realizar login na plataforma. A figura \ref{fig:painel} exibe o painel administrativo da Sudo Loja. Através dessa página é possível gerenciar as lojas criadas pelo usuário.
+
+\begin{figure}[H]
+\centering
+\caption{Painel administrativo da Sudo Loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/dashboard.png.eps}\\
+\label{fig:painel}
+\end{figure}
+
+Toda navegação no painel administrativo se dá a partir do menu lateral, onde é possível acessar as configurações da conta, criar um loja e gerenciar lojas individualmente. Na opção \textbf{conta} é possível alterar configurações da conta, como email, senha e avatar.
+
+Para criar basta selecionar a opção \textbf{configurar nova loja} no menu lateral. Para continuar é preciso informar um nome para a loja e um documento de indentificação. Após os dados serem validados, a loja é criada e disponibilizado no menu lateral. Ao expandir a opção do menu correspondente a uma loja, uma página com um resumo sobre a loja é aberta, onde é possível visualizar informações como numero de vendas, produtos, notificações sobre novos pedidos e comentários, usuários cadastrados e alguns alertas. Como é possível ver na figura \ref{fig:mainloja}.
+
+
+\begin{figure}[H]
+\centering
+\caption{Resumo loja - Sudo Loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/resumoloja.png.eps}\\
+\label{fig:mainloja}
+\end{figure}
+
+Para o funicionamento do cálculo de frete e do pagamento, é necessário que as configurações de endereço e a conta do PagSeguro estejam devidamente configuradas. Alertas são exibidos pelo sistema, caso ainda não tenham sido feitas. 
+
+Na menu de \textbf{configurações} ilustrado na figura \ref{fig:configloja}, é possível alterar algumas informações sobre a loja, adicionar uma logomarca, adicionar um \textit{slogan}, adicionar endereços e configurar a conta do PagSeguro. No menu produtos é onde ocorre o gerenciamento do estoque da loja, ao seleciona-lo, inicialmente é exibida a lista de produtos da loja, onde é possível filtrar e/ou ordenar os produtos por nome, quantidade, preço e código. Ao clicar sobre um produto sua ficha é aberta, onde é possível realizar alterações, como já foi mostrado na seção \ref{sec:implementacao}. 
+
+\begin{figure}[H]
+\centering
+\caption{Configurações da loja - Sudo Loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/configloja.png.eps}\\
+\label{fig:configloja}
+\end{figure}
+
+Como pode ser visto na figura \ref{fig:pedidos}, de forma similar ocorre com o menu \textbf{pedidos}. Ao selecionar essa opção é exibido a lista de pedidos ordenados inicialmente pela data. Ao clicar sobre um pedido, detalhes são exibidos, como: os items do pedido, informações sobre usuário e endereço de entrega, e informações sobre o status do pagamento. Nesta ficha é possível também alterar o status do pedido, caso o lojista sinta necessidade. A ficha de um pedido é mostrada na figura \ref{fig:pedidos}.
+
+\begin{figure}[H]
+\centering
+\caption{Pedidos - Sudo Loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/pedidos.png.eps}\\
+\label{fig:pedidos}
+\end{figure}
+
+O lojista pode ver a lista de usuário cadastrados em sua loja, no menu \textbf{usuarios}. E as perguntas ou comentários que aguardam uma resposta do lojista no menu \textbf{comentários}. Os comentários são exibidos para o lojista da forma apresenta na figura \ref{fig:comentarios}.
+
+\begin{figure}[H]
+\centering
+\caption{Perguntas/Comentários - Sudo Loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/comentarios.png.eps}\\
+\label{fig:comentarios}
+\end{figure}
+
+Antes de discutir o menu de personalização, é interessante que se veja primeiro, o layout inicial da loja. O aspecto visual da loja recém criada e ainda sem nenhuma modificação, pode ser visto na figura \ref{fig:loja}.
+
+\begin{figure}[H]
+\centering
+\caption{Layout padrão da página da loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/loja.png.eps}\\
+\label{fig:loja}
+\end{figure}
+
+A página da loja tem um aspecto visual simples, e é responsiva, ou seja se adapta a diferentes tamanhos de tela. É possível fazer buscar de deterninado produto nessa página, filtrar produtos por categorias e preço, além  de conter as operações comuns à lojas virtuais convecionais, como cadastro e login de cliente, adicionar e remover produtos do carrinho, calcular frete e concretizar uma venda.
+
+A página de detalhes de um produto é mostrada na figura \ref{fig:detalhesproduto}. Nessa página é possível ver a galeria de fotos do produto, especificações, adicionar o produto ao carrinho e realizar um comentário ou pergunta ao lojista.
+
+\begin{figure}[H]
+\centering
+\caption{Detalhes produto - Sudo Loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/produto.png.eps}\\
+\label{fig:detalhesproduto}
+\end{figure}
+
+O carrinho, visto na figura \ref{fig:carrinho} pode ser visualizado ao clicar sobre o botão \texfbf{carrinho}, no menu de navegação localizado no cabeçalho da página. Aqui é possível ver em detalhes os itens adicionados pelo usuário ao carrinho, remover um item, visualizar o custo da compra, calcular valor de frete estimado e seguir com a compra.
+
+\begin{figure}[H]
+\centering
+\caption{Carrinho - Sudo Loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/cart.png.eps}\\
+\label{fig:carrinho}
+\end{figure}
+
+Ao clicar sobre o botão \textbf{pedir agora} o usuário é levado a página de checkout, onde o usuário poderá finalizar a compra. Para isso é necessário que o cliente esteja logado, selecione o endereço da entrega e escolha o tipo de frete. A página de checkout é apresentada na figura \ref{fig:checkout}.
+
+\begin{figure}[H]
+\centering
+\caption{Checkout de produtos - Sudo Loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/checkout.png.eps}\\
+\label{fig:checkout}
+\end{figure} 
+
+O usuário pode tanto selecionar um endereço existente, como inserir um novo endereço de entrega no ato da compra. Também é possível adicionar alguma observação sobre o pedido. Ao clicar em \textbf{finalizar compra} o modal de pagamento é aberto, onde o usuário deve confirmar alguns dados, escolher o meio de pagamento e seguir com a compra. O modal de pagamento pode ser visto na figura \ref{fig:pagamento}.
+
+\begin{figure}[H]
+\centering
+\caption{Modal de pagamento - Sudo Loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/pagamento.png.eps}\\
+\label{fig:pagamento}
+\end{figure} 
+
+O usuário pode realizar o pagamento usando uma conta do PagSeguro ou não. Ao acontecer alguma alteração no status de uma transação, como por exemplo o pagamento de um boleto, ou o cancelamento da transação por parte do cliente em sua conta do PagSeguro (caso o cliente tenha pago usando uma conta do PagSeguro), e entre outras, a alteração é notificada pelo PagSeguro à Sudo Loja, que então irá proceder para que o status do pedido seja modificado, conforme o tipo de alteração. O status dos pedidos podem ser consultados a qualquer hora, tanto pelo lojista, quanto pelo usuário.
+
+Por fim, o lojista pode personalizar suas lojas. As opções de personalização podem ser acessadas através do menu \textbf{personalização}. O lojista pode modificar desde o estilo de uma área isolada (cabeçalho, menu, rodapé, etc.), até elementos específicos como links, títulos, formulários, tabelas, em fim. As opções de personalização são organizadas em blocos como pode ser visto na figura \ref{fig:personalizacao}.
+
+\begin{figure}[H]
+\centering
+\caption{Personalizacao - Sudo Loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/personalizacao.png.eps}\\
+\label{fig:personalizacao}
+\end{figure} 
+
+Cada bloco possui um botão \textbf{aplicar}. Para que aquele estilo seja aplicado, o lojista deve confirmar usando este botão. Toda e qualquer modificação do layout da loja, é aplicado imediatamente ao salvar as alterações. É possível reverter às configurações originais de cada bloco, usando o botão \textbf{resetar configurações} e confirmar com o botão \textbf{aplicar}.
+
+% subsection funcionalidades (end)
+% chapter sudo_loja (end)
 \chapter{Considerações Finais} % (fold)
 \label{cha:considera_es_finais}
 
-Para \citeonline{suh2002content}, um CMS busca atomatizar o processo de criação, publicação e atualização de conteúdo em um web site. A Sudo Loja como sendo um CMS, automatiza uma série de tarefas quando se trata de criar uma loja virtual. O sistema torna a tarefa de criar, manter e atualizar o conteúdo de um \textit{e-commerce} mais fácil, e não apenas para usuários com algum conhecimento técnico. Aqueles cujo conhecimento seja considerado mínimo, poderá fácilmente criar e introduzir conteúdo no seu site de vendas. 
+Para \citeonline{suh2002content}, um CMS busca automatizar o processo de criação, publicação e atualização de conteúdo em um web site. A Sudo Loja como sendo um CMS, automatiza uma série de tarefas quando se trata de criar uma loja virtual. O sistema torna a tarefa de criar, manter e atualizar o conteúdo de um \textit{e-commerce} mais fácil, e não apenas para usuários com algum conhecimento técnico. Aqueles cujo conhecimento seja considerado mínimo, poderá facilmente criar e introduzir conteúdo no seu site de vendas. 
 
-Tudo isso feito a partir de um editor {front-end}, por onde o usuário conseguirá abastecer sua loja com dados; um sitema \textit{back-end} para armazenar e processar o conteúdo; e um mecanismo que obtém o conteúdo e o renderiza, com base num modelo predefinido de site. Este modelo pode ser personalizado pelo próprio usuário, da mesma forma que acontece com o conteúdo.
+Tudo isso feito a partir de um editor \textit{front-end}, por onde o usuário conseguirá abastecer sua loja com dados; um sistema \textit{back-end} para armazenar e processar o conteúdo; e um mecanismo que obtém o conteúdo e o renderiza, com base num modelo predefinido de site. Este modelo pode ser personalizado pelo próprio usuário, da mesma forma que acontece com o conteúdo.
 
-Algumas tecnologias tiveram que ser abordadas com mais profundidade, para que o sistema pudesse ser finalizado e concluído como planejado. O Spring \textit{Framework}, por exemplo, tornou o desenvolvimento muito mais eficiente e rápido. O projeto foi iniciado sem o uso do Spring. Após sua integração notou-se maior velocidade e qualidade na confecção do código fonte.
+Algumas tecnologias tiveram que ser abordadas com mais profundidade, para que o sistema pudesse ser finalizado e concluído como planejado. O Spring \textit{Framework}, por exemplo, tornou o desenvolvimento muito mais eficiente e rápido. O projeto foi iniciado sem o uso do Spring. Após sua integração notou-se maior velocidade e qualidade na escrita do código fonte.
+
+\section{Dificuldades encontradas} % (fold)
+\label{sec:dificuldades_encontradas}
+
+A elaboração desse documento incluiu certas dificuldades. O uso do YP (easYProcess) como processo de desenvolvimento. Por exemplo, não foi possível durante o desenvolvimento do trabalho, seguir estritamente o que é definido no processo, principalmente no que se diz respeito a prazos. O processo sugere que ele seja implementado em projetos com um período limite de tempo de um semestre letivo, este trabalho foi desenvolvido no decorrer de dois semestres. O número de releases sugeridas pelo YP também foi excedido. Todas essas dificuldades com o processo tiveram que ser abstraídas para que o resultado final fosse alcançado.
+
+A decisão do uso de alguns frameworks, como o Spring e o AdminLTE trouxeram benefícios, como maior facilidade e velocidade de desenvolvimento. Porém essa decisão veio a ser tardia, e causou um modificação muito grande em termos de desenvolvimento. Isso causou o não reaproveitamento de muito código já escrito. Esse problema poderia ter sido evitado com o uso desde o início do desenvolvimento.
+% section dificuldades_encontradas (end)
+% subsection subsection_name (end)
 
 \section{Trabalhos futuros} % (fold)
 \label{sec:trabalhos_futuros}
@@ -780,14 +948,16 @@ Algumas tecnologias tiveram que ser abordadas com mais profundidade, para que o 
 O sistema desenvolvido trouxe um resultado satisfatório, porém alguns pontos ainda podem ser melhorados, e  novas funcionalidades poderiam ser acopladas.
 
 \begin{itemize}
-	\item O sistema ultilizou apenas uma estratégia para a realização de pagamentos. O uso do PagSeguro. Outras plataformas poderiam ser integradas ao sistema.
-	\item A personalização foi feita apartir de um template pré definido. O sistema poderia disponibilizar a escolha dentre diversos templates.
-	\item O sistema poderia possibilitar o uso de cupoms de desconto em compras.
+	\item O sistema utilizou apenas uma estratégia para a realização de pagamentos. O uso do PagSeguro, por ser gratuito. O pagamento direto na aplicação envolve custos para realizar a configuração e integração ao sistema. Essas plataformas poderiam ser integradas posteriormente, tornando o pagamento ainda mais amigável e rápido.
+	\item A personalização foi feita a partir de um template pré definido. O sistema poderia disponibilizar a escolha dentre diversos templates.
+	\item O sistema poderia possibilitar o uso de cupons de desconto em compras.
 	\item O sistema poderia disponibilizar diferentes tipos de relatórios, como por exemplo, de vendas, ou produtos menos vendidos, entre outros.
 \end{itemize}
 % section trabalhos_futuros (end)
 % chapter considera_es_finais (end)
 
+
+					%----------------------- FIM DO DOCUMENTO ----------------------%
 \bibliography{referencias}
 
 % Inicio do Apêndice
@@ -1537,7 +1707,7 @@ Iteração 9    & US05  & 12/03/2016 - 02/04/2016\\
 
 % chapter plano_de_itera_o (end)
 
-\chapter{Modelo lógigo de dados} % (fold)
+\chapter{Modelo lógico de dados} % (fold)
 \label{cha:modelo_l_gigo_de_dados}
 
 Este documento apresenta o modelo lógico de dados da Sudo Loja. Para melhor entendimento o diagrama foi decomposto em partes menores, divididos em grau de relacionamento com cada entidade.
@@ -1575,7 +1745,7 @@ Este documento apresenta o modelo lógico de dados da Sudo Loja. Para melhor ent
 \centering
 \caption{Usuário da loja e seus relacionamentos}
 \centering
-\includegraphics[scale=0.7]{img/diagramas/schema/address.1degree.png.eps}\\
+\includegraphics[scale=0.7]{img/diagramas/schema/store_client.1degree.png.eps}\\
 \end{figure}
 
 \begin{figure}[H]

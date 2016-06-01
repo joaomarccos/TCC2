@@ -383,7 +383,7 @@ Esta seção apresenta as atividades seguidas para o desenvolvimento deste traba
 
 \item \textbf{Análise} - Nesta fase, as primeiras reuniões foram feitas afim de obter um maior conhecimento das funcionalidades do sistema que seria desenvolvido.
 
-\item \textbf{Projeto e desenvolvimento} - Fase onde se deu início ao desenvolvimento da ferramenta, auxíliado pelo processo de desenvolvimento easYProcess. Seu uso é descrito em detalhes na seção \ref{sec:processo_de_desenvolvimento}.
+\item \textbf{Projeto e desenvolvimento} - Fase onde se deu início ao desenvolvimento da ferramenta, auxiliado pelo processo de desenvolvimento easYProcess. Seu uso é descrito em detalhes na seção \ref{sec:processo_de_desenvolvimento}.
 
 \item \textbf{Escrita de documentos} - O desenvolvimento do texto foi organizado em capítulos, cada qual abordando diferentes ênfases.
 
@@ -495,9 +495,11 @@ Durante esta etapa foram definidas as \textit{Releases}, juntamente com a data e
 \chapter{Sudo Loja} % (fold)
 \label{cha:sudoloja}
 
-A Sudo Loja é um CMS voltado a construção de lojas virtuais. A ferramenta possibilita o gerenciamento e personalização das páginas, assim como outras capacidades.
+A Sudo Loja é uma plataforma voltada a construção de lojas virtuais. A ferramenta visa facilitar o ingresso de um comerciante ao mercado virtual, fornecendo uma ferramenta capaz de criar uma loja virtual onde um usuário, sem ajuda especializada, poderá gerenciar e customizar sua loja de maneira simples. É voltado ao âmbito comercial, contemplando todos aqueles que desejam criar uma loja virtal e disponibilizar produtos para venda.
 
-Esta seção irá discutir as etapas de análise, projeto e implementação da Sudo Loja.
+O Apêndice \ref{ap:documento_visao} possui detalhes quanto aos objetivos do projeto, sua abrangência, o problema atacado, os envolvidos no uso da ferramenta, e suas principais funcionalidades.
+
+Esta seção irá discutir as etapas de análise, projeto e implementação da Sudo Loja. Assim como a descrição de algumas funcionalidades.
 
 \section{Ferramentas Relacionadas} % (fold)
 \label{sec:ferramentas_relacionadas}
@@ -522,8 +524,6 @@ Foram analisadas algumas ferramentas em busca de compreender as funcionalidades 
 \rowcolor{ballblue}
 & 1 	  & 2 	          & 3 			 & 4 			& 5   & Sudo Loja\\ 
 \hline
-Pago										 	& não     & sim			  & sim			 & sim 			& sim & \textbf{não}\\
-\hline
 Gerenciamento de produtos, 			& sim     & sim			  & sim			 & sim 			& sim & \textbf{sim}\\
 clientes e pedidos 			&      & 			  & 			 &  			&  & \\
 \hline
@@ -535,21 +535,21 @@ Site apropriado para dispositivos moveis    	& sim     & não			  & não			 & n�
 \hline
 Controle de estoque								& sim     & sim			  & sim			 & sim 			& sim & \textbf{sim}\\
 \hline
-Perguntas na página do produto 			& não     & não			  & não			 & não 			& não & \textbf{sim}\\
+Perguntas na página do produto 			& sim     & não			  & não			 & não 			& não & \textbf{sim}\\
 \hline
 \end{tabular*}
 \end{table}
 
-Como o quadro \ref{quad:comparativo} mostra, a Sudo Loja contará com as funcionalidades encontradas nas ferramentas listadas acima e ainda com um diferencial, que será a possibilidade de fazer perguntas ao vendedor sobre determinado produto.
+Como o quadro \ref{quad:comparativo} mostra, a Sudo Loja conta com as funcionalidades encontradas nas ferramentas listadas acima e está disponível gratuitamente.
 
 % section ferramentas_relacionadas (end)
 
 \section{Análise} % (fold)
 \label{sec:analise}
 
-A seguir serão apresentados os artefatos produzidos na fase de análise, inerentes a algumas \textit{User Stories} específicas. Para isso foi escolhida a \textit{User Story} US03 (O sistema deve realizar o gerenciamento do estoque da loja virtual).
+Aqui foram levantados, documentados e validados os requisitos do sistema, estes em forma de \textit{User Stories}. Vejamos os artefatos inerentes a \textit{User Story} US03 (O sistema deve realizar o gerenciamento do estoque da loja virtual). Essa \textit{User Story} abrange funcionalidades envolvendo o estoque de produtos de uma loja virtual, tais como inserção de produtos, atualizações, controle do número de produtos e outras a fim.
 
-As \textit{User Stories} alocadas são quebradas em tarefas, e o cliente deve definir os testes de aceitação para cada \textit{User Story}. Para auxílio na gerência foi feito uso da Tabela de Alocação de Tarefas (TAT), na qual especifica-se as \textit{\textit{User Stories}} envolvidas, tarefas, responsáveis, estimativas de tempo, tempo real consumido e status da tarefa. Nos quadros \ref{quadro:tati-us03} e \ref{quadro:teste-aceitacaoi-us03} é possível ver, respectivamente, a tabela de alocação de tarefas e os testes de aceitação geradas pra a US03. As demais \textit{\textit{User Stories}} são apresentadas com detalhes no Apêndice \ref{app:user_stories_e_testes_de_aceitacao}.	
+Durante a fase de planejamento do YP, cada \textit{User Story} é analisada, para que seja possível destacar um conjunto de funcionalidades, estas que são dispostas em tarefas a serem executadas. A fim de validarmos uma \textit{User Story} são definidos testes de aceitação para cada uma. Para auxílio na gerência foi feito uso da Tabela de Alocação de Tarefas (TAT), na qual especifica-se as \textit{\textit{User Stories}} envolvidas, tarefas, responsáveis, estimativas de tempo, tempo real consumido e status da tarefa. Nos quadros \ref{quadro:tati-us03} e \ref{quadro:teste-aceitacaoi-us03} é possível ver, respectivamente, a tabela de alocação de tarefas e os testes de aceitação geradas pra a US03. As demais \textit{\textit{User Stories}} são apresentadas com detalhes no Apêndice \ref{app:user_stories_e_testes_de_aceitacao}.	
 
 \newpage
 
@@ -604,7 +604,9 @@ TA6 & Dado que estou na página de estoque, quando eu selecionar a opção exclu
 \section{Projeto Arquitetural} % (fold)
 \label{sec:projeto_arquitetural}
 
-O sistema será organizado em 3 camadas, são elas: Apresentação, Serviços e Persistência. As próximas seções abordarão individualmente cada uma delas. Segundo \citeonline{sommerville}, o modelo em camadas de uma arquitetura organiza o sistema em camadas, cada uma das quais fornecendo um conjunto de serviços, essa abordagem apoia o desenvolvimento incremental de sistemas. À medida que uma camada é desenvolvida, alguns serviços disponibilizados por essa camada podem ser disponibilizadas para os usuários. Na Figura \ref{fig:representacao-pa}, pode ser vista uma representação visual de como se dará a organização das camadas, onde cada camada só acessa diretamente suas camadas adjacentes.
+O sistema será organizado em 3 camadas, são elas: Apresentação, Serviços e Persistência. As próximas seções abordarão individualmente cada uma delas. Segundo \citeonline{sommerville}, o modelo em camadas de uma arquitetura organiza o sistema em camadas, cada uma das quais fornecendo um conjunto de serviços, essa abordagem apoia o desenvolvimento incremental de sistemas. À medida que uma camada é desenvolvida, alguns serviços disponibilizados por essa camada podem ser disponibilizadas para os usuários. 
+
+Na Figura \ref{fig:representacao-pa}, pode ser vista uma representação visual de como dar-se a organização das camadas, onde cada camada só acessa diretamente suas camadas adjacentes.
 
 \begin{figure}[H]
 \centering
@@ -617,10 +619,9 @@ O sistema será organizado em 3 camadas, são elas: Apresentação, Serviços e 
 \subsection{Camada de Apresentação} % (fold)
 \label{sub:camada_de_apresentacao}
 
-A partir desta camada o usuário poderá interagir diretamente com o sistema. Será composta por páginas JSP (\textit{Java Sever Pages}) e HTML(\textit{HyperText Markup Language}, que significa Linguagem de Marcação de Hipertexto), estas que serão estilizadas com o uso de CSS3. Para agilizar o processo de desenvolvimento dessas páginas, será usado o \textit{framework} \textit{Bootstrap} na versão 3. Com isso, a velocidade na criação das páginas aumentará devido a existência de dezenas de componentes já estilizados e estruturalmente organizados, que poderão ser reaproveitados. Alguns efeitos visuais da página serão implementados com o uso de \textit{JavaScript}. Todo conteúdo dinâmico dessas páginas serão implementados usando JSP em sua versão 2.1 e para o conteúdo estático será usado HTML.
+A partir desta camada o usuário poderá interagir diretamente com o sistema. É composta por páginas JSP (\textit{Java Sever Pages}) e HTML(\textit{HyperText Markup Language}, que significa Linguagem de Marcação de Hipertexto), são estilizadas com o uso de CSS3. Para agilizar o processo de desenvolvimento dessas páginas, foi usado o \textit{framework} \textit{Bootstrap} na versão 3 e o \textit{framework} AdminLTE. Com isso, a velocidade na criação das páginas aumenta devido a existência de dezenas de componentes já estilizados e estruturalmente organizados, que podem ser reaproveitados. Alguns efeitos visuais da página são implementados com o uso de \textit{JavaScript}. Todo conteúdo dinâmico dessas páginas são implementados usando JSP em sua versão 2.1 e para o conteúdo estático é usado HTML5.
 
-Esta camada poderá interagir diretamente (e apenas) com sua camada adjacente, a camada de Serviços que será discutida na seção \ref{sub:camada_de_servicos}.O estabelecimento desta comunicação será feita utilizando o Spring MVC, a
-través de controladores. Toda a configuração necessária para a inicialização desta camada é feita através do  módulo Spring Boot.
+Esta camada pode interagir diretamente (e apenas) com a camada de Serviços, que será discutida na seção \ref{sub:camada_de_servicos}. O estabelecimento desta comunicação será feita utilizando o Spring MVC, através de controladores. Toda a configuração necessária para a inicialização desta camada é feita através do  módulo Spring Boot.
 
 Segundo \citeonline{souza1998framework}, um Framework pode ser visto como um projeto genérico em um domínio que pode ser adaptado a aplicações específicas, servindo como um molde para a construção de aplicações.
 
@@ -636,7 +637,7 @@ A junção do Spring Boot e Spring MVC em um projeto torna o desenvolvimento de 
 \subsection{Camada de Serviços} % (fold)
 \label{sub:camada_de_servicos}
 
-Esta camada fornecerá todos os serviços necessários para o funcionamento do sistema. Terá acesso direto às suas camadas adjacentes: Camada de Apresentação e Camada de Persistência. Para isso, fará uso da linguagem de programação Java e uso da especificação CDI (Injeção de Dependência e Contextos, em português) para facilitar o uso de injeção de dependências. É composta por um conjunto de classes Java, cada qual com suas responsabilidades. Estas classes validarão e manipularão os dados vindo da camada de apresentação. Essas classes que fornecerão os serviços, irão acessar diretamente a camada de persistência, esta que por sua vez irá retornar algum resultado, para que o serviço realize o processamento e retorne para a camada de apresentação.
+Esta camada fornecerá todos os serviços necessários para o funcionamento do sistema. Digamos que um serviço aqui é uma classe Java contendo determinada lógica, afim de atender uma regra de negócio. Esta camada terá acesso direto às suas camadas adjacentes: Camada de Apresentação e Camada de Persistência. Para isso, fará uso da linguagem de programação Java e uso da especificação CDI (Injeção de Dependência e Contextos, em português) para facilitar o uso de injeção de dependências. É composta por um conjunto de classes Java, cada qual com suas responsabilidades. Estas classes validarão e manipularão os dados vindo da camada de apresentação. Essas classes que fornecerão os serviços, irão acessar diretamente a camada de persistência, esta que por sua vez irá retornar algum resultado, para que o serviço realize o processamento e retorne para a camada de apresentação.
 
 Para \citeonline{foldoc}, Interface de Programação de Aplicação (português brasileiro), cujo acrônimo API provém do Inglês Application Programming Interface, é um conjunto de rotinas e padrões estabelecidos por um software para a utilização das suas funcionalidades por aplicativos que não pretendem envolver-se em detalhes da implementação do software, mas apenas usar seus serviços.
 
@@ -647,7 +648,7 @@ Esta camada tem acesso a alguns serviços externos e usadas em forma de APIs. O 
 \subsection{Camada de Persistência} % (fold)
 \label{sub:camada_de_persistencia}
 
-Esta camada será responsável por manter e disponibilizar todos os dados do sistema. Para isto terá auxílio dos módulos Spring Data JPA e Spring Data Redis. Estes módulos automatizarão o processo criação e manipulação dos dados e auxiliarão  nas operações CRUD (acrônimo de \textit{Create}, \textit{Read}, \textit{Update} e \textit{Delete} na língua Inglesa) para as quatro operações básicas utilizadas em bases de dados relacionais (RDBMS) criação, consulta, atualização e exclusão de dados.
+Esta camada será responsável por manter e disponibilizar todos os dados do sistema. Para isto terá auxílio dos módulos Spring Data JPA e Spring Data Redis, e da especificação JPA (Java Persistence API). Estes módulos automatizarão o processo criação e manipulação dos dados e auxiliarão  nas operações CRUD (acrônimo de \textit{Create}, \textit{Read}, \textit{Update} e \textit{Delete} na língua Inglesa) para as quatro operações básicas utilizadas em bases de dados relacionais (RDBMS) criação, consulta, atualização e exclusão de dados. a especificação JPA é usada no mapeamento das classes correspondentes ao modelo, através de anotações (Java \textit{anotations}).
 
 Segundo \citeonline{kaufeld1996access}, o modelo de banco de dados relacional possui a capacidade de lidar com grandes volumes de informações, eliminando dados redundantes. 
 
@@ -655,8 +656,7 @@ Segundo \citeonline{kaufeld1996access}, o modelo de banco de dados relacional po
 	No modelo relacional existe a possibilidade de elaboração de um relacionamento lógico entre as informações referentes à espécie e as referentes ao indivíduo, evitando-se a necessidade da repetição de informações e agilizando as consultas feitas às duas fontes de dados \cite{da2002banco}.
 \end{citacao}
 
-O \citeonline{postgresql} foi escolhido como SGBDR (Sistema Gerenciador de Banco de Dados Relacional) por ter sido o mais abordado durante a período acadêmico. E o \citeonline{redis} foi escolhido para a manipulação de preferências de usuário por ser um banco extremamente rápido e simples de usar e open source.
-
+O \citeonline{postgresql} foi escolhido como SGBDR (Sistema Gerenciador de Banco de Dados Relacional) por ter sido o mais abordado durante a período acadêmico. E o \citeonline{redis} foi escolhido para a manipulação de preferências de usuário por ser um banco extremamente rápido e simples de usar, e open source.
 
 % subsection camada_de_persistencia (end)
 
@@ -695,6 +695,8 @@ Está seção apresentará com detalhes as principais tecnologias que serão uti
 
 \item \textbf{Bootstrap} - Originalmente criado por um designer e um desenvolvedor do Twitter \citeyear{twitter}, o \textit{Bootstrap} é um framework front-end popular e é um projeto de código aberto. O \textit{Bootstrap} em sua terceira versão se preocupa primeiramente com acesso por dispositivos móveis, focando-se no design responsivo \cite{bootstrap}.
 
+\item \textbf{AdminLTE} - AdminLTE é um \textit{framework front end} baseado no Bootstrap 3, voltado para painéis de controle e dashboards \cite{adminlte}. 
+
 \item \textbf{Java} - Originalmente desenvolvida por uma equipe de desenvolvedores liderada por James Gosling na \textit{Sun Microsystems} (atualmente de propriedade da Oracle) e lançada em 1995, o Java é uma linguagem de programação orientada a objetos que atualmente faz parte do núcleo da Plataforma Java \cite{java}.
 
 \item \textbf{JPA} - JPA é um framework leve, baseado em POJOS (Plain Old Java Objects) para persistir objetos Java. A Java Persistence API, diferente do que muitos imaginam, não é apenas um framework para Mapeamento Objeto-Relacional (ORM - Object-Relational Mapping), ela também oferece diversas funcionalidades essenciais em qualquer aplicação corporativa \cite{medeiros}.
@@ -720,10 +722,10 @@ O sistema se encontra \textit{online} e pode ser acessado a partir da URL \url{h
 
 % section projeto_arquitetural (end)
 
-\section{Diagrama de Classes} % (fold)
+\subsection{Diagrama de Classes} % (fold)
 \label{sec:diagrama_de_classes}
 
-Na Figura \ref{fig:diagrama-classe-estoque}, será apresentado um diagrama de classes que ilustra uma visão mais baixo nível de como as classes necessárias para realizar as operações da US03, deverão se comunicar. 
+Na Figura \ref{fig:diagrama-classe-estoque}, é apresentado um diagrama de classes que ilustra uma visão mais baixo nível de como as classes necessárias para realizar as operações da US03, deverão se comunicar. 
 
 \begin{figure}[H]
 \centering
@@ -733,14 +735,14 @@ Na Figura \ref{fig:diagrama-classe-estoque}, será apresentado um diagrama de cl
 \label{fig:diagrama-classe-estoque}
 \end{figure}
 
-Um \textit{Controller} ainda na camada de apresentação invocará um serviço chamado \textit{ProductServiceImpl}, que fará uso da Classe \textit{ProductRepository}, que por sua vez retornará para o serviço, o resultado que será repassado para a apresentação.
+Um \textit{Controller}, ainda na camada de apresentação, invocará um serviço chamado \textit{ProductServiceImpl}, que fará uso da Classe \textit{ProductRepository}, que por sua vez retornará o resultado que será repassado para a apresentação.
 
 % section diagrama_de_classes (end)
 
 \section{Implementação} % (fold)
 \label{sec:implementacao}
 
-Na Figura \ref{fig:sd-atualiza}, será apresentado um diagrama de sequência que ilustra como se dá a atualização de um produto do estoque, tarefa esta que faz parte da US03.
+Na Figura \ref{fig:sd-atualiza}, é apresentado um diagrama de sequência que ilustra como se dá a atualização de um produto do estoque, tarefa esta que faz parte da US03.
 
 \begin{figure}[H]
 \centering
@@ -773,8 +775,155 @@ O estoque de uma loja do sistema é ilustrado na Figura \ref{fig:sistema-estoque
 
 
 % section implementacao (end)
-% chapter sudo_loja (end)
 
+\section{Funcionalidades} % (fold)
+\label{sec:funcionalidades}
+
+Esta seção apresenta as principais funcionalidades do sistema. Poderá ser visto como funciona a plataforma, e come se dá as operações de cadastro, criação de uma loja, gerenciamento de produtos e pedidos e personalização.
+
+A página inicial da loja é apresentada na figura \ref{fig:inicial}. O botão para se cadastrar apesar de não visível na imagem, pode ser visto ao rolar um pouco a página.
+
+\begin{figure}[H]
+\centering
+\caption{Página inicial da Sudo Loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/sudoloja.eps}\\
+\label{fig:inicial}
+\end{figure}
+
+Ao clicar em cadastrar, o usuário é levado para a página de registro, onde é necessário que o usuário entre com seu nome completo, e-mail e senha. A tela de cadastro poder ser vista na figura \ref{fig:registro}.
+
+\begin{figure}[H]
+\centering
+\caption{Página de cadastro da Sudo Loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/registro.png.eps}\\
+\label{fig:registro}
+\end{figure}
+
+Após a inserção e validação dos dados, um link de confirmação é enviado ao e-mail passado pelo usuário, somente após a abertura desse link que o será possível realizar login na plataforma. A figura \ref{fig:painel} exibe o painel administrativo da Sudo Loja. Através dessa página é possível gerenciar as lojas criadas pelo usuário.
+
+\begin{figure}[H]
+\centering
+\caption{Painel administrativo da Sudo Loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/dashboard.png.eps}\\
+\label{fig:painel}
+\end{figure}
+
+Toda navegação no painel administrativo se dá a partir do menu lateral, onde é possível acessar as configurações da conta, criar um loja e gerenciar lojas individualmente. Na opção \textbf{conta} é possível alterar configurações da conta, como e-mail, senha e avatar.
+
+Para criar basta selecionar a opção \textbf{configurar nova loja} no menu lateral. Para continuar é preciso informar um nome para a loja e um documento de identificação. Após os dados serem validados, a loja é criada e disponibilizado no menu lateral. Ao expandir a opção do menu correspondente a uma loja, uma página com um resumo sobre a loja é aberta, onde é possível visualizar informações como numero de vendas, produtos, notificações sobre novos pedidos e comentários, usuários cadastrados e alguns alertas. Como é possível ver na figura \ref{fig:mainloja}.
+
+
+\begin{figure}[H]
+\centering
+\caption{Resumo loja - Sudo Loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/resumoloja.png.eps}\\
+\label{fig:mainloja}
+\end{figure}
+
+Para o funcionamento do cálculo de frete e do pagamento, é necessário que as configurações de endereço e a conta do PagSeguro estejam devidamente configuradas. Alertas são exibidos pelo sistema, caso ainda não tenham sido feitas. 
+
+Na menu de \textbf{configurações} ilustrado na figura \ref{fig:configloja}, é possível alterar algumas informações sobre a loja, adicionar uma logomarca, adicionar um \textit{slogan}, adicionar endereços e configurar a conta do PagSeguro. No menu produtos é onde ocorre o gerenciamento do estoque da loja, ao selecioná-lo, inicialmente é exibida a lista de produtos da loja, onde é possível filtrar e/ou ordenar os produtos por nome, quantidade, preço e código. Ao clicar sobre um produto sua ficha é aberta, onde é possível realizar alterações, como já foi mostrado na seção \ref{sec:implementacao}. 
+
+\begin{figure}[H]
+\centering
+\caption{Configurações da loja - Sudo Loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/configloja.png.eps}\\
+\label{fig:configloja}
+\end{figure}
+
+Como pode ser visto na figura \ref{fig:pedidos}, de forma similar ocorre com o menu \textbf{pedidos}. Ao selecionar essa opção é exibido a lista de pedidos ordenados inicialmente pela data. Ao clicar sobre um pedido, detalhes são exibidos, como: os itens do pedido, informações sobre usuário e endereço de entrega, e informações sobre o status do pagamento. Nesta ficha é possível também alterar o status do pedido, caso o lojista sinta necessidade. A ficha de um pedido é mostrada na figura \ref{fig:pedidos}.
+
+\begin{figure}[H]
+\centering
+\caption{Pedidos - Sudo Loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/pedidos.png.eps}\\
+\label{fig:pedidos}
+\end{figure}
+
+O lojista pode ver a lista de usuário cadastrados em sua loja, no menu \textbf{usuários}. E as perguntas ou comentários que aguardam uma resposta do lojista no menu \textbf{comentários}. Os comentários são exibidos para o lojista da forma apresenta na figura \ref{fig:comentarios}.
+
+\begin{figure}[H]
+\centering
+\caption{Perguntas/Comentários - Sudo Loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/comentarios.png.eps}\\
+\label{fig:comentarios}
+\end{figure}
+
+Antes de discutir o menu de personalização, é interessante que se veja primeiro, o layout inicial da loja. O aspecto visual da loja recém criada e ainda sem nenhuma modificação, pode ser visto na figura \ref{fig:loja}.
+
+\begin{figure}[H]
+\centering
+\caption{Layout padrão da página da loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/loja.png.eps}\\
+\label{fig:loja}
+\end{figure}
+
+A página da loja tem um aspecto visual simples, e é responsiva, ou seja se adapta a diferentes tamanhos de tela. É possível fazer buscar de determinado produto nessa página, filtrar produtos por categorias e preço, além  de conter as operações comuns à lojas virtuais convencionais, como cadastro e login de cliente, adicionar e remover produtos do carrinho, calcular frete e concretizar uma venda.
+
+A página de detalhes de um produto é mostrada na figura \ref{fig:detalhesproduto}. Nessa página é possível ver a galeria de fotos do produto, especificações, adicionar o produto ao carrinho e realizar um comentário ou pergunta ao lojista.
+
+\begin{figure}[H]
+\centering
+\caption{Detalhes produto - Sudo Loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/produto.png.eps}\\
+\label{fig:detalhesproduto}
+\end{figure}
+
+O carrinho, visto na figura \ref{fig:carrinho} pode ser visualizado ao clicar sobre o botão \texfbf{carrinho}, no menu de navegação localizado no cabeçalho da página. Aqui é possível ver em detalhes os itens adicionados pelo usuário ao carrinho, remover um item, visualizar o custo da compra, calcular valor de frete estimado e seguir com a compra.
+
+\begin{figure}[H]
+\centering
+\caption{Carrinho - Sudo Loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/cart.png.eps}\\
+\label{fig:carrinho}
+\end{figure}
+
+Ao clicar sobre o botão \textbf{pedir agora} o usuário é levado a página de checkout, onde o usuário poderá finalizar a compra. Para isso é necessário que o cliente esteja logado, selecione o endereço da entrega e escolha o tipo de frete. A página de checkout é apresentada na figura \ref{fig:checkout}.
+
+\begin{figure}[H]
+\centering
+\caption{Checkout de produtos - Sudo Loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/checkout.png.eps}\\
+\label{fig:checkout}
+\end{figure} 
+
+O usuário pode tanto selecionar um endereço existente, como inserir um novo endereço de entrega no ato da compra. Também é possível adicionar alguma observação sobre o pedido. Ao clicar em \textbf{finalizar compra} o modal de pagamento é aberto, onde o usuário deve confirmar alguns dados, escolher o meio de pagamento e seguir com a compra. O modal de pagamento pode ser visto na figura \ref{fig:pagamento}.
+
+\begin{figure}[H]
+\centering
+\caption{Modal de pagamento - Sudo Loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/pagamento.png.eps}\\
+\label{fig:pagamento}
+\end{figure} 
+
+O usuário pode realizar o pagamento usando uma conta do PagSeguro ou não. Ao acontecer alguma alteração no status de uma transação, como por exemplo o pagamento de um boleto, ou o cancelamento da transação por parte do cliente em sua conta do PagSeguro (caso o cliente tenha pago usando uma conta do PagSeguro), e entre outras, a alteração é notificada pelo PagSeguro à Sudo Loja, que então irá proceder para que o status do pedido seja modificado, conforme o tipo de alteração. O status dos pedidos podem ser consultados a qualquer hora, tanto pelo lojista, quanto pelo usuário.
+
+Por fim, o lojista pode personalizar suas lojas. As opções de personalização podem ser acessadas através do menu \textbf{personalização}. O lojista pode modificar desde o estilo de uma área isolada (cabeçalho, menu, rodapé, etc.), até elementos específicos como links, títulos, formulários, tabelas, em fim. As opções de personalização são organizadas em blocos como pode ser visto na figura \ref{fig:personalizacao}.
+
+\begin{figure}[H]
+\centering
+\caption{Personalizacao - Sudo Loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/personalizacao.png.eps}\\
+\label{fig:personalizacao}
+\end{figure} 
+
+Cada bloco possui um botão \textbf{aplicar}. Para que aquele estilo seja aplicado, o lojista deve confirmar usando este botão. Toda e qualquer modificação do layout da loja, é aplicado imediatamente ao salvar as alterações. É possível reverter às configurações originais de cada bloco, usando o botão \textbf{resetar configurações} e confirmar com o botão \textbf{aplicar}.
+
+% subsection funcionalidades (end)
+% chapter sudo_loja (end)
 \chapter{Considerações Finais} % (fold)
 \label{cha:considera_es_finais}
 
@@ -782,7 +931,16 @@ Para \citeonline{suh2002content}, um CMS busca automatizar o processo de criaç�
 
 Tudo isso feito a partir de um editor \textit{front-end}, por onde o usuário conseguirá abastecer sua loja com dados; um sistema \textit{back-end} para armazenar e processar o conteúdo; e um mecanismo que obtém o conteúdo e o renderiza, com base num modelo predefinido de site. Este modelo pode ser personalizado pelo próprio usuário, da mesma forma que acontece com o conteúdo.
 
-Algumas tecnologias tiveram que ser abordadas com mais profundidade, para que o sistema pudesse ser finalizado e concluído como planejado. O Spring \textit{Framework}, por exemplo, tornou o desenvolvimento muito mais eficiente e rápido. O projeto foi iniciado sem o uso do Spring. Após sua integração notou-se maior velocidade e qualidade na confecção do código fonte.
+Algumas tecnologias tiveram que ser abordadas com mais profundidade, para que o sistema pudesse ser finalizado e concluído como planejado. O Spring \textit{Framework}, por exemplo, tornou o desenvolvimento muito mais eficiente e rápido. O projeto foi iniciado sem o uso do Spring. Após sua integração notou-se maior velocidade e qualidade na escrita do código fonte.
+
+\section{Dificuldades encontradas} % (fold)
+\label{sec:dificuldades_encontradas}
+
+A elaboração desse documento incluiu certas dificuldades. O uso do YP (easYProcess) como processo de desenvolvimento, por exemplo. Não foi possível durante o desenvolvimento do trabalho, seguir estritamente o que é definido no processo, principalmente no que se diz respeito a prazos. O processo sugere que ele seja implementado em projetos com um período limite de tempo de um semestre letivo, este trabalho foi desenvolvido no decorrer de dois semestres. O número de releases sugeridas pelo YP também foi excedido. Todas essas dificuldades com o processo tiveram que ser abstraídas para que o resultado final fosse alcançado.
+
+A decisão do uso de alguns frameworks, como o Spring e o AdminLTE trouxeram benefícios, como maior facilidade e velocidade de desenvolvimento. Porém essa decisão veio a ser tardia, e resultou em uma modificação muito grande em termos de código, causando o não reaproveitamento de muito código já escrito, e consequentemente perca de tempo. Esse problema poderia ter sido evitado com o uso desde o início do desenvolvimento.
+% section dificuldades_encontradas (end)
+% subsection subsection_name (end)
 
 \section{Trabalhos futuros} % (fold)
 \label{sec:trabalhos_futuros}
