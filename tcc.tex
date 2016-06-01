@@ -504,7 +504,7 @@ Esta seção irá discutir as etapas de análise, projeto e implementação da S
 \section{Ferramentas Relacionadas} % (fold)
 \label{sec:ferramentas_relacionadas}
 
-Foram analisadas algumas ferramentas em busca de compreender as funcionalidades do sistema e procurar um diferencial dentre as soluções existentes. A seguir, o quadro \ref{quad:comparativo} mostra um comparativo com as principais ferramentas usadas na criação de lojas virtuais e suas respectivas funcionalidades, comparando com o sistema desenvolvido.
+Foram analisadas algumas ferramentas em busca de compreender as funcionalidades que o sistema viria a ter. A seguir, o quadro \ref{quad:comparativo} mostra um comparativo com algumas ferramentas usadas na criação de lojas virtuais e suas respectivas funcionalidades, comparando com o sistema desenvolvido.
 
 \begin{itemize}
 \item 1. Magento (www.magento.com) \nocite{magento}
@@ -547,7 +547,7 @@ Como o quadro \ref{quad:comparativo} mostra, a Sudo Loja conta com as funcionali
 \section{Análise} % (fold)
 \label{sec:analise}
 
-Aqui foram levantados, documentados e validados os requisitos do sistema, estes em forma de \textit{User Stories}. Vejamos os artefatos inerentes a \textit{User Story} US03 (O sistema deve realizar o gerenciamento do estoque da loja virtual). Essa \textit{User Story} abrange funcionalidades envolvendo o estoque de produtos de uma loja virtual, tais como inserção de produtos, atualizações, controle do número de produtos e outras a fim.
+Aqui foram levantados, documentados e validados os requisitos do sistema, estes em forma de \textit{User Stories}. A seguir são apresentados artefatos, inerentes a \textit{User Story} US03 (O sistema deve realizar o gerenciamento do estoque da loja virtual). Essa \textit{User Story} abrange funcionalidades envolvendo o estoque de produtos de uma loja virtual, tais como inserção de produtos, atualizações, controle do número de produtos e outras a fim.
 
 Durante a fase de planejamento do YP, cada \textit{User Story} é analisada, para que seja possível destacar um conjunto de funcionalidades, estas que são dispostas em tarefas a serem executadas. A fim de validarmos uma \textit{User Story} são definidos testes de aceitação para cada uma. Para auxílio na gerência foi feito uso da Tabela de Alocação de Tarefas (TAT), na qual especifica-se as \textit{\textit{User Stories}} envolvidas, tarefas, responsáveis, estimativas de tempo, tempo real consumido e status da tarefa. Nos quadros \ref{quadro:tati-us03} e \ref{quadro:teste-aceitacaoi-us03} é possível ver, respectivamente, a tabela de alocação de tarefas e os testes de aceitação geradas pra a US03. As demais \textit{\textit{User Stories}} são apresentadas com detalhes no Apêndice \ref{app:user_stories_e_testes_de_aceitacao}.	
 
@@ -813,7 +813,7 @@ Após a inserção e validação dos dados, um link de confirmação é enviado 
 
 Toda navegação no painel administrativo se dá a partir do menu lateral, onde é possível acessar as configurações da conta, criar um loja e gerenciar lojas individualmente. Na opção \textbf{conta} é possível alterar configurações da conta, como e-mail, senha e avatar.
 
-Para criar basta selecionar a opção \textbf{configurar nova loja} no menu lateral. Para continuar é preciso informar um nome para a loja e um documento de identificação. Após os dados serem validados, a loja é criada e disponibilizado no menu lateral. Ao expandir a opção do menu correspondente a uma loja, uma página com um resumo sobre a loja é aberta, onde é possível visualizar informações como numero de vendas, produtos, notificações sobre novos pedidos e comentários, usuários cadastrados e alguns alertas. Como é possível ver na figura \ref{fig:mainloja}.
+Para criar uma loja basta selecionar a opção \textbf{configurar nova loja} no menu lateral. Para continuar é preciso informar um nome para a loja e um documento de identificação. Após os dados serem validados, a loja é criada e disponibilizado no menu lateral. Ao expandir a opção do menu correspondente a uma loja, uma página com um resumo sobre a loja é aberta, onde é possível visualizar informações como numero de vendas, produtos, notificações sobre novos pedidos e comentários, usuários cadastrados e alguns alertas. Como é possível ver na figura \ref{fig:mainloja}.
 
 
 \begin{figure}[H]
@@ -836,7 +836,7 @@ Na menu de \textbf{configurações} ilustrado na figura \ref{fig:configloja}, é
 \label{fig:configloja}
 \end{figure}
 
-Como pode ser visto na figura \ref{fig:pedidos}, de forma similar ocorre com o menu \textbf{pedidos}. Ao selecionar essa opção é exibido a lista de pedidos ordenados inicialmente pela data. Ao clicar sobre um pedido, detalhes são exibidos, como: os itens do pedido, informações sobre usuário e endereço de entrega, e informações sobre o status do pagamento. Nesta ficha é possível também alterar o status do pedido, caso o lojista sinta necessidade. A ficha de um pedido é mostrada na figura \ref{fig:pedidos}.
+Como pode ser visto na figura \ref{fig:pedidos}, de forma similar ocorre com o menu \textbf{pedidos}. Ao selecionar essa opção é exibido a lista de pedidos ordenados inicialmente pela data. 
 
 \begin{figure}[H]
 \centering
@@ -844,6 +844,16 @@ Como pode ser visto na figura \ref{fig:pedidos}, de forma similar ocorre com o m
 \centering
 \includegraphics[width=15cm]{img/sistema/pedidos.png.eps}\\
 \label{fig:pedidos}
+\end{figure}
+
+Ao clicar sobre um pedido, detalhes são exibidos, como: os itens do pedido, informações sobre usuário e endereço de entrega, e informações sobre o status do pagamento. Nesta ficha é possível também alterar o status do pedido, caso o lojista sinta necessidade. A ficha de um pedido é mostrada na figura \ref{fig:pedidos}.
+
+\begin{figure}[H]
+\centering
+\caption{Ficha pedido - Sudo Loja}
+\centering
+\includegraphics[width=15cm]{img/sistema/pedido.png.eps}\\
+\label{fig:pedido}
 \end{figure}
 
 O lojista pode ver a lista de usuário cadastrados em sua loja, no menu \textbf{usuários}. E as perguntas ou comentários que aguardam uma resposta do lojista no menu \textbf{comentários}. Os comentários são exibidos para o lojista da forma apresenta na figura \ref{fig:comentarios}.
