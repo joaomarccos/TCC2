@@ -131,7 +131,9 @@ Comprar na Internet traz muitas vantagens para um consumidor. É possível fazer
 
 Para os comerciantes as vantagens também são muitas: o produto fica acessível aos clientes 24 horas por dia, todos os dias da semana; pessoas de todos os lugares podem ver o produto; não é necessário um espaço físico para expor os produtos; custo de investimento inicial mínimo, entre outras.
 
-Apesar de existirem algums problemas como fraudes; entrega dos produtos de forma incorreta ou fora do prazo; ou até mesmo o não recebimento do produto; os consumidores virtuais demonstram altos índices de intenção de compra. Segundo \citeonline{webshoppers} essa intenção de compra significa dizer que os clientes continuam buscando e acima de tudo usando o comércio eletrônico.
+Apesar de existirem algums problemas com o uso do e-commerce, os consumidores virtuais demonstram altos índices de intenção de compra. Segundo \citeonline{webshoppers} essa intenção de compra significa dizer que os clientes continuam buscando e acima de tudo usando o comércio eletrônico. 
+
+Os principais problemas citados por \citeonline{da2013crescimento} sobre o comércio eletrônico são: segurança --- pois ao realizar uma compra, o cliente precisa informar seus dados pessoais, números de cartões de crétito e até senhas; falhas no sistema; confiabilidade --- existe o risco tanto para as organizações como para os clientes de não saber a identidade real de quem está do outro lado do computador; e entrega --- devido às más condições de vários tipos de transporte, entretanto essa entrega necessita ser rápida e a um custo viável; 
 
 O \textit{WebShoppers} \citeonline{webshoppers}, relatório sobre o comércio eletrônico anualmente publicado, no qual são analisadas a evolução do \textit{e-commerce}, tendências, estimativas, mudanças de comportamento e preferências dos e-consumidores, apresentou boas estatísticas sobre o \textit{e-commerce} no Brasil. A seguir serão apresentados dados em forma de figuras e gráficos.
 
@@ -495,11 +497,15 @@ Durante esta etapa foram definidas as \textit{Releases}, juntamente com a data e
 \chapter{Sudo Loja} % (fold)
 \label{cha:sudoloja}
 
-A Sudo Loja é uma plataforma voltada a construção de lojas virtuais. A ferramenta visa facilitar o ingresso de um comerciante ao mercado virtual, fornecendo uma ferramenta capaz de criar uma loja virtual onde um usuário, sem ajuda especializada, poderá gerenciar e customizar sua loja de maneira simples. É voltado ao âmbito comercial, contemplando todos aqueles que desejam criar uma loja virtal e disponibilizar produtos para venda.
+A Sudo Loja é uma plataforma WEB voltada a construção de lojas virtuais. A ferramenta visa facilitar o ingresso de um comerciante ao mercado virtual, fornecendo uma ferramenta capaz de criar uma loja virtual, onde um usuário sem ajuda especializada, poderá gerenciar e customizar sua loja de maneira simples. É voltado ao âmbito comercial, contemplando todos aqueles que desejam criar uma loja virtal e disponibilizar produtos para venda.
 
-O Apêndice \ref{ap:documento_visao} possui detalhes quanto aos objetivos do projeto, sua abrangência, o problema atacado, os envolvidos no uso da ferramenta, e suas principais funcionalidades.
+O sistema é basicamente dividido em duas partes: um painel administrativo --- voltado aos lojistas (administrador da loja virtual), responsável por criar a loja, incluir dados nessa loja, gerenciar seus pedidos e personaliza-la; e a loja virtual --- acessada pelos possíveis clientes, onde poderão efetuar cadastros e realizar compras. O funcionamento dessas partes é descrito na seção \ref{sec:funcionalidades-real}.
 
-Esta seção irá discutir as etapas de análise, projeto e implementação da Sudo Loja. Assim como a descrição de algumas funcionalidades.
+Como se trata de um sistema WEB, a única exigência é o usuário possua uma conexão com a Internet. Não possui restrições quanto ao sistema operacional usado pelo usuário, e poder ser usado apartir de qualquer navegador, seja ele de um computador, tablet ou celular.
+
+No Apêndice \ref{ap:documento_visao} - Documento de visão, são apresentados detalhes quanto aos objetivos do projeto, sua abrangência, o problema atacado, os envolvidos no uso da ferramenta, e suas principais funcionalidades.
+
+Esta seção também irá discutir as etapas de análise, projeto e implementação da Sudo Loja. Assim como a descrição de algumas funcionalidades.
 
 \section{Ferramentas Relacionadas} % (fold)
 \label{sec:ferramentas_relacionadas}
@@ -601,10 +607,10 @@ TA6 & Dado que estou na página de estoque, quando eu selecionar a opção exclu
 
 % section analise (end)
 
-\section{Projeto Arquitetural} % (fold)
+\section{Arquitetura do Sistema} % (fold)
 \label{sec:projeto_arquitetural}
 
-O sistema será organizado em 3 camadas, são elas: Apresentação, Serviços e Persistência. As próximas seções abordarão individualmente cada uma delas. Segundo \citeonline{sommerville}, o modelo em camadas de uma arquitetura organiza o sistema em camadas, cada uma das quais fornecendo um conjunto de serviços, essa abordagem apoia o desenvolvimento incremental de sistemas. À medida que uma camada é desenvolvida, alguns serviços disponibilizados por essa camada podem ser disponibilizadas para os usuários. 
+O sistema é organizado em 3 camadas, são elas: Apresentação, Serviços e Persistência. As próximas seções abordarão individualmente cada uma delas. Segundo \citeonline{sommerville}, o modelo em camadas de uma arquitetura organiza o sistema em camadas, cada uma das quais fornecendo um conjunto de serviços, essa abordagem apoia o desenvolvimento incremental de sistemas. À medida que uma camada é desenvolvida, alguns serviços disponibilizados por essa camada podem ser disponibilizadas para os usuários. 
 
 Na Figura \ref{fig:representacao-pa}, pode ser vista uma representação visual de como dar-se a organização das camadas, onde cada camada só acessa diretamente suas camadas adjacentes.
 
@@ -637,7 +643,7 @@ A junção do Spring Boot e Spring MVC em um projeto torna o desenvolvimento de 
 \subsection{Camada de Serviços} % (fold)
 \label{sub:camada_de_servicos}
 
-Esta camada fornecerá todos os serviços necessários para o funcionamento do sistema. Digamos que um serviço aqui é uma classe Java contendo determinada lógica, afim de atender uma regra de negócio. Esta camada terá acesso direto às suas camadas adjacentes: Camada de Apresentação e Camada de Persistência. Para isso, fará uso da linguagem de programação Java e uso da especificação CDI (Injeção de Dependência e Contextos, em português) para facilitar o uso de injeção de dependências. É composta por um conjunto de classes Java, cada qual com suas responsabilidades. Estas classes validarão e manipularão os dados vindo da camada de apresentação. Essas classes que fornecerão os serviços, irão acessar diretamente a camada de persistência, esta que por sua vez irá retornar algum resultado, para que o serviço realize o processamento e retorne para a camada de apresentação.
+Esta camada fornece todos os serviços necessários para o funcionamento do sistema. Digamos que um serviço aqui é uma classe Java contendo determinada lógica, afim de atender uma regra de negócio. Esta camada tem acesso direto às suas camadas adjacentes: Camada de Apresentação e Camada de Persistência. Para isso, fará uso da linguagem de programação Java e uso da especificação CDI (Injeção de Dependência e Contextos, em português) para facilitar o uso de injeção de dependências. É composta por um conjunto de classes Java, cada qual com suas responsabilidades. Estas classes validarão e manipularão os dados vindo da camada de apresentação. Essas classes que fornecerão os serviços, irão acessar diretamente a camada de persistência, esta que por sua vez irá retornar algum resultado, para que o serviço realize o processamento e retorne para a camada de apresentação.
 
 Para \citeonline{foldoc}, Interface de Programação de Aplicação (português brasileiro), cujo acrônimo API provém do Inglês Application Programming Interface, é um conjunto de rotinas e padrões estabelecidos por um software para a utilização das suas funcionalidades por aplicativos que não pretendem envolver-se em detalhes da implementação do software, mas apenas usar seus serviços.
 
@@ -648,7 +654,7 @@ Esta camada tem acesso a alguns serviços externos e usadas em forma de APIs. O 
 \subsection{Camada de Persistência} % (fold)
 \label{sub:camada_de_persistencia}
 
-Esta camada será responsável por manter e disponibilizar todos os dados do sistema. Para isto terá auxílio dos módulos Spring Data JPA e Spring Data Redis, e da especificação JPA (Java Persistence API). Estes módulos automatizarão o processo criação e manipulação dos dados e auxiliarão  nas operações CRUD (acrônimo de \textit{Create}, \textit{Read}, \textit{Update} e \textit{Delete} na língua Inglesa) para as quatro operações básicas utilizadas em bases de dados relacionais (RDBMS) criação, consulta, atualização e exclusão de dados. a especificação JPA é usada no mapeamento das classes correspondentes ao modelo, através de anotações (Java \textit{anotations}).
+Esta camada é responsável por manter e disponibilizar todos os dados do sistema. Para isto tem auxílio dos módulos Spring Data JPA e Spring Data Redis, e da especificação JPA (Java Persistence API). Estes módulos automatizam o processo criação e manipulação dos dados e auxiliarão  nas operações CRUD (acrônimo de \textit{Create}, \textit{Read}, \textit{Update} e \textit{Delete} na língua Inglesa) para as quatro operações básicas utilizadas em bases de dados relacionais (RDBMS) criação, consulta, atualização e exclusão de dados. a especificação JPA é usada no mapeamento das classes correspondentes ao modelo, através de anotações (Java \textit{anotations}).
 
 Segundo \citeonline{kaufeld1996access}, o modelo de banco de dados relacional possui a capacidade de lidar com grandes volumes de informações, eliminando dados redundantes. 
 
@@ -777,7 +783,7 @@ O estoque de uma loja do sistema é ilustrado na Figura \ref{fig:sistema-estoque
 % section implementacao (end)
 
 \section{Funcionalidades} % (fold)
-\label{sec:funcionalidades}
+\label{sec:funcionalidades-real}
 
 Esta seção apresenta as principais funcionalidades do sistema. Poderá ser visto como funciona a plataforma, e come se dá as operações de cadastro, criação de uma loja, gerenciamento de produtos e pedidos e personalização.
 
@@ -1092,7 +1098,7 @@ Gerenciamento de produtos & Inclusão, remoção e alteração de produtos, cada
 Gerenciamento de pedidos & Controle de todos os pedidos realizados
 \\	
 \hline
-Personalização da loja & A loja poderá ser personalizada totalmente (\textit{layout}, cores, fontes, edição de CSS e HTML)
+Personalização da loja & A loja poderá ser personalizada totalmente (\textit{layout}, cores, fontes, dimensões e etc)
 \\	
 \hline
 Gerenciamento de clientes & Cadastro, alteração de dados cadastrais, remoção da conta.
@@ -1104,7 +1110,7 @@ Calculo de frete automático quando houver & Caso haja frete sobre um produto da
 Controle de estoque & O estoque poderá ser consultado e gerenciado, contendo opções como desabilitar/habilitar produtos, visualizar quantidade de cada produto, filtrar produtos por nome
 \\	
 \hline
-Acompanhamento de pedidos para os clientes & Os clientes poderão visualizar o status do pedido a qualquer momento,
+Acompanhamento de pedidos para os clientes & Os clientes poderão visualizar o status do pedido a qualquer momento
 \\	
 \hline
 \end{longtable}	
