@@ -304,7 +304,7 @@
 \def\grau#1{\gdef\@grau{#1}}
 \def\tipo#1{\gdef\@tipo{#1}}
 \def\bacharelado{\grau{BACHAREL} \tipo{Monografia}}
-\def\tecnologo{\grau{TECN\'OLOGO} \tipo{Monografia}} %edited by João Marcos F
+\def\tecnologo{\grau{tecn\'ologo} \tipo{Monografia}} %edited by João Marcos F
 \def\licenciatura{\grau{LICENCIADO} \tipo{Monografia}}
 \def\especializacao{\grau{ESPECIALISTA} \tipo{Monografia}\es@ptrue}
 \def\mestrado{\grau{MESTRE} \tipo{Disserta\c{c}\~{a}o}\ps@dtrue}

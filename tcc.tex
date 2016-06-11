@@ -42,7 +42,7 @@ tablewithin=none,
 %
 %---------- Informe o Curso e Grau -----
 \tecnologo \curso{Análise e Desenvolvimento de Sistemas} \ano{2016}
-\data{\underline{\hspace{1cm}}/\underline{\hspace{1cm}}/2016} % data da aprovação
+\data{11/05/2016} % data da aprovação
 \cidade{Cajazeiras/PB}
 %
 %----------Informações sobre a Instituição -----------------
@@ -51,32 +51,33 @@ tablewithin=none,
 %
 %-------- Informações obtidas na Biblioteca ----------------
 %
-% \CDU{123.45} \areas{Areas..}
+\CDU{536.21} \areas{1.Desenvolvimento de Software  2. Tecnologia.}
+\npaginas{93}  % total de páginas do trabalho
 
-\npaginas{55}  % total de páginas do trabalho
 %------Nomes do Orientador, 1o. Examinador e 2o.
 \orientador{Francisco Paulo de Freitas Neto}
 \abrevttorientador{Prof. Msc}
-\examinadorum{Examinador 1}
-\examinadordois{Examinador 2}
+\examinadorum{Alvaro Magnum Barbosa Neto}
+\examinadordois{Ricardo de Sousa Job}
 \ttorientador{Orientador}
 \ttexaminadorum{Examinador}
 \ttexaminadordois{Examinador}
 \maketitle
-%----------------------------dedicatória--------------
+% % ----------------------------dedicatória-----------------
 \begin{dedicatoria}
-Aos meus pais e irmãos.\\
-Aos meus amigos\\
+Dedico esse trabalho aos meus pais, com todo meu amor e gratidão, por tudo que fizeram por mim ao longo de minha vida.
 \end{dedicatoria}
 
-%----------------------------Agradecimentos--------------
+%----------------------------Agradecimentos---------------
 \agradecimento{Agradecimentos}
-\noindent Primeiramente a Deus. O que seria de nós sem Ele?	\\
-Aos meus pais que sempre me incentivaram e ajudaram, sem eles não teria chegado até aqui.\\
-Ao meu Orientador Francisco Paulo de Freitas Neto pela paciência, disponibilidade e por prestar toda a orientação e esclarecimentos necessários.\\
-Aos meus tios Isabel e Alonso por me acolherem durante todos esses dias.\\
-À minha namorada por estar sempre ao meu lado me encorajando\\
-Aos meus amigos e todos os meus parentes pelo apoio.
+\noindent É difícil agradecer todas as pessoas que de algum modo, nos momentos serenos e ou apreensivos, fizeram ou fazem parte da minha vida, por isso primeiramente agradeço à todos de coração.\\
+Agradeço aos meus pais Manoel e Maria, pela determinação e luta na minha formação.\\
+Agradeço aos meus tios Isabel e Alonso por me acolherem durante todos esses dias em sua casa.\\
+Agradeço aos meus colegas de classe e com certeza futuros excelentes profissionais.\\
+Agradeço aos professores que desempenharam com dedicação as aulas ministradas.\\
+Agradeço ao meu professor e orientador Paulo pela paciência, disponibilidade e por prestar toda a orientação e esclarecimentos necessários.\\
+Agradeço à minha namorada Naiara, por estar sempre ao meu lado me encorajando.\\
+E finalmente agradeço a Deus, por proporcionar estes agradecimentos à todos que tornaram minha vida mais afetuosa, além de ter me dado uma família maravilhosa e amigos sinceros.
 
 \newpage
 
@@ -221,19 +222,7 @@ A Sudo Loja, visa resolver esses problemas oferecendo um CMS (do inglês \textit
 \section{Objetivos} % (fold)
 \label{sec:objetivos}
 
-Esta seção apresenta os propósitos que direcionarão a construção do sistema.
-
-\subsection{Objetivo Geral} % (fold)
-\label{sub:objetivo_geral}
-
-Esse trabalho tem como objetivo principal o desenvolvimento de uma ferramenta para criação de lojas virtuais.
-
-% subsection objetivo_geral (end)
-
-\subsection{Objetivos Específicos} % (fold)
-\label{sub:objetivos_espec}
-
-Como resultado, esperasse que o sistema desenvolvido seja uma alternativa de \textit{e-commerce} para a região, vindo de certa forma a incentivar o uso de novas soluções em TI, em pequenas e médias empresas comerciais da região do sertão paraibano. Facilitando assim, a entrada de novos comerciantes no mercado virtual. Para isso, o desenvolvimento de um painel administrativo para que os usuários possam acompanhar, gerenciar e personalizar suas lojas, se faz necessário. 
+Esse trabalho tem como objetivo principal o desenvolvimento de uma ferramenta para criação de lojas virtuais. Como resultado, esperasse que o sistema desenvolvido seja uma alternativa de \textit{e-commerce} para a região, vindo de certa forma a incentivar o uso de novas soluções em TI, em pequenas e médias empresas comerciais da região do sertão paraibano. Facilitando assim, a entrada de novos comerciantes no mercado virtual. Para isso, o desenvolvimento de um painel administrativo para que os usuários possam acompanhar, gerenciar e personalizar suas lojas, se faz necessário. 
 
 % subsection objetivos_espec (end)
 
@@ -250,7 +239,7 @@ A Seção \ref{cha:fundamentaco_teorica} apresenta a fundamentação teórica pa
 
 Essa seção discutirá sobre alguns assuntos necessários para obter um melhor entendimento do trabalho.
 
-\section{CMS} % (fold)
+\section{Sistemas de Gerenciamento de Conteúdo} % (fold)
 \label{sec:cms}
 
 Sistemas de Gerenciamento de Conteúdo (SGC) ou Content Management System (CMS), segundo \citeonline{mercer} são softwares que facilitam a criação, organização, manipulação e remoção de dados em forma de imagens, documentos, scripts, textos, etc.
@@ -513,11 +502,11 @@ Esta seção também irá discutir as etapas de análise, projeto e implementaç
 Foram analisadas algumas ferramentas em busca de compreender as funcionalidades que o sistema viria a ter. A seguir, o quadro \ref{quad:comparativo} mostra um comparativo com algumas ferramentas usadas na criação de lojas virtuais e suas respectivas funcionalidades, comparando com o sistema desenvolvido.
 
 \begin{itemize}
-\item 1. Magento (www.magento.com) \nocite{magento}
-\item 2. Tray Commerce (www.tray.com.br) \nocite{tray}
-\item 3. Loja UolHost (www.uolhost.com.br) \nocite{uolhost}
-\item 4. Wix Commerce (pt.wix.com/ecommerce/website) \nocite{wix}
-\item 5. Loja Integrada (www.lojaintegrada.com.br) \nocite{lojaintegrada}
+\item 1. Magento\footnote{www.magento.com}  -  Plataforma de e-commerce open source, desenvolvida na linguagem PHP e distribuída livremente no site da empresa. \nocite{magento}
+\item 2. Tray Commerce\footnote{www.tray.com.br} - Cria uma loja virtual e disponibiliza seus produtos em vários \textit{Marketplaces} do Brasil. \nocite{tray}
+\item 3. Loja UolHost\footnote{www.uolhost.com.br} - Plataforma de criação de lojas virtuais mantida pela UOL. \nocite{uolhost}
+\item 4. Wix Commerce\footnote{pt.wix.com/ecommerce/website} - Plataforma online de criação e edição de sites, que permite aos usuários criar sites em HTML5 e sites Mobile.  \nocite{wix}
+\item 5. Loja Integrada\footnote{www.lojaintegrada.com.br} - Uma plataforma de loja virtual para micro e pequenas empresas, com foco na simplicidade. \nocite{lojaintegrada}
 
 \end{itemize}
 
